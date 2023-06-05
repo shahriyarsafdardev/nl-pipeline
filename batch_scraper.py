@@ -50,14 +50,13 @@ def run_scrapers(filename):
         # Update the connector dictionary with the count of scraped pages
         connector['scraped_page_count'] = len(scraped_urls)
 
-    current_connectors_file = read_object(filename)
-    current_connectors = json.loads(current_connectors_file)
+        current_connectors_file = read_object(filename)
+        current_connectors = json.loads(current_connectors_file)
 
-    merged_arrays = merge_arrays(connectors, current_connectors)
-    merged_arrays = json.dumps(list(merged_arrays), indent=4)
-    file_obj = io.BytesIO(merged_arrays.encode('utf-8'))
-
-    upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
+        merged_arrays = merge_arrays(connectors, current_connectors)
+        merged_arrays = json.dumps(merged_arrays, indent=4)
+        file_obj = io.BytesIO(merged_arrays.encode('utf-8'))
+        upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
 
 # Usage:
 run_scrapers('airbyte_connectors.json')
