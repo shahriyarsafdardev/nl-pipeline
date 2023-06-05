@@ -92,27 +92,32 @@
     {
         "name": "DEAR ERP",
         "base_url": "https://support.dearsystems.com/support/solutions",
-        "start_url": "https://support.dearsystems.com/support/solutions/articles/11000067739-api-introduction"
+        "start_url": "https://support.dearsystems.com/support/solutions/articles/11000067739-api-introduction",
+        "scraped_page_count": 688
     },
     {
         "name": "Discourse",
         "base_url": "https://docs.discourse.org",
-        "start_url": "https://docs.discourse.org"
+        "start_url": "https://docs.discourse.org",
+        "scraped_page_count": 1
     },
     {
         "name": "Zendesk Help Centre",
         "base_url": "https://developer.zendesk.com/api-reference",
-        "start_url": "https://developer.zendesk.com/api-reference"
+        "start_url": "https://developer.zendesk.com/api-reference",
+        "scraped_page_count": 419
     },
     {
         "name": "Source IBM DB2: add support for CDC",
         "base_url": "https://www.ibm.com/docs/en/db2",
-        "start_url": "https://www.ibm.com/docs/en/db2/11.5"
+        "start_url": "https://www.ibm.com/docs/en/db2/11.5",
+        "scraped_page_count": 1
     },
     {
         "name": "Onfleet",
         "base_url": "https://docs.onfleet.com/reference",
-        "start_url": "https://docs.onfleet.com/reference/setup-tutorial"
+        "start_url": "https://docs.onfleet.com/reference/setup-tutorial",
+        "scraped_page_count": 105
     },
     {
         "name": "SQLite",
