@@ -1,0 +1,322 @@
+[
+    {
+        "name": "Zenefits",
+        "base_url": "https://developers.zenefits.com/reference",
+        "start_url": "https://developers.zenefits.com/reference/getting-started"
+    },
+    {
+        "name": "RocketMQ",
+        "base_url": "https://rocketmq.apache.org/docs",
+        "start_url": "https://rocketmq.apache.org/docs"
+    },
+    {
+        "name": "Eurostat",
+        "base_url": "https://wikis.ec.europa.eu/display/EUROSTATHELP/API",
+        "start_url": "https://wikis.ec.europa.eu/display/EUROSTATHELP/API+-+Getting+started"
+    },
+    {
+        "name": "Swisscom mobility",
+        "base_url": "https://docs.developer.swisscom.com",
+        "start_url": "https://docs.developer.swisscom.com/devguide-sc/api.html"
+    },
+    {
+        "name": "RabbitMQ",
+        "base_url": "https://www.rabbitmq.com",
+        "start_url": "https://www.rabbitmq.com/documentation.html"
+    },
+    {
+        "name": "Microsoft Dynamics Business Central",
+        "base_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0",
+        "start_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0"
+    },
+    {
+        "name": "Sprout Social",
+        "base_url": "https://api.sproutsocial.com/docs",
+        "start_url": "https://api.sproutsocial.com/docs"
+    },
+    {
+        "name": "Local Parquet",
+        "base_url": "https://parquet.apache.org/docs",
+        "start_url": "https://parquet.apache.org/docs"
+    },
+    {
+        "name": "Airtm",
+        "base_url": "https://airtm.bitbucket.io",
+        "start_url": "https://airtm.bitbucket.io/#introduction"
+    },
+    {
+        "name": "Reddit Ads",
+        "base_url": "https://ads-api.reddit.com/docs",
+        "start_url": "https://ads-api.reddit.com/docs"
+    },
+    {
+        "name": "Teamtailor",
+        "base_url": "https://docs.teamtailor.com",
+        "start_url": "https://docs.teamtailor.com"
+    },
+    {
+        "name": "Iomete platform",
+        "base_url": "https://iomete.com/docs",
+        "start_url": "https://iomete.com/docs"
+    },
+    {
+        "name": "Easybill",
+        "base_url": "https://www.easybill.de/api",
+        "start_url": "https://www.easybill.de/api"
+    },
+    {
+        "name": "Xing API",
+        "base_url": "https://dev.xing.com/partners/job_integration/api_docs",
+        "start_url": "https://dev.xing.com/partners/job_integration/api_docs"
+    },
+    {
+        "name": "ArangoDB",
+        "base_url": "https://www.arangodb.com/docs/stable",
+        "start_url": "https://www.arangodb.com/docs/stable"
+    },
+    {
+        "name": "DEAR ERP",
+        "base_url": "https://support.dearsystems.com/support/solutions",
+        "start_url": "https://support.dearsystems.com/support/solutions/articles/11000067739-api-introduction"
+    },
+    {
+        "name": "Discourse",
+        "base_url": "https://docs.discourse.org",
+        "start_url": "https://docs.discourse.org"
+    },
+    {
+        "name": "Zendesk Help Centre",
+        "base_url": "https://developer.zendesk.com/api-reference",
+        "start_url": "https://developer.zendesk.com/api-reference"
+    },
+    {
+        "name": "Source IBM DB2: add support for CDC",
+        "base_url": "https://www.ibm.com/docs/en/db2",
+        "start_url": "https://www.ibm.com/docs/en/db2/11.5"
+    },
+    {
+        "name": "Onfleet",
+        "base_url": "https://docs.onfleet.com/reference",
+        "start_url": "https://docs.onfleet.com/reference/setup-tutorial"
+    },
+    {
+        "name": "SQLite",
+        "base_url": "https://www.sqlite.org",
+        "start_url": "https://www.sqlite.org/docs.html"
+    },
+    {
+        "name": "TimescaleDB",
+        "base_url": "https://docs.timescale.com/api/latest",
+        "start_url": "https://docs.timescale.com/api/latest"
+    },
+    {
+        "name": "Facebook Leads",
+        "base_url": "https://developers.facebook.com/docs/marketing-api",
+        "start_url": "https://developers.facebook.com/docs/marketing-api/guides/lead-ads"
+    },
+    {
+        "name": "Google Workspace Email Audit API",
+        "base_url": "https://developers.google.com/admin-sdk/email-audit",
+        "start_url": "https://developers.google.com/admin-sdk/email-audit/overview"
+    },
+    {
+        "name": "Mambu",
+        "base_url": "https://api.mambu.com",
+        "start_url": "https://api.mambu.com/#welcome"
+    },
+    {
+        "name": "IHS Markit - iLEVEL Portfolio Monitoring Software",
+        "base_url": "https://api-docs.globalmarkets.ihsmarkit.com",
+        "start_url": "https://api-docs.globalmarkets.ihsmarkit.com"
+    },
+    {
+        "name": "platform orchestration",
+        "base_url": "https://www.juniper.net/documentation/us/en/software/active-assurance3.0.0/rest-api-orchestration",
+        "start_url": "https://www.juniper.net/documentation/us/en/software/active-assurance3.0.0/rest-api-orchestration/topics/concept/introduction.html"
+    },
+    {
+        "name": "Sentry",
+        "base_url": "https://docs.sentry.io/api",
+        "start_url": "https://docs.sentry.io/api"
+    },
+    {
+        "name": "Apache Hudi",
+        "base_url": "https://hudi.apache.org/docs",
+        "start_url": "https://hudi.apache.org/docs/overview"
+    },
+    {
+        "name": "Exasol",
+        "base_url": "https://docs.exasol.com",
+        "start_url": "https://docs.exasol.com/home.htm"
+    },
+    {
+        "name": "InMoment/Wootric",
+        "base_url": "https://docs.wootric.com/api",
+        "start_url": "https://docs.wootric.com/api"
+    },
+    {
+        "name": "Adobe Experience Platform",
+        "base_url": "https://experienceleague.adobe.com/docs/experience-platform",
+        "start_url": "https://experienceleague.adobe.com/docs/experience-platform.html?lang=en"
+    },
+    {
+        "name": "TPL Central",
+        "base_url": "https://api.tplmaps.com/apiportal/#/portal/docs",
+        "start_url": "https://api.tplmaps.com/apiportal/#/portal/docs"
+    },
+    {
+        "name": "Flexport",
+        "base_url": "https://apidocs.flexport.com",
+        "start_url": "https://apidocs.flexport.com"
+    },
+    {
+        "name": "Shortcut",
+        "base_url": "https://developer.shortcut.com/api",
+        "start_url": "https://developer.shortcut.com/api/rest/v3"
+    },
+    {
+        "name": "AWS Cost Explorer",
+        "base_url": "https://docs.aws.amazon.com/cost-management/latest",
+        "start_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-api.html"
+    },
+    {
+        "name": "Google AdSense",
+        "base_url": "https://developers.google.com/adsense/management",
+        "start_url": "https://developers.google.com/adsense/management/getting_started"
+    },
+    {
+        "name": "Quora Ads",
+        "base_url": "https://quoraadsupport.zendesk.com/hc/en-us",
+        "start_url": "https://quoraadsupport.zendesk.com/hc/en-us/categories/115001577787-Getting-Started"
+    },
+    {
+        "name": "Google My Business",
+        "base_url": "https://developers.google.com/my-business",
+        "start_url": "https://developers.google.com/my-business/ref_overview"
+    },
+    {
+        "name": "Personio",
+        "base_url": "https://developer.personio.de/reference",
+        "start_url": "https://developer.personio.de/reference/introduction"
+    },
+    {
+        "name": "Zendesk Support",
+        "base_url": "https://developer.zendesk.com/api-reference",
+        "start_url": "https://developer.zendesk.com/api-reference"
+    },
+    {
+        "name": "Weatherstack",
+        "base_url": "https://weatherstack.com/documentation",
+        "start_url": "https://weatherstack.com/documentation"
+    },
+    {
+        "name": "Drip",
+        "base_url": "https://developer.drip.com",
+        "start_url": "https://developer.drip.com"
+    },
+    {
+        "name": "YouGov BrandIndex",
+        "base_url": "https://business.yougov.com/product",
+        "start_url": "https://business.yougov.com/product/brandindex"
+    },
+    {
+        "name": "Postmark",
+        "base_url": "https://postmarkapp.com/developer/api",
+        "start_url": "https://postmarkapp.com/developer/api/overview"
+    },
+    {
+        "name": "RingCentral",
+        "base_url": "https://developers.ringcentral.com/api-reference",
+        "start_url": "https://developers.ringcentral.com/api-reference"
+    },
+    {
+        "name": "WooCommerce",
+        "base_url": "https://woocommerce.com/docs",
+        "start_url": "https://woocommerce.com/docs"
+    },
+    {
+        "name": "Criteo Ads",
+        "base_url": "https://developers.criteo.com/marketing-solutions/docs",
+        "start_url": "https://developers.criteo.com/marketing-solutions/docs/developer-support"
+    },
+    {
+        "name": "Taboola",
+        "base_url": "https://developers.taboola.com/backstage-api/reference",
+        "start_url": "https://developers.taboola.com/backstage-api/reference/welcome"
+    },
+    {
+        "name": "Shopware",
+        "base_url": "https://developer.shopware.com/docs/concepts/api",
+        "start_url": "https://developer.shopware.com/docs/concepts/api"
+    },
+    {
+        "name": "Microsoft excel online (sharepoint)",
+        "base_url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development",
+        "start_url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development/excel-services-rest-api"
+    },
+    {
+        "name": "Prometheus",
+        "base_url": "https://prometheus.io/docs/prometheus/latest",
+        "start_url": "https://prometheus.io/docs/prometheus/latest/querying/api"
+    },
+    {
+        "name": "Optimizely",
+        "base_url": "https://docs.developers.optimizely.com/web-experimentation/docs",
+        "start_url": "https://docs.developers.optimizely.com/web-experimentation/docs/rest-api-introduction"
+    },
+    {
+        "name": "Beacon CRM",
+        "base_url": "https://developers.beaconcrm.org",
+        "start_url": "https://developers.beaconcrm.org/getting-started.html"
+    },
+    {
+        "name": "Greenplum",
+        "base_url": "https://docs.vmware.com/en/VMware-Greenplum/6/greenplum-database",
+        "start_url": "https://docs.vmware.com/en/VMware-Greenplum/6/greenplum-database/landing-index.html"
+    },
+    {
+        "name": "SFTP",
+        "base_url": "https://docs.aws.amazon.com/transfer",
+        "start_url": "https://docs.aws.amazon.com/transfer/index.html"
+    },
+    {
+        "name": "Azure Blob Storage",
+        "base_url": "https://docs.netapp.com/us-en/bluexp-setup-admin",
+        "start_url": "https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-viewing-azure-blob.html"
+    },
+    {
+        "name": "GCS",
+        "base_url": "https://cloud.google.com/storage/docs",
+        "start_url": "https://cloud.google.com/storage/docs"
+    },
+    {
+        "name": "Linnworks ERP",
+        "base_url": "https://docs.linnworks.com/articles/#!documentation",
+        "start_url": "https://docs.linnworks.com/articles/#!documentation/documentation"
+    },
+    {
+        "name": "oracle hyperion essbase",
+        "base_url": "https://docs.oracle.com/en/database/other-databases/essbase",
+        "start_url": "https://docs.oracle.com/en/database/other-databases/essbase/21/index.html"
+    },
+    {
+        "name": "Workday",
+        "base_url": "https://developer.workday.com",
+        "start_url": "https://developer.workday.com"
+    },
+    {
+        "name": "Salesforce Marketing Cloud",
+        "base_url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide",
+        "start_url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/apis-overview"
+    },
+    {
+        "name": "Appsflyer",
+        "base_url": "https://dev.appsflyer.com/hc/docs/api",
+        "start_url": "https://dev.appsflyer.com/hc/docs/api"
+    },
+    {
+        "name": "SFTP",
+        "base_url": "https://sftptogo.com/blog/api-reference",
+        "start_url": "https://sftptogo.com/blog/api-reference"
+    }
+]

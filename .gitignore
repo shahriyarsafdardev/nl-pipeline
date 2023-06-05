@@ -1,0 +1,13 @@
+venv/
+graveyard/
+.aws-sam
+*.pyc
+*.DS_Store
+.env
+__pycache__
+output/
+helpful-prompts.md
+env.json
+.config-staging
+.config-production
+.tool-versions
