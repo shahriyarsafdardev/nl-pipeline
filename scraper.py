@@ -36,7 +36,13 @@ def extract_linked_urls(html, page_url, verbose=False):
     :param base_url: String containing the base URL for resolving relative links.
     :return: A set of unique URLs extracted from the HTML content.
     """
-    soup = BeautifulSoup(html, "html.parser")
+
+    try:
+        soup = BeautifulSoup(html, "html.parser")
+    except Exception as e:
+        if verbose:
+            logger.error("Error parsing HTML: %s", str(e), exc_info=True)
+        return set()
 
     # Find all the anchor tags in the HTML and get the href attribute
     linked_urls = [link.get("href") for link in soup.find_all("a")]

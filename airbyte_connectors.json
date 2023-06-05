@@ -2,77 +2,92 @@
     {
         "name": "Zenefits",
         "base_url": "https://developers.zenefits.com/reference",
-        "start_url": "https://developers.zenefits.com/reference/getting-started"
+        "start_url": "https://developers.zenefits.com/reference/getting-started",
+        "scraped_page_count": 49
     },
     {
         "name": "RocketMQ",
         "base_url": "https://rocketmq.apache.org/docs",
-        "start_url": "https://rocketmq.apache.org/docs"
+        "start_url": "https://rocketmq.apache.org/docs",
+        "scraped_page_count": 108
     },
     {
         "name": "Eurostat",
         "base_url": "https://wikis.ec.europa.eu/display/EUROSTATHELP/API",
-        "start_url": "https://wikis.ec.europa.eu/display/EUROSTATHELP/API+-+Getting+started"
+        "start_url": "https://wikis.ec.europa.eu/display/EUROSTATHELP/API+-+Getting+started",
+        "scraped_page_count": 6
     },
     {
         "name": "Swisscom mobility",
         "base_url": "https://docs.developer.swisscom.com",
-        "start_url": "https://docs.developer.swisscom.com/devguide-sc/api.html"
+        "start_url": "https://docs.developer.swisscom.com/devguide-sc/api.html",
+        "scraped_page_count": 479
     },
     {
         "name": "RabbitMQ",
         "base_url": "https://www.rabbitmq.com",
-        "start_url": "https://www.rabbitmq.com/documentation.html"
+        "start_url": "https://www.rabbitmq.com/documentation.html",
+        "scraped_page_count": 320
     },
     {
         "name": "Microsoft Dynamics Business Central",
         "base_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0",
-        "start_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0"
+        "start_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0",
+        "scraped_page_count": 1
     },
     {
         "name": "Sprout Social",
         "base_url": "https://api.sproutsocial.com/docs",
-        "start_url": "https://api.sproutsocial.com/docs"
+        "start_url": "https://api.sproutsocial.com/docs",
+        "scraped_page_count": 22
     },
     {
         "name": "Local Parquet",
         "base_url": "https://parquet.apache.org/docs",
-        "start_url": "https://parquet.apache.org/docs"
+        "start_url": "https://parquet.apache.org/docs",
+        "scraped_page_count": 47
     },
     {
         "name": "Airtm",
         "base_url": "https://airtm.bitbucket.io",
-        "start_url": "https://airtm.bitbucket.io/#introduction"
+        "start_url": "https://airtm.bitbucket.io/#introduction",
+        "scraped_page_count": 2
     },
     {
         "name": "Reddit Ads",
         "base_url": "https://ads-api.reddit.com/docs",
-        "start_url": "https://ads-api.reddit.com/docs"
+        "start_url": "https://ads-api.reddit.com/docs",
+        "scraped_page_count": 1
     },
     {
         "name": "Teamtailor",
         "base_url": "https://docs.teamtailor.com",
-        "start_url": "https://docs.teamtailor.com"
+        "start_url": "https://docs.teamtailor.com",
+        "scraped_page_count": 1
     },
     {
         "name": "Iomete platform",
         "base_url": "https://iomete.com/docs",
-        "start_url": "https://iomete.com/docs"
+        "start_url": "https://iomete.com/docs",
+        "scraped_page_count": 99
     },
     {
         "name": "Easybill",
         "base_url": "https://www.easybill.de/api",
-        "start_url": "https://www.easybill.de/api"
+        "start_url": "https://www.easybill.de/api",
+        "scraped_page_count": 1
     },
     {
         "name": "Xing API",
         "base_url": "https://dev.xing.com/partners/job_integration/api_docs",
-        "start_url": "https://dev.xing.com/partners/job_integration/api_docs"
+        "start_url": "https://dev.xing.com/partners/job_integration/api_docs",
+        "scraped_page_count": 16
     },
     {
         "name": "ArangoDB",
         "base_url": "https://www.arangodb.com/docs/stable",
-        "start_url": "https://www.arangodb.com/docs/stable"
+        "start_url": "https://www.arangodb.com/docs/stable",
+        "scraped_page_count": 787
     },
     {
         "name": "DEAR ERP",
