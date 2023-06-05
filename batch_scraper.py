@@ -1,5 +1,8 @@
 import json
 from scraper import scrape_domain
+from logger import getLogger
+
+logger = getLogger()
 
 def run_scrapers(filename):
     """
@@ -16,8 +19,10 @@ def run_scrapers(filename):
         base_url = connector['base_url']
         start_url = connector['start_url']
         
-        print(f"Running scraper for: {name}")
-        scrape_domain(start_url, base_url)
+        scraped_urls = scrape_domain(start_url, base_url, verbose=False)
+
+        # Log the number of URLs scraped for each connector
+        logger.info(f'Scraper for {name} completed. Total URLs scraped: {len(scraped_urls)}')
 
 # Usage:
 run_scrapers('airbyte_connectors.json')
