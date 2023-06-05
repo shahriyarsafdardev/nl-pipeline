@@ -1,0 +1,10 @@
+- .gitignore
+- airbyte_connectors.json
+- batch_scraper.py
+- config.py
+* documentation
+  - file_tree_generator.py
+- logger.py
+- requirements.txt
+- s3.py
+- scraper.py
