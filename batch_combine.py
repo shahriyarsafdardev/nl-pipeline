@@ -3,9 +3,12 @@ from urllib.parse import quote
 from logger import getLogger
 import json
 import html2text
+import re
+import io
 
 logger = getLogger()
 
+link_pattern = r'\s(https?|/[^/\s]+)'
 
 def html_to_md_converter(text):
     converter = html2text.HTML2Text()
@@ -50,6 +53,18 @@ def create_md_files(filename):
 		# creating a new file with repetitions removed
 		unique_paragraphs = set(combined_file_content.split("\n\n"))
 		upload_object("\n\n".join(unique_paragraphs), quoted_base_url + '-bulk-concise' + '.md')
+
+		# extracting unique urls from the bulk-concise
+		extracted_links = []
+		for paragraph in unique_paragraphs:
+			matches = re.findall(link_pattern, paragraph)
+			extracted_links.extend(matches)
+
+		# adding the endpoint_count field to the connector object and uploading to S3
+		connector['endpoint_count'] = len(extracted_links)
+		connectors = json.dumps(connectors, indent=4)
+		file_obj = io.BytesIO(connectors.encode('utf-8'))
+		upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
 
 
 # Usage:
