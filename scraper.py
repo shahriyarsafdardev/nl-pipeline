@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import io
+import html2text
 from s3 import upload_object
 from urllib.parse import urljoin, urlparse, urlunparse, quote
 from tqdm import tqdm
@@ -109,3 +110,9 @@ def scrape_domain(page_url, base_domain_url, verbose=False):
 
     return scraped_urls
 
+
+def html_converter(text):
+    converter = html2text.HTML2Text()
+    converter.ignore_links = True
+    converter.ignore_images = True
+    return converter.handle(text)
