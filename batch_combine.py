@@ -7,7 +7,7 @@ import html2text
 logger = getLogger()
 
 
-def html_converter(text):
+def html_to_md_converter(text):
     converter = html2text.HTML2Text()
     converter.ignore_links = True
     converter.ignore_images = True
@@ -36,7 +36,7 @@ def create_md_files(filename):
 
 		for file_key in file_keys:
 			# reading the html files and converting them to text
-			file_content = html_converter(read_object(file_key, verbose=True))
+			file_content = html_to_md_converter(read_object(file_key, verbose=True))
 
 			# saving that text to its md file
 			upload_object(file_content, file_key.rsplit('.html', 1)[0] + ".md")
