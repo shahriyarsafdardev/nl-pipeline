@@ -86,7 +86,7 @@ def scrape_domain(page_url, base_domain_url, verbose=False):
             urls = extract_linked_urls(html, url, verbose=verbose)
 
             # Saving the HTML content to S3
-            upload_object(io.BytesIO(html.encode()), quote(url, safe=""), verbose=verbose)
+            upload_object(io.BytesIO(html.encode()), quote(url, safe="")+".html", verbose=verbose)
 
             for url in urls:
                 if base_domain_url not in url:  # Exclude URLs outside of the base domain
