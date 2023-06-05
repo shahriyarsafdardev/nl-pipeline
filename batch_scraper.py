@@ -6,21 +6,6 @@ from s3 import read_object, upload_object
 
 logger = getLogger()
 
-def merge_arrays(arr1, arr2):
-    key_dict = {(obj['name'], obj['base_url']): obj for obj in arr2}
-    
-    for obj in arr1:
-        name = obj['name']
-        base_url = obj['base_url']
-        key = (name, base_url)
-        if key in key_dict:
-            key_dict[key] = obj
-        else:
-            key_dict[key] = obj
-    
-    merged_array = list(key_dict.values())
-    return merged_array
-
 
 def run_scrapers(filename):
     """
@@ -29,6 +14,7 @@ def run_scrapers(filename):
     :param filename: String containing the path to the JSON file.
     :return: None
     """
+    # Reading file from S3
     file_content = read_object(filename)
     connectors = json.loads(file_content)
 
@@ -50,12 +36,9 @@ def run_scrapers(filename):
         # Update the connector dictionary with the count of scraped pages
         connector['scraped_page_count'] = len(scraped_urls)
 
-        current_connectors_file = read_object(filename)
-        current_connectors = json.loads(current_connectors_file)
-
-        merged_arrays = merge_arrays(connectors, current_connectors)
-        merged_arrays = json.dumps(merged_arrays, indent=4)
-        file_obj = io.BytesIO(merged_arrays.encode('utf-8'))
+        # Uploading the updated connector data list to S3
+        connectors = json.dumps(connectors, indent=4)
+        file_obj = io.BytesIO(connectors.encode('utf-8'))
         upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
 
 # Usage:
