@@ -1,0 +1,46 @@
+{
+  "base_url": {
+    "description": "What is the most likely base url. Some endpoints include a version like /0/, /v0/. Give me the url (including https://) and nothing else"
+  },
+  "authentication": {
+    "description": "What is the method of authentication to authorize the API calls with this API?",
+    "options": [
+      "BasicHttpAuthenticator",
+      "BearerAuthenticator",
+      "ApiKeyAuthenticator",
+      "OAuth"
+    ],
+    "api_authentication_header": {
+      "description": "This {base_url} uses pagination to fetch data. What are the main parameters? If main parameters contain 'page' or 'offset' ignore them. Just get the main parameter's name and return only one word parameter"
+    },
+    "oauth_authentication_object": {
+      "description": "Please generate a JSON which contains the following keys with the values for OAuth authentication for the URL {base_url}: 'client_id', 'client_secret', token_refresh_endpoint, refresh_token, access_token_name, expires_in_name. Give me the complete JSON and don't add extra text"
+    }
+  },
+  "connector_name": {
+    "description": "What is the name of website having this base url:{base_url} and domain:{domain}. Give me one word most precise name of the website without domain and any dots in small case"
+  },
+  "pagination": {
+    "description": "What is the pagination strategy used for the URL {base_url} to fetch the data.",
+    "options": [
+      "OffsetIncrement",
+      "PageIncrement",
+      "CursorPagination",
+      "NoPagination"
+    ],
+    "increment_pagination_parameter": {
+      "description": "This {base_url} uses pagination to fetch data. What are the main parameters? If main parameters contain 'page' or 'offset' ignore them. Just get the main parameter's name and return only one word parameter"
+    },
+    "cursor_pagination_value": {
+      "description": "This url {base_url} uses cursor pagination. I want to know, On what basis it makes further request to fetch the next data either it uses next url in headers, last record id in parameter or next cursor link? Just tell me the method it uses and don't add extra text"
+    }
+  },
+  "response_handler": {
+    "description": "What is the format of the response from this API?",
+    "options": [
+      "JsonResponseHandler",
+      "XmlResponseHandler",
+      "HtmlResponseHandler"
+    ]
+  }
+}

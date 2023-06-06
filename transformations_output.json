@@ -1,0 +1,10 @@
+{
+    "base_url": "https://api.sendgrid.com/v3",
+    "authentication": "BearerAuthenticator",
+    "connector_name": "sendgrid",
+    "pagination": {
+        "type": "OffsetIncrement",
+        "increment_pagination_parameter": " limit"
+    },
+    "response_handler": "JsonResponseHandler"
+}
