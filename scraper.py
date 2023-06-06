@@ -1,10 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
 import io
+from config import settings
 from s3 import upload_object
 from urllib.parse import urljoin, urlparse, urlunparse, quote
 from tqdm import tqdm
 from logger import getLogger
+from scrapingbee import ScrapingBeeClient
 
 logger = getLogger()
 
@@ -21,6 +23,18 @@ def download_html(page_url, verbose=False):
         response.raise_for_status()
         if verbose:
             logger.info("Downloaded HTML from: %s", page_url)
+        
+        # Parse the response text using BeautifulSoup with html.parser
+        a_tags_list = []
+        soup = BeautifulSoup(response.text, 'html.parser')
+        a_tags_list = soup.find_all('a', href=True)
+        
+        # Scrap using scraping_bee client if no 'a' tags are found
+        if len(a_tags_list) == 0:
+            response = scraping_bee_scrapper(page_url)
+            if verbose:
+                logger.info("Downloaded HTML from: %s using scraping bee", page_url)
+                
         return response.text
     except Exception as e:
         if verbose:
@@ -109,3 +123,11 @@ def scrape_domain(page_url, base_domain_url, verbose=False):
 
     return scraped_urls
 
+
+def scraping_bee_scrapper(url):
+    client = ScrapingBeeClient(
+        api_key=settings.scraping_bee_api_key)
+
+    response = client.get(url)
+
+    return response
