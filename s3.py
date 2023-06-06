@@ -46,6 +46,8 @@ def delete_object(key, verbose=False):
 def list_objects(file_name_filters=[], verbose=False):
     keys = []
     kwargs = {'Bucket': bucket_name}
+    if file_name_filters[0]:
+        kwargs['Prefix'] = file_name_filters[0]
     while True:
         resp = s3_client.list_objects_v2(**kwargs)
         if 'Contents' in resp:
