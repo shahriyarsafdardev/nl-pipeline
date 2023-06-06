@@ -54,7 +54,6 @@ def query_with_langchain(domain, query_object):
     docsearch = Pinecone.from_existing_index(settings.pinecone_index_name, embeddings)
     docs = docsearch.similarity_search(query, k=5, filter={'page_urls': domain})
     response = chain.run(input_documents=docs, question=query)
-    breakpoint()
     print(f'\nQuery: {query}\n\nResponse: {response}')
     return find_best_response(response, query_object['options'])
 
