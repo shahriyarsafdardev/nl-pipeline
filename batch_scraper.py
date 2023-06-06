@@ -38,8 +38,8 @@ def run_scrapers(filename):
         connectors[idx] = connector
 
         # Uploading the updated connector data list to S3
-        connectors = json.dumps(connectors, indent=4)
-        file_obj = io.BytesIO(connectors.encode('utf-8'))
+        updated_connectors = json.dumps(connectors, indent=4)
+        file_obj = io.BytesIO(updated_connectors.encode('utf-8'))
         upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
 
 # Usage:
