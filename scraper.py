@@ -7,6 +7,7 @@ from urllib.parse import urljoin, urlparse, urlunparse, quote
 from tqdm import tqdm
 from logger import getLogger
 from scrapingbee import ScrapingBeeClient
+import concurrent.futures
 
 logger = getLogger()
 
@@ -80,7 +81,7 @@ def extract_linked_urls(html, page_url, verbose=False):
 
     return clean_urls
 
-def scrape_domain(page_url, base_domain_url, verbose=False):
+def scrape_domain(page_url, base_domain_url, max_workers=4, verbose=False):
     """
     This function performs the web scraping operation starting from the page_url, 
     it then continues to scrape all the linked pages within the same domain (base_domain_url).
@@ -91,35 +92,37 @@ def scrape_domain(page_url, base_domain_url, verbose=False):
     """
     to_scrape_urls = set([page_url])
     scraped_urls = set()
+    
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        with tqdm(total=len(to_scrape_urls), desc="URLs processed") as pbar:
+            while to_scrape_urls:
+                # Pick a URL from the to_scrape_urls set and remove it from the set
+                url = to_scrape_urls.pop()
+                scraped_urls.add(url)
+                
+                future = executor.submit(download_html, url, verbose=verbose)
+                html = future.result()
+                if not html:
+                    pbar.update(1)
+                    continue
 
-    with tqdm(total=len(to_scrape_urls), desc="URLs processed") as pbar:
-        while to_scrape_urls:
-            # Pick a URL from the to_scrape_urls set and remove it from the set
-            url = to_scrape_urls.pop()
-            scraped_urls.add(url)
+                urls = extract_linked_urls(html, url, verbose=verbose)
 
-            html = download_html(url, verbose=verbose)
-            if not html:
+                # Saving the HTML content to S3
+                future = executor.submit(upload_object, io.BytesIO(html.encode()), quote(url, safe="")+".html", verbose=verbose)
+
+                for url in urls:
+                    if base_domain_url not in url:  # Exclude URLs outside of the base domain
+                        continue
+                    if url in scraped_urls:  # Exclude URLs already scraped
+                        continue
+                    if url in to_scrape_urls:  # Exclude URLs already in the queue to be scraped
+                        continue
+
+                    to_scrape_urls.add(url)
+                    pbar.total += 1
+
                 pbar.update(1)
-                continue
-
-            urls = extract_linked_urls(html, url, verbose=verbose)
-
-            # Saving the HTML content to S3
-            upload_object(io.BytesIO(html.encode()), quote(url, safe="")+".html", verbose=verbose)
-
-            for url in urls:
-                if base_domain_url not in url:  # Exclude URLs outside of the base domain
-                    continue
-                if url in scraped_urls:  # Exclude URLs already scraped
-                    continue
-                if url in to_scrape_urls:  # Exclude URLs already in the queue to be scraped
-                    continue
-
-                to_scrape_urls.add(url)
-                pbar.total += 1
-
-            pbar.update(1)
 
     return scraped_urls
 
