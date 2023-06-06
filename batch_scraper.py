@@ -18,7 +18,7 @@ def run_scrapers(filename):
     file_content = read_object(filename)
     connectors = json.loads(file_content)
 
-    for connector in connectors:
+    for idx, connector in enumerate(connectors):
         # Check if this connector has already been scraped
         if "scraped_page_count" in connector:
             logger.info(f'Skipping {connector["name"]}, already scraped {connector["scraped_page_count"]} pages.')
@@ -35,6 +35,7 @@ def run_scrapers(filename):
 
         # Update the connector dictionary with the count of scraped pages
         connector['scraped_page_count'] = len(scraped_urls)
+        connectors[idx] = connector
 
         # Uploading the updated connector data list to S3
         connectors = json.dumps(connectors, indent=4)
