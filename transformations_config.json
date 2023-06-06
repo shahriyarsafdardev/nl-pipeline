@@ -1,0 +1,36 @@
+{
+  "authentication": {
+    "description": "What is the method of authentication to authorize the API calls with this API?",
+    "options": [
+      "BasicHttpAuthenticator",
+      "BearerAuthenticator",
+      "ApiKeyAuthenticator",
+      "OAuth"
+    ]
+  },
+  "pagination": {
+    "description": "What is the pagination strategy used by this API",
+    "options": [
+      "OffsetIncrement",
+      "PageIncrement",
+      "CursorPagination",
+      "NoPagination"
+    ]
+  },
+  "rate_limiter": {
+    "description": "How many requests per minute does the {base_url} allow? Please provide the exact number.",
+    "options": [
+      "1",
+      "10",
+      "None"
+    ]
+  },
+  "response_handler": {
+    "description": "What is the format of the response from this API?",
+    "options": [
+      "JsonResponseHandler",
+      "XmlResponseHandler",
+      "HtmlResponseHandler"
+    ]
+  }
+}

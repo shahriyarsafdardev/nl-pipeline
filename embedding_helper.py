@@ -1,6 +1,6 @@
 import re
 import uuid
-from openai import create_embedding
+from openai_gpt import create_embedding
 from logger import getLogger
 
 link_pattern = r'\s(https?|/[^/\s]+)'
