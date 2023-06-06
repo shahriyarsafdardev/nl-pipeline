@@ -60,7 +60,7 @@ def extract_linked_urls(html, page_url, verbose=False):
         return set()
 
     # Find all the anchor tags in the HTML and get the href attribute
-    linked_urls = [link.get("href") for link in soup.find_all("a")]
+    linked_urls = [link.get("href") for link in soup.find_all("a", href=lambda href: href and not href.endswith('.png'))]
 
     # Make URLs absolute by joining with the base_url. If the URL is already absolute, it will be returned as is.
     linked_urls = [urljoin(page_url, url) for url in linked_urls if url]
