@@ -27,6 +27,22 @@ def extract_connectors():
   return connector_info
 
 
+def find_authenticator_block(data):
+    if isinstance(data, dict):
+        if 'authenticator' in data:
+            return data['authenticator']
+        for key, value in data.items():
+            auth_block = find_authenticator_block(value)
+            if auth_block is not None:
+                return auth_block
+    elif isinstance(data, list):
+        for item in data:
+            auth_block = find_authenticator_block(item)
+            if auth_block is not None:
+                return auth_block
+    return None
+
+
 def get_authentication_from_yaml(connector_name):
     connector_name = connector_name.lower()
 
@@ -40,13 +56,14 @@ def get_authentication_from_yaml(connector_name):
     if response.status_code == 200:
         try:
             data = yaml.safe_load(response.text)
-            auth_block = data.get('definitions', {}).get('requester', {}).get('authenticator', {})
-            return auth_block
+            auth_block = find_authenticator_block(data)
+            return auth_block if auth_block is not None else {}
         except Exception as e:
             return {}
     else:
         print(f'\nFailed to fetch file for {connector_name}, status code: {response.status_code}')
         return {}
+
 
 
 if __name__ == "__main__":
@@ -56,8 +73,7 @@ if __name__ == "__main__":
     for connector in connectors:
         auth_block = get_authentication_from_yaml(connector['name'])
         auth_comparison[connector['name']] = auth_block
-        if auth_block != {}:
-            print(f"\nFound authentication block for {connector['name']}")
+        print(f"\nFound authentication block for {connector['name']}") if auth_block != {} else print(f"\Could not found authentication block for {connector['name']}")
 
     with open(AUTHENTICATION_COMPARISON_FILE_PATH, 'w') as f:
         json.dump(auth_comparison, f, indent=2)
