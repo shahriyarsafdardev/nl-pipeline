@@ -2,6 +2,7 @@ import re
 import uuid
 from openai_gpt import create_embedding
 from logger import getLogger
+from link_matcher import detect_links
 
 link_pattern = r'\s(https?|/[^/\s]+)'
 logger = getLogger()
@@ -23,7 +24,7 @@ def text_slice_to_vector(text, base_url):
     metadata = {
         "text": text,
         "domain_base_url": base_url,
-        "referenced_urls": link_search_text(text)
+        "referenced_urls": detect_links(text)
     }
 
     return (
