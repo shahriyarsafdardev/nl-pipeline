@@ -27,7 +27,7 @@ def create_md_files(filename, local=False):
 
     for connector in connectors:
         page_count = connector.get('scraped_page_count', None)
-        if not page_count:
+        if not page_count or connector['airbyte_status'] != 'lowcode-connector':
             logger.info("No pages scrapped for {}".format(connector['name']))
             continue
         logger.info("Creating md files for {}".format(connector['name']))

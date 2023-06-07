@@ -15,6 +15,8 @@ def create_embeddings(filename):
 
 	for connector in connectors:
 		# reading the concise bulk file
+		if connector['airbyte_status'] != 'lowcode-connector':
+			continue
 		quoted_base_url = quote(connector['base_url'], safe="")
 		concise_bulk_file = read_object(quoted_base_url + '-bulk-concise' + '.md')
 
