@@ -12,8 +12,7 @@ from config import settings
 
 
 # Initialize Pinecone and OpenAI
-pinecone.init(api_key=settings.pinecone_api_key,
-              environment=settings.pinecone_env)
+pinecone.init(api_key=settings.pinecone_api_key, environment=settings.pinecone_env)
 index_name = pinecone.Index(settings.pinecone_index_name)
 ChatOpenAI.api_key = settings.openai_api_key
 embeddings = OpenAIEmbeddings(openai_api_key=settings.openai_api_key)
@@ -26,42 +25,40 @@ AUTHENTICATION_COMPARISON_FILE_PATH = 'authentication_comparison.json'
 
 
 def extract_connectors():
-  with open(CONNECTORS_FILE_PATH) as f:
-    connectors = json.load(f)
+    with open(CONNECTORS_FILE_PATH) as f:
+        connectors = json.load(f)
   
-  lowcode_connectors = [connector for connector in connectors if connector.get('airbyte_status') == 'lowcode-connector']
+    lowcode_connectors = [connector for connector in connectors if connector.get('airbyte_status') == 'lowcode-connector']
 
-  connector_info = []
-  for connector in lowcode_connectors:
-    base_url = connector.get('base_url', '')
-    parsed_url = urlparse(base_url)
+    connector_info = []
+    for connector in lowcode_connectors:
+        base_url = connector.get('base_url', '')
+        parsed_url = urlparse(base_url)
 
-    connector_info.append({
-        'name': connector.get('name', '').lower(),
-        'domain': parsed_url.netloc
-    })
+        connector_info.append({
+            'name': connector.get('name', '').lower(),
+            'domain': parsed_url.netloc
+        })
 
-  return connector_info
+    return connector_info
 
 
 def get_base_url(domain):
-  query = "What is the most likely base url. Some endpoints include a version like /0/, /v0/. Give me the url (including https://) and nothing else"
-  docsearch = Pinecone.from_existing_index(settings.pinecone_index_name, embeddings)
-  docs = docsearch.similarity_search(query, k=5, filter={'page_urls': domain})
-  response = chain.run(input_documents=docs, question=query)
+    query = "What is the most likely base url. Some endpoints include a version like /0/, /v0/. Give me the url (including https://) and nothing else"
+    response = get_langchain_response(domain, query)
   
-  if '/v1' in response:
-    return response.split('/v1')[0] + '/v1'
-  elif '/v2' in response:
-    return response.split('/v2')[0] + '/v2'
-  elif '/v3' in response:
-    return response.split('/v3')[0] + '/v3'
-  elif '/api' in response:
-    return response.split('/api')[0] + '/api'
-  elif '.com' in response:
-    return response.split('.com')[0] + '.com'
-  else:
-    return response
+    if '/v1' in response:
+        return response.split('/v1')[0] + '/v1'
+    elif '/v2' in response:
+        return response.split('/v2')[0] + '/v2'
+    elif '/v3' in response:
+        return response.split('/v3')[0] + '/v3'
+    elif '/api' in response:
+        return response.split('/api')[0] + '/api'
+    elif '.com' in response:
+        return response.split('.com')[0] + '.com'
+    else:
+        return response
 
 
 def find_best_response(response, options):
@@ -88,14 +85,14 @@ def get_sphere_sub_auth_block(base_url, domain, authentication_type):
     elif authentication_type == "BearerAuthenticator":
         return {
             "type": "BearerAuthenticator",
-            "api_token": "{{config.api_token}}",
+            "api_token": "{{config.auth_token}}",
         }
     elif authentication_type == 'ApiKeyAuthenticator':
         query = f"This {base_url} uses pagination to fetch data. What are the main parameters? If main parameters contain 'page' or 'offset' ignore them. Just get the main parameter's name and return only one word parameter"
         response = get_langchain_response(base_url, domain, query)
         return {
             'type': authentication_type,
-            "api_token": "{{config.api_token}}",
+            "api_token": "{{config.api_key}}",
             "header": response,
         }
     elif authentication_type == 'OAuth':
@@ -118,7 +115,7 @@ def get_sphere_auth_block(connector):
     query = f"What is the method of authentication to authorize the API calls with this API? Following are the options: {authenticator_options}. Return the response from given options, just return the one word option. Return 'None' if don't find any"
     langchain_response = get_langchain_response(connector['domain'], query)
     authentication_type =  find_best_response(langchain_response, authenticator_options)
-    response = get_sphere_sub_auth_block(base_url,connector['domain'], authentication_type )
+    response = get_sphere_sub_auth_block(base_url, connector['domain'], authentication_type)
 
     return response
 
@@ -176,4 +173,4 @@ if __name__ == "__main__":
         print(f"\nProcessed connector: {connector['name']}")
 
     with open(AUTHENTICATION_COMPARISON_FILE_PATH, 'w') as f:
-        json.dump(auth_comparison, f, indent=2)
+        json.dump(auth_comparison, f, indent=4)
