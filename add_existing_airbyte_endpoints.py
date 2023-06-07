@@ -2,10 +2,22 @@ import json
 import requests
 import yaml
 import io
+import ast
 from logger import getLogger
 from s3 import read_object, upload_object
 
 logger = getLogger()
+
+
+def get_folder_names(connector_name):
+    connector_name = connector_name.lower()
+
+    # Replace the spaces with hyphens and underscores respectively
+    connector_folder_name = connector_name.replace(" ", "-").replace("_", "-")
+    connector_file_name = connector_folder_name.replace('-', '_')
+
+    return connector_folder_name, connector_file_name
+
 
 def get_paths_and_url_base_from_yaml(yaml_data):
     """
@@ -53,12 +65,8 @@ def find_manifest_file(connector_name):
         paths_list (list): List of 'path' attributes.
         url_base (str or None): 'url_base' attribute value.
     """
-    # Convert the name into lowercase
-    connector_name = connector_name.lower()
-
-    # Replace the spaces with hyphens and underscores respectively
-    connector_folder_name = connector_name.replace(" ", "-").replace("_", "-")
-    connector_file_name = connector_folder_name.replace('-', '_')
+    # get files from github
+    connector_folder_name, connector_file_name = get_folder_names(connector_name)
 
     url = f"https://raw.githubusercontent.com/airbytehq/airbyte/master/airbyte-integrations/connectors/source-{connector_folder_name}/source_{connector_file_name}/manifest.yaml"
 
@@ -78,6 +86,59 @@ def find_manifest_file(connector_name):
         return None, None
 
 
+def get_lowcode_endpoints(connector_name):
+    # read the endpoints from the manifest file
+    urls, api_base_url = find_manifest_file(connector_name)
+
+    if not urls:
+        logger.info(f"No Airbyte endpoints found for {connector_name}")
+        return []
+
+    logger.info(f"Fetched URLs for {connector_name}")
+    return urls
+
+
+def get_python_endpoints(connector_name):
+    connector_folder_name, connector_file_name = get_folder_names(connector_name)
+
+    urls = [f"https://raw.githubusercontent.com/airbytehq/airbyte/master/airbyte-integrations/connectors/source-{connector_folder_name}/source_{connector_file_name}/streams.py", f"https://raw.githubusercontent.com/airbytehq/airbyte/master/airbyte-integrations/connectors/source-{connector_folder_name}/source_{connector_file_name}/source.py"]
+
+    return_values = []
+
+    # Fetch the content of the file
+    for url in urls:
+        response = requests.get(url)
+
+        # Check to ensure the request was successful
+        if response.status_code == 200:
+            tree = ast.parse(response.text)
+            return_values = []
+            # parse the AST representation of the python code to fetch the return values of path functions
+            for node in ast.walk(tree):
+                if isinstance(node, ast.FunctionDef) and node.name == 'path':
+                    for stmt in node.body:
+                        if isinstance(stmt, ast.Return):
+                            if isinstance(stmt.value, ast.Str):
+                                return_values.append(stmt.value.s)
+                            elif isinstance(stmt.value, ast.JoinedStr):
+                                return_values.append(''.join(eval_node.s if isinstance(eval_node, ast.Str) else ast.unparse(eval_node) for eval_node in stmt.value.values))
+                            elif isinstance(stmt.value, ast.FormattedValue):
+                                return_values.append(ast.unparse(stmt.value))
+        else:
+            print(f"Failed to fetch {url.strip('/')[-1]} file, status code: {response.status_code}")
+
+    return return_values
+
+
+def get_java_endpoints(connector_name):
+    response = get_folder_names(connector_name)
+    if response.status_code == 200:
+        pass
+    else:
+        pass
+    return []
+
+
 def add_existing_airbyte_endpoints(filename, local=False, connector_type='lowcode-connector'):
     if local:
         # Reading file from local storage
@@ -92,19 +153,18 @@ def add_existing_airbyte_endpoints(filename, local=False, connector_type='lowcod
         if connector['airbyte_status'] != connector_type:
             logger.info(f"Skipping {connector['name']} because it is not a {connector_type}")
             continue
-
-        # read the endpoints from the manifest file
-        urls, api_base_url = find_manifest_file(connector['name'])
-
-        if not urls or not api_base_url:
-            logger.info(f"No Airbyte endpoints found for {connector['name']}")
-            connector['existing_airbyte_endpoints'] = []
-            continue
-
-        logger.info(f"Fetched URLs for {connector['name']}")
-
-        # update the connectors list
-        connector['existing_airbyte_endpoints'] = urls
+        
+        logger.info(f"Fetching endpoints for {connector['name']}")
+        # update the connectors list by calling the relevant function
+        if connector_type == 'lowcode-connector':
+            connector['existing_airbyte_endpoints'] = get_lowcode_endpoints(connector['name'])
+        elif connector_type == 'python-connector':
+            connector['existing_airbyte_endpoints'] = get_python_endpoints(connector['name'])
+        elif connector_type == 'java-connector':
+            connector['existing_airbyte_endpoints'] = get_java_endpoints(connector['name'])
+        else:
+            logger.info(f"There is no connector type {connector_type}")
+            return
         
         # write to file
         if local:
@@ -118,4 +178,4 @@ def add_existing_airbyte_endpoints(filename, local=False, connector_type='lowcod
             upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
 
 
-add_existing_airbyte_endpoints('airbyte_connectors.json', local=True, connector_type='lowcode-connector')
+add_existing_airbyte_endpoints('airbyte_connectors.json', local=True, connector_type='python-connector')
