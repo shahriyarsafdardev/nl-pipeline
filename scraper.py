@@ -30,11 +30,11 @@ def download_html(page_url, verbose=False):
         soup = BeautifulSoup(response.text, 'html.parser')
         a_tags_list = soup.find_all('a', href=True)
         
-        # Scrap using scraping_bee client if no 'a' tags are found
-        if len(a_tags_list) == 0:
-            response = scraping_bee_scrapper(page_url)
-            if verbose:
-                logger.info("Downloaded HTML from: %s using scraping bee", page_url)
+        # # Scrape using scraping_bee client if no 'a' tags are found
+        # if len(a_tags_list) == 0:
+        #     response = scraping_bee_scrapper(page_url)
+        #     if verbose:
+        #         logger.info("Downloaded HTML from: %s using scraping bee", page_url)
                 
         return response.text
     except Exception as e:
@@ -117,6 +117,8 @@ def scrape_domain(page_url, base_domain_url, max_workers=4, verbose=False):
                     if url in scraped_urls:  # Exclude URLs already scraped
                         continue
                     if url in to_scrape_urls:  # Exclude URLs already in the queue to be scraped
+                        continue
+                    if (len(scraped_urls)+len(to_scrape_urls)) > 1000:  # Limit the number of URLs to be scraped
                         continue
 
                     to_scrape_urls.add(url)

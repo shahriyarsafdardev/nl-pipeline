@@ -1,342 +1,4165 @@
 [
     {
-        "name": "Zenefits",
-        "base_url": "https://developers.zenefits.com/reference",
-        "start_url": "https://developers.zenefits.com/reference/getting-started",
-        "scraped_page_count": 49
+        "name": "AudienceProject",
+        "base_url": "https://docs.audiencereport.com/audiencereport-api/",
+        "start_url": "https://docs.audiencereport.com/audiencereport-api/#api-Campaign-PostCampaignLabels",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Salesforce Marketing Cloud",
+        "base_url": "https://developer.salesforce.com/docs/marketing/marketing-cloud",
+        "start_url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/apis-overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Salesforce Commerce Cloud",
+        "base_url": "https://documentation.b2c.commercecloud.salesforce.com",
+        "start_url": "https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Ricochet 360",
+        "base_url": "https://ricochet360.com",
+        "start_url": "https://ricochet360.com/integrations",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 229,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "KYVE",
+        "base_url": "https://docs.kyve.network",
+        "start_url": "https://docs.kyve.network/introduction/architecture",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 55,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Exasol",
+        "base_url": "https://docs.exasol.com",
+        "start_url": "https://docs.exasol.com/saas/administration/rest_api/rest_api.htm",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 6,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Outbrain-Amplify",
+        "base_url": "https://developer.outbrain.com/home-page/amplify-api/documentation",
+        "start_url": "https://developer.outbrain.com/home-page/amplify-api/documentation/#/reference/segments",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Databricks",
+        "base_url": "https://docs.databricks.com/dev-tools/api",
+        "start_url": "https://docs.databricks.com/dev-tools/api/index.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Google Cloud Spanner",
+        "base_url": "https://cloud.google.com/spanner/docs",
+        "start_url": "https://cloud.google.com/spanner/docs/apis",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 499,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Iceberg",
+        "base_url": "https://iceberg.apache.org/docs/latest",
+        "start_url": "https://iceberg.apache.org/docs/latest/getting-started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 80,
+        "endpoint_count": 5,
+        "endpoints": [
+            "https://github.com/apache/iceberg/tree/<SHA1>",
+            "https://repository.apache.org/content/repositories/orgapacheiceberg-<ID>/",
+            "https://dist.apache.org/repos/dist/dev/iceberg/apache-iceberg-<VERSION>-rc<NUM>/",
+            "https://www.apache.org/dyn/closer.cgi/iceberg/<TARBALL NAME WITHOUT .tar.gz>/<TARBALL",
+            "https://github.com/apache/iceberg/commits/apache-iceberg-<VERSION>-rc<NUM>"
+        ]
+    },
+    {
+        "name": "Fortnox",
+        "base_url": "https://apps.fortnox.se/apidocs",
+        "start_url": "https://apps.fortnox.se/apidocs#section/Documentation",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Pennylane",
+        "base_url": "https://docs.pennylane.ai/en/stable/develoepment/guide",
+        "start_url": "https://docs.pennylane.ai/en/stable/development/guide/documentation.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Apache Arrow Flight and Arrow Adbc",
+        "base_url": "https://arrow.apache.org/docs",
+        "start_url": "https://arrow.apache.org/docs/format/Versioning.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 3500,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Graylog",
+        "base_url": "https://go2docs.graylog.org/5-0/home.htm",
+        "start_url": "https://go2docs.graylog.org/5-0/setting_up_graylog/initial_configuration_settings.html?tocpath=Setting%20up%20Graylog%7CGetting%20Started%7CInitial%20Configuration%20Settings%7C_____0",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "New Relic",
+        "base_url": "https://developer.newrelic.com",
+        "start_url": "https://developer.newrelic.com/build-apps/build-hello-world-app",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 597,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Workday Adaptive Insights",
+        "base_url": "https://community.workday.com/sites/default/files/file-hosting/restapi/index.html",
+        "start_url": "https://community.workday.com/sites/default/files/file-hosting/restapi/index.html#absenceManagement/v1/balances",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Impact Radius",
+        "base_url": "https://integrations.impact.com",
+        "start_url": "https://integrations.impact.com/impact-publisher/reference/authentication",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 481,
+        "endpoint_count": 5,
+        "endpoints": [
+            "/Agencies/<AccountSID>/Jobs/d8807a9f-a5ee-4e3f-ad2b-3dfd19d1915f/Download",
+            "/Agencies/<AccountSID>/Jobs/d8807a9f-a5ee-4e3f-ad2b-3dfd19d1915f",
+            "/Agencies/<AccountSID>/Compliance/Content/ComplianceAPISubmissions/content_api_1603459292102",
+            "/Agencies/<AccountSID>/Advertisers/987654",
+            "https://api.impact.com/Agencies/<AccountSID>/Advertisers/<AdvertiserAccountID>/"
+        ]
+    },
+    {
+        "name": "Clari",
+        "base_url": "https://developer.clari.com/documentation",
+        "start_url": "https://developer.clari.com/documentation/external_spec",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "UKG Ultipro",
+        "base_url": "https://doc.people-doc.com/client",
+        "start_url": "https://doc.people-doc.com/client/presentation.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 198,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "FullStory",
+        "base_url": "https://developer.fullstory.com",
+        "start_url": "https://developer.fullstory.com/overview/api-basics/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 171,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Semrush",
+        "base_url": "https://developer.semrush.com/api",
+        "start_url": "https://developer.semrush.com/api/basics/get-started/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 20,
+        "endpoint_count": 1,
+        "endpoints": [
+            "https://api.semrush.com/?key=<key>"
+        ]
+    },
+    {
+        "name": "Ring Central",
+        "base_url": "https://developers.ringcentral.com/api-reference",
+        "start_url": "https://developers.ringcentral.com/api-reference/team-messaging",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Lightspeed",
+        "base_url": "https://developers.lightspeedhq.com",
+        "start_url": "https://developers.lightspeedhq.com/retail/introduction/introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 329,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Vimeo",
+        "base_url": "https://developer.vimeo.com/api",
+        "start_url": "https://developer.vimeo.com/api/start",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Huawei Cloud",
+        "base_url": "https://support.huaweicloud.com/intl/en-us",
+        "start_url": "https://support.huaweicloud.com/intl/en-us/apig/index.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1001,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Napta",
+        "base_url": "https://en.napta.io",
+        "start_url": "https://en.napta.io",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 121,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Airbyte connections monitoring/alerting - /jobs/list",
+        "base_url": "https://reference.airbyte.com/reference",
+        "start_url": "https://reference.airbyte.com/reference/start",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 35,
+        "endpoint_count": 3,
+        "endpoints": [
+            "https://cloud.airbyte.com/workspaces/<workspace_uuid>/source/<source_uuid>",
+            "https://cloud.airbyte.com/workspaces/<workspace_uuid>/...",
+            "https://cloud.airbyte.com/workspaces/<workspace_uuid>/destination/<destination_uuid>"
+        ]
+    },
+    {
+        "name": "Microsoft Outlook",
+        "base_url": "https://learn.microsoft.com/en-us/outlook/rest",
+        "start_url": "https://learn.microsoft.com/en-us/outlook/rest/reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 2,
+        "endpoints": [
+            "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=openid+Mail.Read&response_type=code&client_id=<SOME GUID>&redirect_uri=<REDIRECT",
+            "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=openid+https%3A%2F%2Foutlook.office.com%2Fmail.read&response_type=code&client_id=<SOME GUID>&redirect_uri=<REDIRECT"
+        ]
+    },
+    {
+        "name": "Gmail",
+        "base_url": "https://developers.google.com/gmail/api",
+        "start_url": "https://developers.google.com/gmail/api/guides",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 207,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Google Docs",
+        "base_url": "https://developers.google.com/docs/api",
+        "start_url": "https://developers.google.com/docs/api/reference/rest",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 39,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "SurrealDB",
+        "base_url": "https://surrealdb.com/docs",
+        "start_url": "https://surrealdb.com/docs/introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 139,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Salla",
+        "base_url": "https://docs.salla.dev/docs",
+        "start_url": "https://docs.salla.dev/docs/merchant/fccf7c395e5d2-get-started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Spotify",
+        "base_url": "https://developer.spotify.com/documentation/web-api",
+        "start_url": "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 105,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "DGraph",
+        "base_url": "https://dgraph.io/docs",
+        "start_url": "https://dgraph.io/docs/graphql",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 347,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "getLago",
+        "base_url": "https://doc.getlago.com/docs",
+        "start_url": "https://doc.getlago.com/docs/guide/intro/welcome",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 175,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Holiday API",
+        "base_url": "https://holidayapi.com/docs",
+        "start_url": "https://holidayapi.com/docs",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Redis",
+        "base_url": "https://redis.io/docs",
+        "start_url": "https://redis.io/docs/getting-started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 246,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Gorgias",
+        "base_url": "https://developers.gorgias.com/reference",
+        "start_url": "https://developers.gorgias.com/reference/introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 121,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Timeplus",
+        "base_url": "https://docs.timeplus.com/docs",
+        "start_url": "https://docs.timeplus.com/docs/quickstart",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 44,
+        "endpoint_count": 1,
+        "endpoints": [
+            "https://us.timeplus.cloud/<workspace-id>/console"
+        ]
+    },
+    {
+        "name": "Weaviate",
+        "base_url": "https://weaviate.io/developers/weaviate/api",
+        "start_url": "https://weaviate.io/developers/weaviate/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 19,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Wise",
+        "base_url": "https://api-docs.wise.com/v1",
+        "start_url": "https://api-docs.wise.com/v1#wise-platform-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 8,
+        "endpoint_count": 9,
+        "endpoints": [
+            "https://api.sandbox.transferwise.tech/v2/accounts?profileId=<profileId>",
+            "https://api.sandbox.transferwise.tech/v1/transfers?offset=0&limit=100&profile=<your profile id>&status=funds_refunded&createdDateStart=2018-12-15&createdDateEnd=2018-12-30",
+            "/v1/quotes/<quoteId/quoteUuid>/account-requirements",
+            "/v1/profiles/<profileId>/transfers/<transferId>/deposit-details/bank-transfer",
+            "https://api.sandbox.transferwise.tech/v1/accounts?profile=<profileId>&currency=GBP",
+            "https://api.sandbox.transferwise.tech/v1/accounts?profile=<profileId>&currency=<currencyCode>",
+            "https://api.sandbox.transferwise.tech/v1/bank-branches?country=HK&bankCode=<bankCode>",
+            "https://api.sandbox.transferwise.tech/v2/accounts?profile=<profileId>&currency=GBP",
+            "https://api.sandbox.transferwise.tech/v1/transfers/?offset=0&limit=100&profile=<your profile id>&status=funds_refunded&sourceCurrency=EUR&createdDateStart=2018-12-15T01:30:00.000Z&createdDateEnd=2018-12-30T01:30:00.000Z"
+        ]
+    },
+    {
+        "name": "Railsr",
+        "base_url": "https://docs.railsr.com/docs/api",
+        "start_url": "https://docs.railsr.com/docs/api/5ff00bb1936ca-railsbank-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "AppTweak API",
+        "base_url": "https://developers.apptweak.com/reference",
+        "start_url": "https://developers.apptweak.com/reference/overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 69,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "SODA API",
+        "base_url": "https://docs.soda.io/api-docs",
+        "start_url": "https://docs.soda.io/api-docs/reporting-api-v1.html#/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 5,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "AWS OpenSearch",
+        "base_url": "https://docs.aws.amazon.com/opensearch-service",
+        "start_url": "https://docs.aws.amazon.com/opensearch-service/index.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Source Wise",
+        "base_url": "https://developer.connectwise.com",
+        "start_url": "https://developer.connectwise.com/Best_Practices/Getting_Started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 17,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Plaid Investments",
+        "base_url": "https://plaid.com/docs/api",
+        "start_url": "https://plaid.com/docs/api/#api-access",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 52,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "SuiteCRM",
+        "base_url": "https://docs.suitecrm.com/developer/api",
+        "start_url": "https://docs.suitecrm.com/developer/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 15,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Moengage",
+        "base_url": "https://developers.moengage.com/hc/en-us",
+        "start_url": "https://developers.moengage.com/hc/en-us/categories/4404541620756-API",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Opensearch",
+        "base_url": "https://opensearch.org/docs",
+        "start_url": "https://opensearch.org/docs/latest",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 782,
+        "endpoint_count": 2,
+        "endpoints": [
+            "https://<host>:<port>/<index-name>/_doc/<document-id>",
+            "https://<host>:<port>/<index-name>/_search?q=wind"
+        ]
+    },
+    {
+        "name": "IBM DB2",
+        "base_url": "https://www.ibm.com/docs/en/db2/11.1",
+        "start_url": "https://www.ibm.com/docs/en/db2/11.1?topic=apis-db2",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Local Parquet",
+        "base_url": "https://parquet.apache.org/docs",
+        "start_url": "https://parquet.apache.org/docs/file-format/data-pages/encodings/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 46,
+        "endpoint_count": 3,
+        "endpoints": [
+            "https://github.com/apache/parquet-mr/blob/apache-parquet-<VERSION>/CHANGES.md",
+            "https://github.com/apache/parquet-mr/tree/<SHA1>",
+            "https://dist.apache.org/repos/dist/dev/parquet/<PATH>"
+        ]
+    },
+    {
+        "name": "Firebird",
+        "base_url": "https://www.firebirdsql.org/en/documentation",
+        "start_url": "https://www.firebirdsql.org/en/documentation",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Google Analytics",
+        "base_url": "https://developers.google.com/analytics/devguides",
+        "start_url": "https://developers.google.com/analytics/devguides/integrate",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1001,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "ITGlue",
+        "base_url": "https://api.itglue.com/developer",
+        "start_url": "https://api.itglue.com/developer#attachments-create",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Vertica",
+        "base_url": "https://docs.vertica.com/12.0.x",
+        "start_url": "https://docs.vertica.com/12.0.x/en/api-reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
+    },
+    {
+        "name": "Pulsar",
+        "base_url": "https://pulsar.apache.org/docs",
+        "start_url": "https://pulsar.apache.org/docs/next/getting-started-home/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 712,
+        "endpoint_count": 2,
+        "endpoints": [
+            "http://<DNS-OF-US-CENT>:<PORT>",
+            "http://<DNS-OF-US-EAST>:<PORT>"
+        ]
     },
     {
         "name": "RocketMQ",
         "base_url": "https://rocketmq.apache.org/docs",
-        "start_url": "https://rocketmq.apache.org/docs",
-        "scraped_page_count": 108
+        "start_url": "https://rocketmq.apache.org/docs/quickStart/01quickstart",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 107,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Eurostat",
         "base_url": "https://wikis.ec.europa.eu/display/EUROSTATHELP/API",
         "start_url": "https://wikis.ec.europa.eu/display/EUROSTATHELP/API+-+Getting+started",
-        "scraped_page_count": 6
+        "airbyte_status": "backlog",
+        "scraped_page_count": 6,
+        "endpoint_count": 6,
+        "endpoints": [
+            "https://<api_base_uri>/1.0/async/data/<id>",
+            "https://<api_base_uri>/sdmx/2.1/<resource>/<flowRef>/<key>?",
+            "https://<api_base_uri>/1.0/async/status/<id>",
+            "https://<api_base_uri>/sdmx/2.1/<resource>/<flowRef>/",
+            "https://<api_base_uri>/sdmx/2.1/<resource>/<agencyID>/<resourceID>?",
+            "https://<api_base_uri>/sdmx/2.1/<resource>/<agencyID>/<resourceID>/"
+        ]
     },
     {
         "name": "Swisscom mobility",
         "base_url": "https://docs.developer.swisscom.com",
         "start_url": "https://docs.developer.swisscom.com/devguide-sc/api.html",
-        "scraped_page_count": 479
+        "airbyte_status": "backlog",
+        "scraped_page_count": 479,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "RabbitMQ",
         "base_url": "https://www.rabbitmq.com",
         "start_url": "https://www.rabbitmq.com/documentation.html",
-        "scraped_page_count": 320
+        "airbyte_status": "backlog",
+        "scraped_page_count": 320,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Microsoft Dynamics Business Central",
         "base_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0",
-        "start_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0",
-        "scraped_page_count": 1
+        "start_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/endpoints-apis-for-dynamics",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 3,
+        "endpoint_count": 1,
+        "endpoints": [
+            "https://<base URL>:<port>/<serverinstance>/api/<API"
+        ]
     },
     {
         "name": "Sprout Social",
         "base_url": "https://api.sproutsocial.com/docs",
-        "start_url": "https://api.sproutsocial.com/docs",
-        "scraped_page_count": 22
+        "start_url": "https://api.sproutsocial.com/docs/#sprout-api-overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 22,
+        "endpoint_count": 8,
+        "endpoints": [
+            "/v1/<customer ID>/messages",
+            "/v1/<customer ID>/metadata/customer",
+            "/v1/<customer ID>/metadata/customer/groups",
+            "/v1/<customer ID>/metadata/customer/tags",
+            "/v1/<customer ID>/analytics/profiles",
+            "/<version>/<customer",
+            "/v1/<customer ID>/analytics/posts",
+            "/v1/<customer ID>/metadata/customer/users"
+        ]
     },
     {
         "name": "Local Parquet",
         "base_url": "https://parquet.apache.org/docs",
-        "start_url": "https://parquet.apache.org/docs",
-        "scraped_page_count": 47
+        "start_url": "https://parquet.apache.org/docs/overview/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 46,
+        "endpoint_count": 3,
+        "endpoints": [
+            "https://github.com/apache/parquet-mr/blob/apache-parquet-<VERSION>/CHANGES.md",
+            "https://github.com/apache/parquet-mr/tree/<SHA1>",
+            "https://dist.apache.org/repos/dist/dev/parquet/<PATH>"
+        ]
     },
     {
         "name": "Airtm",
         "base_url": "https://airtm.bitbucket.io",
         "start_url": "https://airtm.bitbucket.io/#introduction",
-        "scraped_page_count": 2
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 1,
+        "endpoints": [
+            "https://payments.static-stg.tests.airtm.org/operations/<id>"
+        ]
     },
     {
         "name": "Reddit Ads",
         "base_url": "https://ads-api.reddit.com/docs",
-        "start_url": "https://ads-api.reddit.com/docs",
-        "scraped_page_count": 1
+        "start_url": "https://ads-api.reddit.com/docs/#section/Model-Hierarchy",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Teamtailor",
         "base_url": "https://docs.teamtailor.com",
-        "start_url": "https://docs.teamtailor.com",
-        "scraped_page_count": 1
+        "start_url": "https://docs.teamtailor.com/#intro",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Iomete platform",
         "base_url": "https://iomete.com/docs",
-        "start_url": "https://iomete.com/docs",
-        "scraped_page_count": 99
+        "start_url": "https://iomete.com/docs/starting-with-notebook",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 98,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Easybill",
         "base_url": "https://www.easybill.de/api",
         "start_url": "https://www.easybill.de/api",
-        "scraped_page_count": 1
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Xing API",
         "base_url": "https://dev.xing.com/partners/job_integration/api_docs",
         "start_url": "https://dev.xing.com/partners/job_integration/api_docs",
-        "scraped_page_count": 16
+        "airbyte_status": "backlog",
+        "scraped_page_count": 16,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "ArangoDB",
         "base_url": "https://www.arangodb.com/docs/stable",
-        "start_url": "https://www.arangodb.com/docs/stable",
-        "scraped_page_count": 787
+        "start_url": "https://www.arangodb.com/docs/stable/quick-start-guide.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 786,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "DEAR ERP",
         "base_url": "https://support.dearsystems.com/support/solutions",
-        "start_url": "https://support.dearsystems.com/support/solutions/articles/11000067739-api-introduction",
-        "scraped_page_count": 688
+        "start_url": "https://support.dearsystems.com/support/solutions/articles/1000182680-getting-started-guide",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 688,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Discourse",
         "base_url": "https://docs.discourse.org",
-        "start_url": "https://docs.discourse.org",
-        "scraped_page_count": 1
+        "start_url": "https://docs.discourse.org/#tag/Site",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Zendesk Help Centre",
         "base_url": "https://developer.zendesk.com/api-reference",
-        "start_url": "https://developer.zendesk.com/api-reference",
-        "scraped_page_count": 419
-    },
-    {
-        "name": "Source IBM DB2: add support for CDC",
-        "base_url": "https://www.ibm.com/docs/en/db2",
-        "start_url": "https://www.ibm.com/docs/en/db2/11.5",
-        "scraped_page_count": 1
+        "start_url": "https://developer.zendesk.com/api-reference/introduction/introduction/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 419,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Onfleet",
         "base_url": "https://docs.onfleet.com/reference",
         "start_url": "https://docs.onfleet.com/reference/setup-tutorial",
-        "scraped_page_count": 105
+        "airbyte_status": "backlog",
+        "scraped_page_count": 105,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "SQLite",
         "base_url": "https://www.sqlite.org",
-        "start_url": "https://www.sqlite.org/docs.html"
+        "start_url": "https://www.sqlite.org/docs.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1001,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "TimescaleDB",
         "base_url": "https://docs.timescale.com/api/latest",
-        "start_url": "https://docs.timescale.com/api/latest"
+        "start_url": "https://docs.timescale.com/api/latest/hypertable/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 140,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Facebook Leads",
         "base_url": "https://developers.facebook.com/docs/marketing-api",
-        "start_url": "https://developers.facebook.com/docs/marketing-api/guides/lead-ads"
+        "start_url": "https://developers.facebook.com/docs/marketing-api/guides/lead-ads",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 945,
+        "endpoint_count": 41,
+        "endpoints": [
+            "https://graph.facebook.com/<API_VERSION>/<CAMPAIGN_ID>/",
+            "https://graph.facebook.com/<VERSION>/<AD_ACCOUNT_ID>/adrules_history",
+            "https://graph.facebook.com/<API_VERSION>/<CHILD_BM_ID>/business_users",
+            "https://graph.facebook.com/<API_VERSION>/<INVOICE_GROUP_ID>/ad_accounts",
+            "https://graph.facebook.com/<VERSION>/<AD_ACCOUNT_ID>/adrules_library",
+            "https://graph.facebook.com/<API_VERSION>/act_<AD_ACCOUNT_ID>/ads",
+            "https://graph.facebook.com/<VERSION>/<AD_OBJECT_ID>/adrules_governed",
+            "https://graph.facebook.com/<API_VERSION>/<CHILD_BM_ID>/system_users",
+            "https://graph.facebook.com/<API_VERSION>/<CHILD_BUSINESS_MANAGER_ID>/extendedcredits",
+            "https://graph.facebook.com/<VERSION>/<AD_RULE_ID>/preview",
+            "https://graph.facebook.com/<API_VERSION>/<INVOICE_GROUP_ID>",
+            "https://graph.facebook.com/<API_VERSION>/act_AD_ACCOUNT_ID/adsets",
+            "https://graph.facebook.com/<API_VERSION>/<parent_bm_id>/owned_businesses?client_user_id=<Client\u2019s",
+            "https://graph.facebook.com/<API_VERSION>/<CHILD_BUSINESS_MANAGER_ID>/access_token",
+            "https://graph.facebook.com/<API_VERSION>/<act_ACCOUNT_ID>/assigned_users",
+            "https://graph.facebook.com/<API_VERSION>/act_<AD_ACCOUNT_ID>/adcreatives",
+            "https://graph.facebook.com/<API_VERSION>/CHILD_BM_ID/adaccount",
+            "https://graph.facebook.com/<API_VERSION>/<PARENT_BM_Id>/owned_businesses",
+            "https://graph.facebook.com/<API_VERSION>/<PARENT_BM_Line_Of_Credit_ID>/owning_credit_allocation_configs",
+            "https://graph.facebook.com/<API-VERSION>/<AD_ID>",
+            "https://graph.facebook.com/<API_VERSION>/<INVOICE_GROUP_ID",
+            "https://graph.facebook.com/v17.0/<CREATIVE_ID>/",
+            "https://graph.facebook.com/<API_VERSION>/<allocation",
+            "https://graph.facebook.com/<API_VERSION>/<CHILD_BM_ID>/access_token",
+            "https://graph.facebook.com/<API_VERSION>/<ADSET_ID>",
+            "https://business.facebook.com/settings/payment-methods/<PARENT_BM_Line_Of_Credit_ID>?business_id=<BUSINESS_ID>",
+            "https://graph.facebook.com/<API_VERSION>/<EXTENDED_CREDIT_ID>/extended_credit_invoice_groups",
+            "https://graph.facebook.com/<API_VERSION>/<child_bm_allocation_config_id>",
+            "https://graph.facebook.com/<API_VERSION>/act_<AD_ACCOUNT_ID>/campaigns",
+            "https://graph.facebook.com/<VERSION>/<AD_RULE_ID>",
+            "https://graph.facebook.com/<VERSION>/<AD_RULE_ID>/history",
+            "https://graph.facebook.com/<API_VERSION>/<AD_ACCOUNT_ID>?fields=extended_credit_invoice_group&access_token=<access",
+            "https://graph.facebook.com/<API_VERSION>/<child_bm_allocation_config_id>?fields=receiving_business&access_token=<access_token>",
+            "https://graph.facebook.com/<API_VERSION>/<PARENT_BM_ID>/owned_businesses",
+            "https://graph.facebook.com/v17.0/act_<AD_ACCOUNT_ID>/adcreatives",
+            "https://graph.facebook.com/<API_VERSION>/<BM_ID>",
+            "https://graph.facebook.com/<VERSION>/<AD_RULE_ID>/execute",
+            "https://graph.facebook.com/<API_VERSION>/<act_AD_ACCOUNT_ID>/campaigns",
+            "https://graph.facebook.com/<API_VERSION>/<extended",
+            "https://graph.facebook.com/<API_VERSION>/<CHILD_BM_ID>/owned_ad_accounts",
+            "https://graph.facebook.com/<API_VERSION>/act_<AD_ACCOUNT_ID>/adsets"
+        ]
     },
     {
         "name": "Google Workspace Email Audit API",
         "base_url": "https://developers.google.com/admin-sdk/email-audit",
-        "start_url": "https://developers.google.com/admin-sdk/email-audit/overview"
+        "start_url": "https://developers.google.com/admin-sdk/email-audit/overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 7,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Mambu",
         "base_url": "https://api.mambu.com",
-        "start_url": "https://api.mambu.com/#welcome"
+        "start_url": "https://api.mambu.com/#welcome",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 17,
+        "endpoint_count": 11,
+        "endpoints": [
+            "/></div><div>Your",
+            "/></div><div>Cheers,</div><div></div>",
+            "/></u></div><div><u>loan</u></div>",
+            "/></div><div>You",
+            "/></div><div>Keep",
+            "/></div><div><u>aefaefaf</u></div><div><u><br",
+            "/></u></div><div><u>afaef</u></div>",
+            "/></div><div>just",
+            "/></div><div>Happy",
+            "/></div><div>your",
+            "/></div><div><u>personal</u></div><div><u><br"
+        ]
     },
     {
-        "name": "IHS Markit - iLEVEL Portfolio Monitoring Software",
+        "name": "IHS Markit",
         "base_url": "https://api-docs.globalmarkets.ihsmarkit.com",
-        "start_url": "https://api-docs.globalmarkets.ihsmarkit.com"
+        "start_url": "https://api-docs.globalmarkets.ihsmarkit.com",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
-        "name": "platform orchestration",
+        "name": "Platform orchestration",
         "base_url": "https://www.juniper.net/documentation/us/en/software/active-assurance3.0.0/rest-api-orchestration",
-        "start_url": "https://www.juniper.net/documentation/us/en/software/active-assurance3.0.0/rest-api-orchestration/topics/concept/introduction.html"
-    },
-    {
-        "name": "Sentry",
-        "base_url": "https://docs.sentry.io/api",
-        "start_url": "https://docs.sentry.io/api"
+        "start_url": "https://www.juniper.net/documentation/us/en/software/active-assurance3.0.0/rest-api-orchestration/topics/concept/introduction.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Apache Hudi",
         "base_url": "https://hudi.apache.org/docs",
-        "start_url": "https://hudi.apache.org/docs/overview"
-    },
-    {
-        "name": "Exasol",
-        "base_url": "https://docs.exasol.com",
-        "start_url": "https://docs.exasol.com/home.htm"
+        "start_url": "https://hudi.apache.org/docs/overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 769,
+        "endpoint_count": 1,
+        "endpoints": [
+            "http://bj.bcebos.com</description>"
+        ]
     },
     {
         "name": "InMoment/Wootric",
         "base_url": "https://docs.wootric.com/api",
-        "start_url": "https://docs.wootric.com/api"
+        "start_url": "https://docs.wootric.com/api/#introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 3,
+        "endpoint_count": 15,
+        "endpoints": [
+            "https://api.wootric.com/v1/end_users/<end_user_id>/responses/<response_id>",
+            "https://api.wootric.com/v1/end_users/phone_number/<phone_number>",
+            "https://api.wootric.com/v1/end_users/<end_user_id>/responses",
+            "https://api.wootric.com/v1/end_users/<end_user_id>/settings",
+            "https://api.wootric.com/v1/end_users/<end_user_id>/declines/<decline_id>",
+            "https://api.wootric.com/v1/end_users/<id>/export",
+            "https://api.wootric.com/v1/end_users/<external_id>?lookup_by_external_id=true",
+            "https://api.wootric.com/v1/end_users/<END_USER_ID>",
+            "https://api.wootric.com/v1/end_users/<end_user_id>/responses/<id>",
+            "https://api.wootric.com/v1/end_users/<end_user_id_or_email>",
+            "https://api.wootric.com/v1/end_users/<email>?lookup_by_email=true",
+            "https://api.wootric.com/v1/end_users/<end_user_id>/declines",
+            "https://api.wootric.com/v1/end_users/<id>",
+            "https://api.wootric.com/v1/responses/<id>",
+            "https://api.wootric.com/v1/end_users/<end_user_id>/declines/<id>"
+        ]
     },
     {
         "name": "Adobe Experience Platform",
         "base_url": "https://experienceleague.adobe.com/docs/experience-platform",
-        "start_url": "https://experienceleague.adobe.com/docs/experience-platform.html?lang=en"
+        "start_url": "https://experienceleague.adobe.com/docs/experience-platform.html?lang=en",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1001,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "TPL Central",
         "base_url": "https://api.tplmaps.com/apiportal/#/portal/docs",
-        "start_url": "https://api.tplmaps.com/apiportal/#/portal/docs"
-    },
-    {
-        "name": "Flexport",
-        "base_url": "https://apidocs.flexport.com",
-        "start_url": "https://apidocs.flexport.com"
+        "start_url": "https://api.tplmaps.com/apiportal/#/portal/docs",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Shortcut",
         "base_url": "https://developer.shortcut.com/api",
-        "start_url": "https://developer.shortcut.com/api/rest/v3"
+        "start_url": "https://developer.shortcut.com/api/rest/v3",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "AWS Cost Explorer",
         "base_url": "https://docs.aws.amazon.com/cost-management/latest",
-        "start_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-api.html"
+        "start_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-api.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 53,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Google AdSense",
         "base_url": "https://developers.google.com/adsense/management",
-        "start_url": "https://developers.google.com/adsense/management/getting_started"
+        "start_url": "https://developers.google.com/adsense/management/getting_started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 77,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Quora Ads",
         "base_url": "https://quoraadsupport.zendesk.com/hc/en-us",
-        "start_url": "https://quoraadsupport.zendesk.com/hc/en-us/categories/115001577787-Getting-Started"
+        "start_url": "https://quoraadsupport.zendesk.com/hc/en-us/categories/115001577787-Getting-Started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Google My Business",
         "base_url": "https://developers.google.com/my-business",
-        "start_url": "https://developers.google.com/my-business/ref_overview"
+        "start_url": "https://developers.google.com/my-business/ref_overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 300,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Personio",
         "base_url": "https://developer.personio.de/reference",
-        "start_url": "https://developer.personio.de/reference/introduction"
+        "start_url": "https://developer.personio.de/reference/introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 39,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Zendesk Support",
         "base_url": "https://developer.zendesk.com/api-reference",
-        "start_url": "https://developer.zendesk.com/api-reference"
-    },
-    {
-        "name": "Weatherstack",
-        "base_url": "https://weatherstack.com/documentation",
-        "start_url": "https://weatherstack.com/documentation"
+        "start_url": "https://developer.zendesk.com/api-reference/introduction/introduction/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 419,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Drip",
         "base_url": "https://developer.drip.com",
-        "start_url": "https://developer.drip.com"
+        "start_url": "https://developer.drip.com/#introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 2,
+        "endpoints": [
+            "https://www.getdrip.com/oauth/authorize?response_type=code&client_id=<your_client_id>&redirect_uri=<your_redirect_uri>",
+            "https://www.getdrip.com/oauth/token?response_type=token&client_id=<your_client_id>&client_secret=<your_client_secret>&code=<your_verification_code>&redirect_uri=<your_redirect_uri>&grant_type=authorization_code"
+        ]
     },
     {
         "name": "YouGov BrandIndex",
         "base_url": "https://business.yougov.com/product",
-        "start_url": "https://business.yougov.com/product/brandindex"
+        "start_url": "https://business.yougov.com/product/brandindex",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Postmark",
         "base_url": "https://postmarkapp.com/developer/api",
-        "start_url": "https://postmarkapp.com/developer/api/overview"
-    },
-    {
-        "name": "RingCentral",
-        "base_url": "https://developers.ringcentral.com/api-reference",
-        "start_url": "https://developers.ringcentral.com/api-reference"
+        "start_url": "https://postmarkapp.com/developer/api/overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 14,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "WooCommerce",
         "base_url": "https://woocommerce.com/docs",
-        "start_url": "https://woocommerce.com/docs"
+        "start_url": "https://woocommerce.com/documentation/woocommerce/getting-started/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Criteo Ads",
         "base_url": "https://developers.criteo.com/marketing-solutions/docs",
-        "start_url": "https://developers.criteo.com/marketing-solutions/docs/developer-support"
+        "start_url": "https://developers.criteo.com/marketing-solutions/docs/developer-support",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 53,
+        "endpoint_count": 35,
+        "endpoints": [
+            "https://api.criteo.com/2021-10/audiences?advertiser-id={advertiserId}",
+            "https://packagist.org/packages/criteo/criteo-api-marketingsolutions-sdk",
+            "/ad-sets",
+            "https://api.criteo.com/2023-04/marketing-solutions/ad-sets/{ad-set-id}/category-bids",
+            "https://github.com/joepikowski/criteo-api-nodejs-client",
+            "/report",
+            "/category-bids",
+            "https://api.criteo.com/2023-04/marketing-solutions/ad-sets/search",
+            "https://api.criteo.com/2023-04/audiences",
+            "https://api.criteo.com/2023-04/marketing-solutions/ad-sets/start",
+            "https://api.criteo.com/2023-04/audiences/{audienceId}/contactlist",
+            "https://api.criteo.com/2023-04/marketing-solutions/campaigns/search",
+            "https://consent.criteo.com/request?nonce=<nonce>&hmac=<signature>",
+            "https://pypi.org/project/criteo-api-marketingsolutions-sdk/",
+            "https://api.criteo.com/oauth2/token",
+            "/statistics/report",
+            "https://api.criteo.com/2023-04/audiences/{audienceId}",
+            "https://developers.criteo.com/",
+            "/advertisers/me",
+            "https://api.criteo.com/2023-04/marketing-solutions/campaigns",
+            "https://consent.criteo.com/request?key=<public",
+            "https://api.criteo.com/2023-04/marketing-solutions/ad-sets",
+            "https://consent.criteo.com/request${query}&signature=${sha512.hmac(signingSecret,",
+            "https://api.criteo.com/2023-04/advertisers",
+            "//Populate",
+            "https://api.criteo.com/2023-04/marketing-solutions/ad-sets/stop",
+            "https://api.criteo.com/marketing/v1/statistics",
+            "https://search.maven.org/artifact/com.criteo/criteo-api-marketingsolutions-sdk",
+            "https://status.criteo.com/.",
+            "https://api.criteo.com/2023-04/marketing-solutions/ad-sets/{adSetId}",
+            "https://consent.criteo.com/request?key={publicSigningKey}&timestamp={timestamp}&state={state}&redirect-uri={redirectUri}&signature={signature}",
+            "/oauth2/token",
+            "https://api.criteo.com/2023-04/statistics/report",
+            "https://api.criteo.com/2023-04/marketing-solutions/campaigns/{campaignId}",
+            "https://api.criteo.com/2020-10/advertisers/me"
+        ]
     },
     {
         "name": "Taboola",
         "base_url": "https://developers.taboola.com/backstage-api/reference",
-        "start_url": "https://developers.taboola.com/backstage-api/reference/welcome"
+        "start_url": "https://developers.taboola.com/backstage-api/reference/welcome",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 396,
+        "endpoint_count": 5,
+        "endpoints": [
+            "https://backstage.taboola.com/backstage/api/1.0/{account-id}/audience_onboarding",
+            "/backstage/api/1.0/demo-advertiser/audience_onboarding/",
+            "/from",
+            "/remove",
+            "/backstage/api/1.0/{account_id}/campaigns/"
+        ]
     },
     {
         "name": "Shopware",
         "base_url": "https://developer.shopware.com/docs/concepts/api",
-        "start_url": "https://developer.shopware.com/docs/concepts/api"
+        "start_url": "https://developer.shopware.com/docs/concepts/api/store-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 3,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Microsoft excel online (sharepoint)",
         "base_url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development",
-        "start_url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development/excel-services-rest-api"
+        "start_url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development/excel-services-rest-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 10,
+        "endpoint_count": 54,
+        "endpoints": [
+            "http://schemas.microsoft.com/ado/2007/08/dataservices/scheme",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('Chart",
+            "/model/Ranges",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/<DocumentLibrary>/<FileName>",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('SampleNamedRange'",
+            "http://myserver/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('Sheet1!A1%7CH3'",
+            "/model/Charts",
+            "http://schemas.microsoft.com/ado/2007/08/dataservice",
+            "http://ServerName/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('Chart%201'",
+            "/model/PivotTables('[Name",
+            "http://excel.live.com/REST",
+            "http://ServerName/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('SampleChart%20'",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model",
+            "/model/PivotTables('MyPivotTable'",
+            "/model/Tables?$format=atom",
+            "/model/Ranges('nameOfTheNamedRange'",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model?$format=workbook",
+            "/model/Tables('MyTable'",
+            "http://myserver/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('Sheet1!A1|H3'",
+            "/model/Charts('MyChart'",
+            "/model/Charts('[Name",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('SampleChart'",
+            "/model/PivotTables('MyPivotTable",
+            "http://",
+            "/Docs/Documents/sampleWorkbook.xlsx",
+            "/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('Sheet1!A1|G5'",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx",
+            "http://ServerName/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts?$format=atom",
+            "/model/Ranges('MyRange'",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('SampleChart%20'",
+            "/model/PivotTables?$format=atom",
+            "http://ServerName/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('Chart%203'",
+            "/model/Charts('Chart",
+            "http://ServerName/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('SampleNamedRange'",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx",
+            "http://schemas.microsoft.com/office/2008/07/excelservices/rest",
+            "http://<ServerName>/Docs/Documents/sampleWorkbook.xlsx",
+            "/model/PivotTables",
+            "/_vti_bin/ExcelRest.aspx",
+            "http://schemas.microsoft.com/ado/2007/08/dataservices/metadata",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/<DocumentLibrary>/<FileName>/<ResourceLocation>",
+            "http://www.w3.org/2005/Atom",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Ranges('nameOfTheNamedRange'",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/<DocumentLibrary>/<FileName>/model",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model?$format=atom",
+            "/model/Ranges?$format=atom",
+            "/model/Ranges('[Name",
+            "/model?$format=workbook",
+            "/model/Tables",
+            "/model/Tables('[Name",
+            "http://<ServerName>/_vti_bin/ExcelRest.aspx/Docs/Documents/sampleWorkbook.xlsx/model/Charts('Chart%201'",
+            "/model/Charts?$format=atom",
+            "/model"
+        ]
     },
     {
         "name": "Prometheus",
         "base_url": "https://prometheus.io/docs/prometheus/latest",
-        "start_url": "https://prometheus.io/docs/prometheus/latest/querying/api"
+        "start_url": "https://prometheus.io/docs/prometheus/latest/querying/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 27,
+        "endpoint_count": 104,
+        "endpoints": [
+            "/api/v1/query_range",
+            "/var/run/secrets/kubernetes.io/serviceaccount/.",
+            "https://console.scaleway.com/project/credentials",
+            "http://localhost:9090/api/v1/status/config",
+            "http://127.0.0.1:9090/api/v1/alerts",
+            "http://127.0.0.1:9091/metrics",
+            "/api/v1/metadata",
+            "/var/run/secrets/kubernetes.io/serviceaccount/token",
+            "https://pkg.go.dev/crypto/tls#CipherSuites",
+            "/rules.yaml",
+            "/api/v1/status/buildinfo",
+            "/api/comments",
+            "/etc/prometheus",
+            "/user.",
+            "https://docs.mesosphere.com/1.11/security/ent/iam-api/#passing-an-authentication-token",
+            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options",
+            "/path/to/example.rules.yml",
+            "/alerts",
+            "/-/quit",
+            "https://docs.docker.com/engine/api/v1.40/#operation/ContainerList",
+            "https://docs.docker.com/engine/api/v1.40/#operation/ServiceList",
+            "https://golang.org/pkg/crypto/tls/#ClientAuthType",
+            "http://localhost:9090/api/v1/label/job/values",
+            "http://localhost:9090/api/v1/metadata?limit=2",
+            "http://localhost:9090/api/v1/alertmanagers",
+            "http://localhost:9090/metrics",
+            "https://cloud.google.com/compute/docs/reference/latest/instances/list",
+            "https://pkg.go.dev/crypto/tls#Config.",
+            "http://example-prometheus:9090/metrics",
+            "/federate",
+            "/api/v1",
+            "http://localhost:8080/metrics,",
+            "http://example-prometheus:9091/metrics",
+            "/api/v1/query",
+            "http://localhost:9090/api/v1/alerts",
+            "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html",
+            "https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview",
+            "/api/v1/admin/tsdb/delete_series",
+            "http://localhost:9094/api/v1/read",
+            "/metrics",
+            "http://localhost:9090",
+            "https://golang.org/pkg/crypto/tls/#CurveID",
+            "https://puppet.com/docs/puppetdb/latest/api/query/v4/pql.html",
+            "https://api.ovh.com",
+            "/-/healthy",
+            "/api/v1/query_exemplars",
+            "/consoles/",
+            "/api/v1/admin/tsdb/snapshot",
+            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security",
+            "http://localhost:8082/metrics.",
+            "/api/v1/labels",
+            "/path/to/prometheus.yml:/etc/prometheus/prometheus.yml",
+            "http://localhost:8081/metrics,",
+            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection",
+            "http://localhost:9090/api/v1/metadata?metric=http_requests_total",
+            "/api/v1/label/<label_name>/values",
+            "/api/v1/status/flags",
+            "/api/v1/alerts",
+            "http://localhost:9090/graph",
+            "/api/v1/status/runtimeinfo",
+            "https://www.consul.io/api/features/consistency.html",
+            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options",
+            "http://localhost:9090/api/v1/status/runtimeinfo",
+            "/api/v1/admin/tsdb/clean_tombstones",
+            "https://www.consul.io/api/catalog.html#list-nodes-for-service",
+            "http://127.0.0.1:9090/metrics",
+            "http://localhost:9090/api/v1/status/flags",
+            "/api/v1/rules",
+            "http://localhost:9090/api/v1/status/tsdb",
+            "/api/v1/status/walreplay",
+            "http://localhost:9090/api/v1/admin/tsdb/snapshot",
+            "/api/v1/format_query",
+            "/api/v1/status/config",
+            "/api/v1/write",
+            "http://localhost:9090/api/v1/admin/tsdb/clean_tombstones",
+            "/consoles.",
+            "https://prometheus.io/docs/prometheus/latest/feature_flags/",
+            "/-/ready",
+            "/etc/resolv.conf",
+            "https://docs.docker.com/engine/api/v1.40/#operation/NodeList",
+            "http://localhost:9090/api/v1/status/buildinfo",
+            "http://127.0.0.1:9093/api/v1/alerts",
+            "/path/to/config:/etc/prometheus",
+            "http://localhost:9090/api/v1/rules",
+            "/api/v1/targets",
+            "http://localhost:9090/api/v1/status/walreplay",
+            "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Filter.html",
+            "/-/reload",
+            "/var/run/secrets/kubernetes.io/serviceaccount/ca.crt",
+            "/api/v1/series",
+            "https://tools.ietf.org/html/rfc4366#section-3.1",
+            "/rules",
+            "/api/v1/targets/metadata",
+            "https://api.scaleway.com",
+            "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/",
+            "https://golang.org/pkg/crypto/tls/#pkg-constants",
+            "/etc/prometheus/",
+            "/api/v1/alertmanagers",
+            "https://docs.docker.com/engine/api/v1.40/#operation/TaskList",
+            "https://github.com/ovh/go-ovh#supported-apis",
+            "/api/v1/status/tsdb",
+            "http://localhost:9090/api/v1/targets",
+            "http://localhost:9091/api/v1/targets/metadata",
+            "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/"
+        ]
     },
     {
         "name": "Optimizely",
         "base_url": "https://docs.developers.optimizely.com/web-experimentation/docs",
-        "start_url": "https://docs.developers.optimizely.com/web-experimentation/docs/rest-api-introduction"
+        "start_url": "https://docs.developers.optimizely.com/web-experimentation/docs/rest-api-introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 91,
+        "endpoint_count": 16,
+        "endpoints": [
+            "http://tags.bluekai.com/site/15415?ret=js&limit=1",
+            "http://swagger.io/.",
+            "https://api.optimizely.com/experiment/v1/projects/1234/",
+            "https://api.optimizely.com/v2/projects?page=3&per_page=10",
+            "http://generator.swagger.io/.",
+            "https://api.optimizely.com/v2/projects",
+            "https://app.optimizely.com",
+            "https://app.optimizely.com/.",
+            "//BlueKai",
+            "https://app.optimizely.com/oauth2/token",
+            "https://api.optimizely.com/v2/swagger.json",
+            "//existing_head_code",
+            "https://api.optimizely.com",
+            "//Optimizely",
+            "https://clarity.microsoft.com/",
+            "//cdn.optimizely.com/js/236000000.js"
+        ]
     },
     {
         "name": "Beacon CRM",
         "base_url": "https://developers.beaconcrm.org",
-        "start_url": "https://developers.beaconcrm.org/getting-started.html"
+        "start_url": "https://developers.beaconcrm.org/getting-started.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Greenplum",
         "base_url": "https://docs.vmware.com/en/VMware-Greenplum/6/greenplum-database",
-        "start_url": "https://docs.vmware.com/en/VMware-Greenplum/6/greenplum-database/landing-index.html"
-    },
-    {
-        "name": "SFTP",
-        "base_url": "https://docs.aws.amazon.com/transfer",
-        "start_url": "https://docs.aws.amazon.com/transfer/index.html"
+        "start_url": "https://docs.vmware.com/en/VMware-Greenplum/6/greenplum-database/landing-index.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "Azure Blob Storage",
         "base_url": "https://docs.netapp.com/us-en/bluexp-setup-admin",
-        "start_url": "https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-viewing-azure-blob.html"
+        "start_url": "https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-viewing-azure-blob.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 119,
+        "endpoint_count": 1,
+        "endpoints": [
+            "https://cloudmanager.cloud.netapp.com"
+        ]
     },
     {
         "name": "GCS",
         "base_url": "https://cloud.google.com/storage/docs",
-        "start_url": "https://cloud.google.com/storage/docs"
+        "start_url": "https://cloud.google.com/storage/docs#docs",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 485,
+        "endpoint_count": 57,
+        "endpoints": [
+            "https://storage.googleapis.com/storage/v1/b/example-travel-maps/o/paris.jpg?predefinedAcl=private",
+            "https://storage.googleapis.com/storage/v1/b/example-travel-maps/o/paris.jpg",
+            "https://console.cloud.google.com/storage/browser?project=PROJECT_ID",
+            "http://travel-maps.example.com/paris.jpg",
+            "https://storage.googleapis.com/BUCKET_NAME?defaultObjectAcl",
+            "https://www.googleapis.com/storage/v1/b/example-bucket/acl/project-owners-123412341234",
+            "https://ALPHANUMERIC_SEQUENCE-apidata.googleusercontent.com/download/storage/v1/b/BUCKET_NAME/o/OBJECT_NAME",
+            "https://storage.googleapis.com/storage/v1/b/BUCKET_NAME?projection=full",
+            "https://storage.googleapis.com",
+            "https://www.googleapis.com/storage/v1/b/example-bucket/acl/allAuthenticatedUsers",
+            "https://storage.googleapis.",
+            "https://storage.googleapis.com/BUCKET_NAME/OBJECT_NAME",
+            "/storage/v1/b/example-travel-maps/o/paris.jpg",
+            "https://www.googleapis.com/auth/devstorage.read_write",
+            "https://storage.googleapis.com/example-travel-maps/paris.jpg",
+            "https://console.cloud.google.com/storage/browser/_details/BUCKET_NAME/OBJECT_NAME",
+            "https://storage.googleapis.com/storage/v1/b/BUCKET_NAME/iam",
+            "https://www.googleapis.com/storage/v1/b/example-travel-maps/o/paris.jpg",
+            "https://cloud.google.com/storage/docs/access-control/iam#conditions.",
+            "https://storage.googleapis.com/upload/storage/v1/b/BUCKET_NAME/o",
+            "https://storage.googleapis.com/batch/storage/v1/PATH_TO_RESOURCE",
+            "https://www.googleapis.com/storage/v1/b/example-bucket/acl/allUsers",
+            "/paris.jpg?acl",
+            "https://www.googleapis.com/storage/v1/b/example-bucket/acl/user-jane@gmail.com",
+            "https://storage.googleapis.com/storage/v1/b/example-travel-maps",
+            "/storage/v1/b/example-travel-maps/o/paris.jpg?predefinedAcl=private",
+            "https://storage.googleapis.com/storage/v1/b/BUCKET_NAME/o/OBJECT_NAME/acl",
+            "https://storage.googleapis.com/upload/storage/v1/b/example-travel-maps/o?name=paris.jpg&predefinedAcl=bucketOwnerRead",
+            "https://www.googleapis.com/storage/v1/b/example-bucket/acl/project-editors-123412341234",
+            "https://cloud.google.com/storage/docs/access-control/iam",
+            "https://www.googleapis.com/auth/devstorage.full_control",
+            "https://storage.googleapis.com/download/storage/v1/b/BUCKET_NAME/o/OBJECT_NAME?alt=media",
+            "https://storage.googleapis.com/storage/v1/b/example-bucket/o/foo%3f%3fbar",
+            "https://storage.googleapis.com/storage/v1/PATH_TO_RESOURCE",
+            "https://cloud.google.com/storage/docs/access-control/lists#scopes",
+            "https://console.cloud.google.com/storage/browser/BUCKET_NAME",
+            "https://storage.googleapis.com/example-travel-maps/paris.jpg?acl",
+            "https://www.googleapis.com/storage/v1/b/example-bucket/acl/group-gs-announce@googlegroups.com",
+            "/upload/storage/v1/b/example-travel-maps/o?name=paris.jpg&amppredefinedAcl=bucketOwnerRead",
+            "https://storage.googleapis.com/example-bucket/cat-pics/tabby.jpeg",
+            "/example-bucket/cat-pics/tabby.jpeg",
+            "http://storage.googleapis.com/BUCKET_NAME?defaultObjectAcl",
+            "https://storage.googleapis.com/example-bucket/cat.jpeg?X-Goog-Algorithm=GOOG4-",
+            "https://storage.cloud.google.com/example-maps/london.jpg",
+            "https://storage.googleapis.com/storage/v1/b/BUCKET_NAME?predefinedAcl=private",
+            "https://www.googleapis.com/auth/devstorage.read_only",
+            "https://www.googleapis.com/storage/v1/b/example-bucket/acl/project-viewers-123412341234",
+            "/bucket/objectname",
+            "/paris.jpg",
+            "https://storage.googleapis.com/example-bucket/cat.jpeg?X-Goog-Algorithm=",
+            "https://storage.googleapis.com/BUCKET_NAME/OBJECT_NAME?acl",
+            "https://storage.googleapis.com/storage/v1/b/example-travel-maps/o/paris.jpg?projection=full",
+            "https://BUCKET_NAME.storage.googleapis.com/OBJECT_NAME",
+            "https://cloud.google.com/iam/docs/policies#versions.",
+            "https://my-custom-endpoint.example.com/storage/v1/",
+            "https://cloud.google.com/storage/docs/access-control/lists#permissions",
+            "https://storage.cloud.google.com/BUCKET_NAME/OBJECT_NAME"
+        ]
     },
     {
         "name": "Linnworks ERP",
         "base_url": "https://docs.linnworks.com/articles/#!documentation",
-        "start_url": "https://docs.linnworks.com/articles/#!documentation/documentation"
+        "start_url": "https://docs.linnworks.com/articles/#!documentation/getting-started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
-        "name": "oracle hyperion essbase",
+        "name": "Oracle hyperion essbase",
         "base_url": "https://docs.oracle.com/en/database/other-databases/essbase",
-        "start_url": "https://docs.oracle.com/en/database/other-databases/essbase/21/index.html"
-    },
-    {
-        "name": "Workday",
-        "base_url": "https://developer.workday.com",
-        "start_url": "https://developer.workday.com"
+        "start_url": "https://docs.oracle.com/en/database/other-databases/essbase/21/index.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1001,
+        "endpoint_count": 68,
+        "endpoints": [
+            "/Last",
+            "/Width",
+            "/Names",
+            "/Contents[",
+            "/GoTo",
+            "http://ns.adobe.com/pdf/1.3/",
+            "/CropBox",
+            "/Size",
+            "/Count",
+            "/Lang",
+            "http://purl.org/dc/elements/1.1/",
+            "/Subtype",
+            "/Catalog",
+            "/ProcSet[/PDF/Text/ImageB/ImageC",
+            "/BleedBox",
+            "/ObjStm",
+            "/Info",
+            "/Range",
+            "/Height",
+            "/FlateDecode/BitsPerComponent",
+            "/Prev",
+            "http://ns.adobe.com/xap/1.0/",
+            "/Title",
+            "/Group<>",
+            "/First",
+            "/Subtype/Image",
+            "/Outlines",
+            "/Pages",
+            "/ColorSpace<<",
+            "http://www.oracle.com/pls/topic/lookup?ctx=acc&id=info",
+            "/u01/data/essbase",
+            "/ProcSet[/PDF/Text/ImageC/ImageI",
+            "/ColorSpace[/Indexed",
+            "/PageLabels",
+            "/Filter",
+            "http://www.oracle.com/pls/topic/lookup?ctx=acc&id;=docacc.",
+            "/Crypt",
+            "/MediaBox",
+            "/Root",
+            "/DeviceGray/BitsPerComponent",
+            "/XObject<<",
+            "/Metadata",
+            "/ICCBased",
+            "/Index[0",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "/Parent",
+            "https://:7002/console",
+            "http://www.oracle.com/pls/topic/lookup?ctx=acc&id;=trs",
+            "/ProcSet[/Text/ImageC",
+            "/Resources",
+            "/Group<</Type/Group/S/Transparency/CS/DeviceRGB>>",
+            "/Next",
+            "/FlateDecode",
+            "/Annots",
+            "http://www.oracle.com/pls/topic/lookup?ctx=acc&id=docacc.",
+            "/Length1",
+            "/XML",
+            "/SMask",
+            "http://www.oracle.com/pls/topic/lookup?ctx=acc&id;=info",
+            "/ProcSet[/PDF/Text/ImageC",
+            "/Length",
+            "/Type",
+            "/DeviceRGB",
+            "https://<Essbase",
+            "/DeviceGray",
+            "http://www.oracle.com/pls/topic/lookup?ctx=acc&id=trs",
+            "/Annots[",
+            "/ColorSpace"
+        ]
     },
     {
         "name": "Salesforce Marketing Cloud",
         "base_url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide",
-        "start_url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/apis-overview"
-    },
-    {
-        "name": "Appsflyer",
-        "base_url": "https://dev.appsflyer.com/hc/docs/api",
-        "start_url": "https://dev.appsflyer.com/hc/docs/api"
+        "start_url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/apis-overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0,
+        "endpoints": []
     },
     {
         "name": "SFTP",
         "base_url": "https://sftptogo.com/blog/api-reference",
-        "start_url": "https://sftptogo.com/blog/api-reference"
+        "start_url": "https://sftptogo.com/blog/api-reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 8,
+        "endpoints": [
+            "/test",
+            "https://api.sftptogo.com/organizations/$SFTPTOGO_ORGANIZATION_ID/users/$CREDENTIAL_ID/credential-rotations",
+            "https://api.sftptogo.com/organizations/$SFTPTOGO_ORGANIZATION_ID/users/$CREDENTIAL_ID",
+            "https://api.sftptogo.com/organizations/$SFTPTOGO_ORGANIZATION_ID/users/$CREDENTIAL_ID/ssh-public-keys",
+            "/sftptg-prod-us-east-1-72e9cf24-be8c-4f15-9aa2-813281fb98fe",
+            "https://api.sftptogo.com/organizations/${SFTPTOGO_ORGANIZATION_ID}",
+            "https://api.sftptogo.com/organizations/$SFTPTOGO_ORGANIZATION_ID/users",
+            "https://api.sftptogo.com/organizations/$SFTPTOGO_ORGANIZATION_ID/users/$CREDENTIAL_ID/ssh-public-keys/$KEY_ID"
+        ]
+    },
+    {
+        "name": "influxDB",
+        "base_url": "https://docs.influxdata.com/influxdb/v2.0/api",
+        "start_url": "https://docs.influxdata.com/influxdb/v2.0/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 16,
+        "endpoint_count": 7
+    },
+    {
+        "name": "IBM Informix",
+        "base_url": "https://www.ibm.com/docs/en/informix-servers/12.10?topic",
+        "start_url": "https://www.ibm.com/docs/en/informix-servers/12.10?topic=extensions-datablade-api-programmers-guide",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "AWS Cloudwatch",
+        "base_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference",
+        "start_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 79,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Vertica",
+        "base_url": "https://docs.vertica.com/12.0.x/en",
+        "start_url": "https://docs.vertica.com/12.0.x/en/api-reference/",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1001,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Adobe Analytics",
+        "base_url": "https://developer.adobe.com/document-services/docs/overview",
+        "start_url": "https://developer.adobe.com/document-services/docs/overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 252,
+        "endpoint_count": 7
+    },
+    {
+        "name": "Sisense (Periscope)",
+        "base_url": "https://sisense.dev/guides/rest",
+        "start_url": "https://sisense.dev/guides/rest",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Panoply",
+        "base_url": "https://panoply.io/docs",
+        "start_url": "https://panoply.io/docs/connectors-introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 671,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Sharepoint",
+        "base_url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development",
+        "start_url": "https://learn.microsoft.com/en-us/sharepoint/dev/general-development/excel-services-rest-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 10,
+        "endpoint_count": 6
+    },
+    {
+        "name": "Zoho Subcriptions",
+        "base_url": "https://www.zoho.com/subscriptions/api/v1",
+        "start_url": "https://www.zoho.com/subscriptions/api/v1/introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 27,
+        "endpoint_count": 34
+    },
+    {
+        "name": "Gem Recruiting",
+        "base_url": "https://api.gem.com/v0/reference",
+        "start_url": "https://api.gem.com/v0/reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Rippling Connector",
+        "base_url": "https://developer.rippling.com/docs/rippling-api",
+        "start_url": "https://developer.rippling.com/docs/rippling-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "SAP S/4HANA Cloud System",
+        "base_url": "https://api.sap.com/api/",
+        "start_url": "https://api.sap.com/package/SAPS4HANACloud/soap",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Google Cloud SQL",
+        "base_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7",
+        "start_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/e1059ff581854a699f15734049f14293.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Matomo Analytics",
+        "base_url": "https://developer.matomo.org/api-reference",
+        "start_url": "https://developer.matomo.org/api-reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 259,
+        "endpoint_count": 5
+    },
+    {
+        "name": "Kustomer",
+        "base_url": "https://developer.kustomer.com/kustomer-api-docs/reference",
+        "start_url": "https://developer.kustomer.com/kustomer-api-docs/reference/introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 395,
+        "endpoint_count": 7
+    },
+    {
+        "name": "Require Source Segment",
+        "base_url": "https://segment.com/docs/connections/sources",
+        "start_url": "https://segment.com/docs/connections/sources/catalog/libraries/server/http-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 373,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Support Matomo Source",
+        "base_url": "https://developer.matomo.org/api-reference",
+        "start_url": "https://developer.matomo.org/api-reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 259,
+        "endpoint_count": 5
+    },
+    {
+        "name": "Munis/municipal ERP & accounting system",
+        "base_url": "https://www.tylertech.com/products/enterprise-erp/api-catalog",
+        "start_url": "https://www.tylertech.com/products/enterprise-erp/api-catalog",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Amazon Kinesis Destination",
+        "base_url": "https://docs.aws.amazon.com/streams/latest/dev",
+        "start_url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Fusebill",
+        "base_url": "https://secure.fusebill.com/Help",
+        "start_url": "https://secure.fusebill.com/Help",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 309,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Google Adwords",
+        "base_url": "https://developers.google.com/google-ads/api/docs",
+        "start_url": "https://developers.google.com/google-ads/api/docs/start",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 385,
+        "endpoint_count": 10
+    },
+    {
+        "name": "Dynamo DB",
+        "base_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide",
+        "start_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDB_API.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 478,
+        "endpoint_count": 6
+    },
+    {
+        "name": "SAP HANA Source",
+        "base_url": "https://help.sap.com/docs/SAP_HANA_PLATFORM/52715f71adba4aaeb480d946c742d1f6",
+        "start_url": "https://help.sap.com/docs/SAP_HANA_PLATFORM/52715f71adba4aaeb480d946c742d1f6/0e5335b66a9e4c64993605fc24ccd6d1.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Neo4j",
+        "base_url": "https://neo4j.com/docs/http-api/current",
+        "start_url": "https://neo4j.com/docs/http-api/current",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 23,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Gainsight",
+        "base_url": "https://support.gainsight.com/SFDC_Edition/API_and_Developer_Docs",
+        "start_url": "https://support.gainsight.com/SFDC_Edition/API_and_Developer_Docs/About/API_Documentation_Overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 22,
+        "endpoint_count": 5
+    },
+    {
+        "name": "Firestore",
+        "base_url": "https://firebase.google.com/docs/firestore",
+        "start_url": "https://firebase.google.com/docs/firestore/use-rest-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 193,
+        "endpoint_count": 2
+    },
+    {
+        "name": "Redis",
+        "base_url": "https://redis.io/docs/reference",
+        "start_url": "https://redis.io/docs/reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 22,
+        "endpoint_count": 3
+    },
+    {
+        "name": "Twitter Ads",
+        "base_url": "https://developer.twitter.comen/en/docs/twitter-ads-api",
+        "start_url": "https://developer.twitter.com/en/docs/twitter-ads-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Bitrix24 CRM",
+        "base_url": "https://training.bitrix24.com/rest_help/crm",
+        "start_url": "https://training.bitrix24.com/rest_help/crm/deals/crm_deal_add.php",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "tune.com",
+        "base_url": "https://developers.tune.com/network",
+        "start_url": "https://developers.tune.com/network",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Everflow",
+        "base_url": "https://developers.everflow.io/docs",
+        "start_url": "https://developers.everflow.io/docs",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 88,
+        "endpoint_count": 1
+    },
+    {
+        "name": "judge.me",
+        "base_url": "https://www.judge.me/api/docs",
+        "start_url": "https://www.judge.me/api/docs",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "URL Tables",
+        "base_url": "https://developer.servicenow.com/dev.do#!/reference/api/utah/rest/c_TableAPI",
+        "start_url": "https://developer.servicenow.com/dev.do#!/reference/api/utah/rest/c_TableAPI",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Azure data lake storage Gen 2",
+        "base_url": "https://learn.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/filesystem",
+        "start_url": "https://learn.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/filesystem",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 6,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Sparkpost",
+        "base_url": "https://developers.sparkpost.com/api",
+        "start_url": "https://developers.sparkpost.com/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 36,
+        "endpoint_count": 33
+    },
+    {
+        "name": "Google Analytics 360",
+        "base_url": "https://developers.google.com/analytics/devguides/reporting/data/v1/rest",
+        "start_url": "https://developers.google.com/analytics/devguides/reporting/data/v1/rest",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 30,
+        "endpoint_count": 2
+    },
+    {
+        "name": "UserVoice",
+        "base_url": "https://developer.uservoice.com/docs/api",
+        "start_url": "https://developer.uservoice.com/docs/api/v2/getting-started",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 5,
+        "endpoint_count": 9
+    },
+    {
+        "name": "Google Play Reports",
+        "base_url": "https://developers.google.com/play/developer/reporting/reference/rest",
+        "start_url": "https://developers.google.com/play/developer/reporting/reference/rest",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 69,
+        "endpoint_count": 5
+    },
+    {
+        "name": "Help Scout",
+        "base_url": "https://developer.helpscout.com/docs-api",
+        "start_url": "https://developer.helpscout.com/docs-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 62,
+        "endpoint_count": 5
+    },
+    {
+        "name": "Front",
+        "base_url": "https://dev.frontapp.com/reference",
+        "start_url": "https://dev.frontapp.com/reference/introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 253,
+        "endpoint_count": 2
+    },
+    {
+        "name": "Firebase",
+        "base_url": "https://firebase.google.com/docs",
+        "start_url": "https://firebase.google.com/docs/reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 573,
+        "endpoint_count": 4
+    },
+    {
+        "name": "Paypal Reports",
+        "base_url": "https://developer.paypal.com/docs/reports/reference",
+        "start_url": "https://developer.paypal.com/docs/reports/reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 5,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Microsoft Access",
+        "base_url": "https://learn.microsoft.com/en-us/office/vba/api/overview/access",
+        "start_url": "https://learn.microsoft.com/en-us/office/vba/api/overview/access",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Imap",
+        "base_url": "https://imapclient.readthedocs.io/en/master/api.html",
+        "start_url": "https://imapclient.readthedocs.io/en/master/api.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Zoho Books",
+        "base_url": "https://www.zoho.com/books/api/v3",
+        "start_url": "https://www.zoho.com/books/api/v3/introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 41,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Estoca logistics system",
+        "base_url": "https://www.postman.com/estoca/workspace/estoca-public-workspace",
+        "start_url": "https://www.postman.com/estoca/workspace/estoca-public-workspace/documentation/17693834-7645d1ea-6997-48c1-8fec-689834bd079c",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Bling ERP System",
+        "base_url": "https://developers.linkapi.solutions/docs/bling",
+        "start_url": "https://developers.linkapi.solutions/docs/bling",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 8
+    },
+    {
+        "name": "VNDA Ecommerce Platform",
+        "base_url": "https://developers.vnda.com.br/reference",
+        "start_url": "https://developers.vnda.com.br/reference/refer%C3%AAncia-de-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 264,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Apache Druid",
+        "base_url": "https://druid.apache.org/docs/latest/operations/api-reference.html",
+        "start_url": "https://druid.apache.org/docs/latest/operations/api-reference.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 62
+    },
+    {
+        "name": "Superset",
+        "base_url": "https://superset.apache.org/docs/api",
+        "start_url": "https://superset.apache.org/docs/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Reddit",
+        "base_url": "https://www.reddit.com/dev/api",
+        "start_url": "https://www.reddit.com/dev/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Email",
+        "base_url": "https://developers.google.com/gmail/postmaster/reference/rest",
+        "start_url": "https://developers.google.com/gmail/postmaster/reference/rest",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 7,
+        "endpoint_count": 5
+    },
+    {
+        "name": "Tenable.io",
+        "base_url": "https://developer.cisco.com/docs/cloud-security",
+        "start_url": "https://developer.cisco.com/docs/cloud-security/#!investigate-api-api-reference-overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Cisco Umbrella",
+        "base_url": "https://developer.cisco.com/docs/cloud-security",
+        "start_url": "https://developer.cisco.com/docs/cloud-security/#!umbrella-api-introduction",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Qualys",
+        "base_url": "https://qualys.com",
+        "start_url": "https://www.qualys.com/documentation/#apis",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "PrismaCloud",
+        "base_url": "https://docs.paloaltonetworks.com/prisma/prisma-cloud/prisma-cloud-admin",
+        "start_url": "https://docs.paloaltonetworks.com/prisma/prisma-cloud/prisma-cloud-admin/get-started-with-prisma-cloud/access-the-prisma-cloud-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Azure Active Directory",
+        "base_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authentication-azure-ad",
+        "start_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authentication-azure-ad#prerequisites",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Azure Activity Logs",
+        "base_url": "https://learn.microsoft.com/en-us/rest/api/monitor/activity-logs/list?tabs=HTTP",
+        "start_url": "https://learn.microsoft.com/en-us/rest/api/monitor/activity-logs/list?tabs=HTTP",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 7
+    },
+    {
+        "name": "CrowdStrike",
+        "base_url": "https://developer.crowdstrike.com",
+        "start_url": "https://developer.crowdstrike.com/docs/rest-api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 12,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Bold Subscriptions",
+        "base_url": "https://developer.boldcommerce.com/api/subscriptions",
+        "start_url": "https://developer.boldcommerce.com/api/subscriptions",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 17
+    },
+    {
+        "name": "Sage Intacct",
+        "base_url": "https://developer.intacct.com",
+        "start_url": "https://developer.intacct.com/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 307,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Fastly",
+        "base_url": "https://developer.fastly.com/reference/api",
+        "start_url": "https://developer.fastly.com/reference/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 248,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Coda.io tables",
+        "base_url": "https://coda.io/developers/apis/v1",
+        "start_url": "https://coda.io/developers/apis/v1",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 2
+    },
+    {
+        "name": "Azure Synapse",
+        "base_url": "https://learn.microsoft.com/en-us/rest/api/synapse",
+        "start_url": "https://learn.microsoft.com/en-us/rest/api/synapse/azure-ad-only-authentications",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 4,
+        "endpoint_count": 10
+    },
+    {
+        "name": "Qualtrics",
+        "base_url": "https://www.qualtrics.com/support/integrations/api-integration",
+        "start_url": "https://www.qualtrics.com/support/integrations/api-integration/overview",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 6,
+        "endpoint_count": 4
+    },
+    {
+        "name": "Kaggle Datasets Integration",
+        "base_url": "https://www.kaggle.com/docs/api",
+        "start_url": "https://www.kaggle.com/docs/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "coreBOS",
+        "base_url": "https://corebos.com/docs_grav/developer-guide",
+        "start_url": "https://corebos.com/docs_grav/developer-guide/api-documentation",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 110,
+        "endpoint_count": 10
+    },
+    {
+        "name": "ELK stack integration",
+        "base_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current",
+        "start_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1001,
+        "endpoint_count": 6
+    },
+    {
+        "name": "HDFS, Hive Integration",
+        "base_url": "https://doc.dataiku.com/dss/latest/api/index.html",
+        "start_url": "https://doc.dataiku.com/dss/latest/api/index.html",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Appstore",
+        "base_url": "https://developer.apple.com/documentation/appstoreconnectapi",
+        "start_url": "https://developer.apple.com/documentation/appstoreconnectapi",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Freshteam",
+        "base_url": "https://developers.freshteam.com/api",
+        "start_url": "https://developers.freshteam.com/api",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 41
+    },
+    {
+        "name": "Exact Online",
+        "base_url": "https://start.exactonline.nl/docs/HlpRestAPIResources",
+        "start_url": "https://start.exactonline.nl/docs/HlpRestAPIResources.aspx",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 2,
+        "endpoint_count": 3
+    },
+    {
+        "name": "Selligent",
+        "base_url": "https://developers.slgnt.eu/api/cortex",
+        "start_url": "https://developers.slgnt.eu/api/cortex",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 7
+    },
+    {
+        "name": "Magento1, Magento2",
+        "base_url": "https://developer.adobe.com/commerce/webapi",
+        "start_url": "https://developer.adobe.com/commerce/webapi/rest",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 417,
+        "endpoint_count": 18
+    },
+    {
+        "name": "Splunk",
+        "base_url": "https://docs.splunk.com/Documentation/Splunk/9.0.4/RESTREF/REST",
+        "start_url": "https://docs.splunk.com/Documentation/Splunk/9.0.4/RESTREF/RESTprolog",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 18,
+        "endpoint_count": 41
+    },
+    {
+        "name": "IBM Sybase",
+        "base_url": "https://cloud.ibm.com/docs",
+        "start_url": "https://cloud.ibm.com/docs?tab=develop",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Kustomer Singer",
+        "base_url": "https://help.adjust.com/en",
+        "start_url": "https://help.adjust.com/en/developer/ios-sdk-reference",
+        "airbyte_status": "backlog",
+        "scraped_page_count": 864,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Qonto",
+        "base_url": "https://api-doc.qonto.com",
+        "start_url": "https://api-doc.qonto.com/docs/business-api/83e3d6c0404f3-getting-started",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 2,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Qualaroo",
+        "base_url": "https://help.qualaroo.com/hc/en-us/articles",
+        "start_url": "https://help.qualaroo.com/hc/en-us/articles/115002231686-Link-Survey-API-Documentation-",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Quickbooks",
+        "base_url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+        "start_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/basic-implementations",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Railz",
+        "base_url": "https://docs.railz.ai/reference",
+        "start_url": "https://docs.railz.ai/reference/railz-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 165,
+        "endpoint_count": 89
+    },
+    {
+        "name": "Rd-station-marketing",
+        "base_url": "https://developers.rdstation.com/docs",
+        "start_url": "https://developers.rdstation.com/docs/api-rest",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 5,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Recharge",
+        "base_url": "https://developer.rechargepayments.com/2021-11/",
+        "start_url": "https://developer.rechargepayments.com/2021-11/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 3,
+        "endpoint_count": 31
+    },
+    {
+        "name": "Recreation",
+        "base_url": "https://ridb.recreation.gov/docs",
+        "start_url": "https://ridb.recreation.gov/docs",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Recruitee",
+        "base_url": "https://api.recruitee.com/docs/index.html",
+        "start_url": "https://api.recruitee.com/docs/index.html",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 585
+    },
+    {
+        "name": "Recurly",
+        "base_url": "https://recurly.com/developers/api",
+        "start_url": "https://recurly.com/developers/api/v2021-02-25/index.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 33,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Redshift",
+        "base_url": "https://docs.aws.amazon.com/redshift/latest/dg",
+        "start_url": "https://docs.aws.amazon.com/redshift/latest/dg/welcome.html",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 1001,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Reply-io",
+        "base_url": "https://apidocs.reply.io",
+        "start_url": "https://apidocs.reply.io/#intro",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Retently",
+        "base_url": "https://www.retently.com/api",
+        "start_url": "https://www.retently.com/api/#api-get-customers-get",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Ringcentral",
+        "base_url": "https://developers.ringcentral.com",
+        "start_url": "https://developers.ringcentral.com/api-and-docs.html",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 3,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Rki-covid",
+        "base_url": "https://api.corona-zahlen.org/docs",
+        "start_url": "https://api.corona-zahlen.org/docs/endpoints/germany.html#germany-2",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 8,
+        "endpoint_count": 157
+    },
+    {
+        "name": "Rocket-chat",
+        "base_url": "https://developer.rocket.chat/reference/api",
+        "start_url": "https://developer.rocket.chat/reference/api/rest-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Rss",
+        "base_url": "https://rss.app/docs/api",
+        "start_url": "https://rss.app/docs/api",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 9,
+        "endpoint_count": 5
+    },
+    {
+        "name": "S3",
+        "base_url": "https://docs.aws.amazon.com/AmazonS3/latest/API",
+        "start_url": "https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 2
+    },
+    {
+        "name": "Salesforce",
+        "base_url": "https://developer.salesforce.com/docs",
+        "start_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Salesloft",
+        "base_url": "https://developers.salesloft.com/docs",
+        "start_url": "https://developers.salesloft.com/docs/platform/intro",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Sap-fieldglass",
+        "base_url": "https://api.sap.com/products/SAPFieldglass",
+        "start_url": "https://api.sap.com/products/SAPFieldglass/apis/all",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Scaffold-java-jdbc",
+        "base_url": "https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/",
+        "start_url": "https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 3,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Search-metrics",
+        "base_url": "https://developer.searchmetrics.com/docs/apiv4-documentation",
+        "start_url": "https://developer.searchmetrics.com/docs/apiv4-documentation/ZG9jOjQ2Nzk1-getting-started",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Secoda",
+        "base_url": "https://docs.secoda.co/secoda-api",
+        "start_url": "https://docs.secoda.co/secoda-api/get-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 4,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Sendgrid",
+        "base_url": "https://docs.sendgrid.com/api-reference",
+        "start_url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 11
+    },
+    {
+        "name": "Sendinblue",
+        "base_url": "https://developers.brevo.com/docs",
+        "start_url": "https://developers.brevo.com/docs",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 13
+    },
+    {
+        "name": "Senseforce",
+        "base_url": "https://manual.senseforce.io/manual/sf-platform",
+        "start_url": "https://manual.senseforce.io/manual/sf-platform/public-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Sentry",
+        "base_url": "https://docs.sentry.io/api",
+        "start_url": "https://docs.sentry.io/api/auth/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 5
+    },
+    {
+        "name": "Sftp",
+        "base_url": "https://sftptogo.com/blog/api-reference/",
+        "start_url": "https://sftptogo.com/blog/api-reference/",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Sftp-bulk",
+        "base_url": "https://api.sap.com/api/sftpBulkUploadConnector/overview",
+        "start_url": "https://api.sap.com/api/sftpBulkUploadConnector/overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Shopify",
+        "base_url": "https://shopify.dev/docs/api",
+        "start_url": "https://shopify.dev/docs/api/admin/getting-started",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 4
+    },
+    {
+        "name": "Shortio",
+        "base_url": "https://developers.short.io/reference",
+        "start_url": "https://developers.short.io/reference/apilinksget",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 9
+    },
+    {
+        "name": "Slack",
+        "base_url": "https://api.slack.com",
+        "start_url": "https://api.slack.com/start",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 1
+    },
+    {
+        "name": "Smaily",
+        "base_url": "https://smaily.com/help/api/",
+        "start_url": "https://smaily.com/help/api/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 6
+    },
+    {
+        "name": "Smartengage",
+        "base_url": "https://smartengage.com/docs",
+        "start_url": "https://smartengage.com/docs/#smartengage-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 2,
+        "endpoint_count": 26
+    },
+    {
+        "name": "Smartsheets",
+        "base_url": "https://smartsheet.redoc.ly",
+        "start_url": "https://smartsheet.redoc.ly/#section/Introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 17
+    },
+    {
+        "name": "Snapchat-marketing",
+        "base_url": "https://marketingapi.snapchat.com/docs",
+        "start_url": "https://marketingapi.snapchat.com/docs/#introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 7,
+        "endpoint_count": 149
+    },
+    {
+        "name": "Snowflake",
+        "base_url": "https://docs.snowflake.com/en/developer-guide",
+        "start_url": "https://docs.snowflake.com/en/developer-guide/drivers",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Sonar-cloud",
+        "base_url": "https://sonarcloud.io/web_api",
+        "start_url": "https://sonarcloud.io/web_api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Spacex-api",
+        "base_url": "https://docs.spacexdata.com",
+        "start_url": "https://docs.spacexdata.com/#intro",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Square",
+        "base_url": "https://developer.squareup.com/reference",
+        "start_url": "https://developer.squareup.com/reference/square",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11,
+        "endpoint_count": 0
+    },
+    {
+        "name": "Statuspage",
+        "base_url": "https://developer.statuspage.io",
+        "start_url": "https://developer.statuspage.io/#section/Basics",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Strava",
+        "base_url": "https://developers.strava.com/docs/reference",
+        "start_url": "https://developers.strava.com/docs/reference/#api-Activities",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 3
+    },
+    {
+        "name": "Stripe",
+        "base_url": "https://stripe.com/docs/api",
+        "start_url": "https://stripe.com/docs/api",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Survey-sparrow",
+        "base_url": "https://developers.surveysparrow.com/rest-apis",
+        "start_url": "https://developers.surveysparrow.com/rest-apis",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Surveycto",
+        "base_url": "https://docs.surveycto.com/03-collecting-data",
+        "start_url": "https://docs.surveycto.com/03-collecting-data/01-mobile-data-collection/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Talkdesk-explore",
+        "base_url": "https://docs.talkdesk.com/reference",
+        "start_url": "https://docs.talkdesk.com/reference/api-reference",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Tempo",
+        "base_url": "https://apidocs.tempo.io/",
+        "start_url": "https://apidocs.tempo.io/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Teradata",
+        "base_url": "https://docs.teradata.com",
+        "start_url": "https://docs.teradata.com/r/NdkMUPEon7RcxYO8pcolTQ/xLNUoWj_FbQomEhuMoHlkQ",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "The-guardian-api",
+        "base_url": "https://open-platform.theguardian.com/",
+        "start_url": "https://open-platform.theguardian.com/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 9
+    },
+    {
+        "name": "Tidb",
+        "base_url": "https://docs.pingcap.com/tidbcloud",
+        "start_url": "https://docs.pingcap.com/tidbcloud/api-overview",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Tiktok-marketing",
+        "base_url": "https://ads.tiktok.com/marketing_api",
+        "start_url": "https://ads.tiktok.com/marketing_api/homepage",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Timely",
+        "base_url": "https://dev.timelyapp.com",
+        "start_url": "https://dev.timelyapp.com/#introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Tmdb",
+        "base_url": "https://developer.themoviedb.org/docs",
+        "start_url": "https://developer.themoviedb.org/docs/getting-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Todoist",
+        "base_url": "https://developer.todoist.com/rest/v2/#overview",
+        "start_url": "https://developer.todoist.com/rest/v2/#overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Toggl",
+        "base_url": "https://developers.track.toggl.com/docs/",
+        "start_url": "https://developers.track.toggl.com/docs/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Tplcentral",
+        "base_url": "https://3w.extensiv.com/rels/",
+        "start_url": "https://3w.extensiv.com/rels/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Trello",
+        "base_url": "https://developer.atlassian.com/cloud/trello/rest",
+        "start_url": "https://developer.atlassian.com/cloud/trello/rest/api-group-actions/#api-actions-id-get",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Trustpilot",
+        "base_url": "https://documentation-apidocumentation.trustpilot.com/",
+        "start_url": "https://documentation-apidocumentation.trustpilot.com/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Tvmaze-schedule",
+        "base_url": "https://www.tvmaze.com/api",
+        "start_url": "https://www.tvmaze.com/api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Twilio",
+        "base_url": "https://www.twilio.com/docs/iam/api",
+        "start_url": "https://www.twilio.com/docs/iam/api#base-url",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 4
+    },
+    {
+        "name": "Twilio-taskrouter",
+        "base_url": "https://www.twilio.com/docs/taskrouter/api",
+        "start_url": "https://www.twilio.com/docs/taskrouter/api#base-url",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Twitter",
+        "base_url": "https://developer.twitter.com/en/docs/twitter-api",
+        "start_url": "https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Tyntec-sms",
+        "base_url": "https://api.tyntec.com/reference",
+        "start_url": "https://api.tyntec.com/reference/sms/current.html#sms-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Typeform",
+        "base_url": "https://www.typeform.com/developers",
+        "start_url": "https://www.typeform.com/developers/create/walkthroughs/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Unleash",
+        "base_url": "https://docs.getunleash.io/reference/api/legacy/unleash",
+        "start_url": "https://docs.getunleash.io/reference/api/legacy/unleash",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Us-census",
+        "base_url": "https://www.census.gov/data/developers/data-sets.html",
+        "start_url": "https://www.census.gov/data/developers/data-sets.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Vantage",
+        "base_url": "https://vantage.readme.io/reference",
+        "start_url": "https://vantage.readme.io/reference/general",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Visma-economic",
+        "base_url": "https://developer.visma.com/api",
+        "start_url": "https://developer.visma.com/api/e-conomic",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Vitally",
+        "base_url": "https://docs.vitally.io/pushing-data-to-vitally/rest-api",
+        "start_url": "https://docs.vitally.io/pushing-data-to-vitally/rest-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Waiteraid",
+        "base_url": "https://app.waiteraid.com/api-docs/index.html#auth_call",
+        "start_url": "https://app.waiteraid.com/api-docs/index.html#auth_call",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Weatherstack",
+        "base_url": "https://weatherstack.com/documentation",
+        "start_url": "https://weatherstack.com/documentation",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Webflow",
+        "base_url": "https://developers.webflow.com/reference",
+        "start_url": "https://developers.webflow.com/reference/get-authorized-user",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Whisky-hunter",
+        "base_url": "https://whiskyhunter.net/api/",
+        "start_url": "https://whiskyhunter.net/api/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Wikipedia-pageviews",
+        "base_url": "https://wikimedia.org/api/rest_v1",
+        "start_url": "https://wikimedia.org/api/rest_v1/#/Pageviews%20data",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Woocommerce",
+        "base_url": "https://woocommerce.github.io/woocommerce-rest-api-docs",
+        "start_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#introduction",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 8
+    },
+    {
+        "name": "Workable",
+        "base_url": "https://workable.readme.io/reference",
+        "start_url": "https://workable.readme.io/reference/generate-an-access-token",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Workramp",
+        "base_url": "https://developers.workramp.com/reference",
+        "start_url": "https://developers.workramp.com/reference/getting-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Wrike",
+        "base_url": "https://developers.wrike.com/overview/",
+        "start_url": "https://developers.wrike.com/overview/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Xero",
+        "base_url": "https://developer.xero.com/documentation/api/accounting",
+        "start_url": "https://developer.xero.com/documentation/api/accounting/overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Xkcd",
+        "base_url": "https://xkcd.com/json.html",
+        "start_url": "https://xkcd.com/json.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Yahoo-finance-price",
+        "base_url": "https://developer.yahoo.com/api/",
+        "start_url": "https://developer.yahoo.com/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Yandex-metrica",
+        "base_url": "https://yandex.com/dev/metrika/doc/api2",
+        "start_url": "https://yandex.com/dev/metrika/doc/api2/concept/about.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Yotpo",
+        "base_url": "https://apidocs.yotpo.com/reference",
+        "start_url": "https://apidocs.yotpo.com/reference/welcome",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Younium",
+        "base_url": "https://developer.younium.com",
+        "start_url": "https://developer.younium.com/get-started",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 6
+    },
+    {
+        "name": "Youtube-analytics",
+        "base_url": "https://developers.google.com/youtube/reporting",
+        "start_url": "https://developers.google.com/youtube/reporting/v1/reports",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Zapier-supported-storage",
+        "base_url": "https://store.zapier.com/",
+        "start_url": "https://store.zapier.com/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Zendesk-chat",
+        "base_url": "https://developer.zendesk.com/api-reference",
+        "start_url": "https://developer.zendesk.com/api-reference/introduction/introduction/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Zendesk-sell",
+        "base_url": "https://developer.zendesk.com/api-reference",
+        "start_url": "https://developer.zendesk.com/api-reference/sales-crm/introduction/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Zendesk-sunshine",
+        "base_url": "https://developer.zendesk.com/api-reference",
+        "start_url": "https://developer.zendesk.com/api-reference/introduction/introduction/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Zendesk-support",
+        "base_url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token",
+        "start_url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Zendesk-talk",
+        "base_url": "https://support.zendesk.com/hc/en-us/articles/4408889192858",
+        "start_url": "https://support.zendesk.com/hc/en-us/articles/4408889192858",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Zenefits",
+        "base_url": "https://developers.zenefits.com/reference",
+        "start_url": "https://developers.zenefits.com/reference/getting-started",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Zenloop",
+        "base_url": "https://docs.zenloop.com/reference",
+        "start_url": "https://docs.zenloop.com/reference/introduction",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Zoho-crm",
+        "base_url": "https://www.zoho.com/crm/developer/docs/api/v2",
+        "start_url": "https://www.zoho.com/crm/developer/docs/api/v2/modules-api.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Zoom",
+        "base_url": "https://developers.zoom.us/docs/api/rest/reference/zoom-api",
+        "start_url": "https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#overview",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Zuora",
+        "base_url": "https://www.zuora.com/developer/api-references/api",
+        "start_url": "https://www.zuora.com/developer/api-references/api/overview/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Activecampaign",
+        "base_url": "https://developers.activecampaign.com/reference/",
+        "start_url": "https://developers.activecampaign.com/reference/overview",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Adjust",
+        "base_url": "https://help.adjust.com/en",
+        "start_url": "https://help.adjust.com/en/developer",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Aha",
+        "base_url": "https://www.aha.io/api",
+        "start_url": "https://www.aha.io/api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Aircall",
+        "base_url": "https://developer.aircall.io/api-references/",
+        "start_url": "https://developer.aircall.io/api-references/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Airtable",
+        "base_url": "https://airtable.com/developers/web/api",
+        "start_url": "https://airtable.com/developers/web/api/introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Alloydb",
+        "base_url": "https://cloud.google.com/alloydb/docs/reference/rest",
+        "start_url": "https://cloud.google.com/alloydb/docs/reference/rest",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Alloydb-strict-encrypt",
+        "base_url": "https://advertising.amazon.com/API/docs/en-us",
+        "start_url": "https://advertising.amazon.com/API/docs/en-us/info/api-overview",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Alpha-vantage",
+        "base_url": "https://docs.aws.amazon.com/AWSSimpleQueue/latest/APIReference",
+        "start_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/Welcome.html",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Amazon-ads",
+        "base_url": "https://advertising.amazon.com/API/docs/en-us",
+        "start_url": "https://advertising.amazon.com/API/docs/en-us/info/api-overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Amazon-seller-partner",
+        "base_url": "https://developer-docs.amazon.com/sp-api/",
+        "start_url": "https://developer-docs.amazon.com/sp-api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Amazon-sqs",
+        "base_url": "https://docs.aws.amazon.com/AWSSimpleQueue/latest/APIReference",
+        "start_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/Welcome.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Amplitude",
+        "base_url": "https://www.docs.developers.amplitude.com/analytics",
+        "start_url": "https://www.docs.developers.amplitude.com/analytics/apis/http-v2-api/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Apify-dataset",
+        "base_url": "https://docs.apify.com/api/v2",
+        "start_url": "https://docs.apify.com/api/v2",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Appfollow",
+        "base_url": "https://support.appfollow.io/hc/en-us",
+        "start_url": "https://support.appfollow.io/hc/en-us/articles/360020833017-API-Overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Apple-search-ads",
+        "base_url": "https://developer.apple.com/documentation/apple_search_ads",
+        "start_url": "https://developer.apple.com/documentation/apple_search_ads",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Appsflyer",
+        "base_url": "https://dev.appsflyer.com/hc/docs",
+        "start_url": "https://dev.appsflyer.com/hc/docs/api",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Appstore-singer",
+        "base_url": "https://developer.apple.com/documentation/appstoreconnectapi",
+        "start_url": "https://developer.apple.com/documentation/appstoreconnectapi",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Asana",
+        "base_url": "https://developers.asana.com/reference",
+        "start_url": "https://developers.asana.com/reference/rest-api-reference",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Ashby",
+        "base_url": "https://developers.ashbyhq.com/reference",
+        "start_url": "https://developers.ashbyhq.com/reference/introduction",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Auth0",
+        "base_url": "https://auth0.com/docs/api",
+        "start_url": "https://auth0.com/docs/api",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Aws-cloudtrail",
+        "base_url": "https://docs.aws.amazon.com/cloudtrail/",
+        "start_url": "https://docs.aws.amazon.com/cloudtrail/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Azure-blob-storage",
+        "base_url": "https://learn.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api",
+        "start_url": "https://learn.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Azure-table",
+        "base_url": "https://learn.microsoft.com/en-us/azure/storage/tables/",
+        "start_url": "https://learn.microsoft.com/en-us/azure/storage/tables/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Babelforce",
+        "base_url": "https://api.babelforce.com/",
+        "start_url": "https://api.babelforce.com/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Bamboo-hr",
+        "base_url": "https://docs.axway.com/en-us/bundle/Amplify_Integration_Builder_allOS_en/page/",
+        "start_url": "https://docs.axway.com/en-US/bundle/Amplify_Integration_Builder_allOS_en/page/bamboohr_api_documentation.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Bigcommerce",
+        "base_url": "https://developer.bigcommerce.com/docs/api",
+        "start_url": "https://developer.bigcommerce.com/docs/api",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Bigquery",
+        "base_url": "https://cloud.google.com/bigquery/docs/reference",
+        "start_url": "https://cloud.google.com/bigquery/docs/reference/libraries-overview",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Bing-ads",
+        "base_url": "https://learn.microsoft.com/en-us/advertising/guides",
+        "start_url": "https://learn.microsoft.com/en-us/advertising/guides/?view=bingads-13",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Braintree",
+        "base_url": "https://graphql.braintreepayments.com/guides",
+        "start_url": "https://graphql.braintreepayments.com/guides/making_api_calls/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Braze",
+        "base_url": "https://www.braze.com/docs/api",
+        "start_url": "https://www.braze.com/docs/api/home",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Breezometer",
+        "base_url": "https://docs.breezometer.com/api-documentation",
+        "start_url": "https://docs.breezometer.com/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 10
+    },
+    {
+        "name": "Callrail",
+        "base_url": "https://apidocs.callrail.com",
+        "start_url": "https://apidocs.callrail.com/#getting-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Cart",
+        "base_url": "https://shopify.dev/docs/api",
+        "start_url": "https://shopify.dev/docs/api/ajax/reference/cart",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Chargebee",
+        "base_url": "https://apidocs.chargebee.com/docs/api",
+        "start_url": "https://apidocs.chargebee.com/docs/api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Chargify",
+        "base_url": "https://developers.chargify.com/docs/api-docs",
+        "start_url": "https://developers.chargify.com/docs/api-docs",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Chartmogul",
+        "base_url": "https://dev.chartmogul.com/reference",
+        "start_url": "https://dev.chartmogul.com/reference/introduction-import-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Clickhouse",
+        "base_url": "https://clickhouse.com/docs/en/",
+        "start_url": "https://clickhouse.com/docs/en/interfaces/jdbc",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Clickhouse-strict-encrypt",
+        "base_url": "https://clickhouse.com/docs/en/",
+        "start_url": "https://clickhouse.com/docs/en/interfaces/jdbc",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Clickup-api",
+        "base_url": "https://clickup.com/api/",
+        "start_url": "https://clickup.com/api/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Clockify",
+        "base_url": "https://clockify.me/",
+        "start_url": "https://clockify.me/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Close-com",
+        "base_url": "https://help.close.com/docs/api-keys",
+        "start_url": "https://help.close.com/docs",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Cockroachdb",
+        "base_url": "https://www.cockroachlabs.com/docs",
+        "start_url": "https://www.cockroachlabs.com/docs/cockroachcloud/cloud-api.html",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Coda",
+        "base_url": "https://coda.io/developers/apis/v1",
+        "start_url": "https://coda.io/developers/apis/v1",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Coin-api",
+        "base_url": "https://docs.coinapi.io/",
+        "start_url": "https://docs.coinapi.io/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Coingecko-coins",
+        "base_url": "https://www.coingecko.com/",
+        "start_url": "https://www.coingecko.com/en/api/documentation",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Coinmarketcap",
+        "base_url": "https://coinmarketcap.com/api/documentation/v1/",
+        "start_url": "https://coinmarketcap.com/api/documentation/v1/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Commcare",
+        "base_url": "https://commcare-hq.readthedocs.io",
+        "start_url": "https://commcare-hq.readthedocs.io/api.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Commercetools",
+        "base_url": "https://docs.commercetools.com/api/",
+        "start_url": "https://docs.commercetools.com/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Configcat",
+        "base_url": "https://api.configcat.com/docs/",
+        "start_url": "https://api.configcat.com/docs/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Confluence",
+        "base_url": "https://developer.atlassian.com/cloud/confluence/rest",
+        "start_url": "https://developer.atlassian.com/cloud/confluence/rest/v1/intro/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Convertkit",
+        "base_url": "https://developers.convertkit.com",
+        "start_url": "https://developers.convertkit.com/#getting-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Convex",
+        "base_url": "https://docs.convex.dev/api/modules",
+        "start_url": "https://docs.convex.dev/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 8
+    },
+    {
+        "name": "Copper",
+        "base_url": "https://developer.copper.com/",
+        "start_url": "https://developer.copper.com/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Courier",
+        "base_url": "https://www.courier.com/docs",
+        "start_url": "https://www.courier.com/docs/guides/getting-started/go/#getting-your-api-keys",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Datadog",
+        "base_url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+        "start_url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Datascope",
+        "base_url": "https://dscope.github.io/docs/",
+        "start_url": "https://dscope.github.io/docs/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Db2",
+        "base_url": "https://www.ibm.com/docs/en/db2",
+        "start_url": "https://www.ibm.com/docs/en/db2/11.1?topic=apis-administrative",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Db2-strict-encrypt",
+        "base_url": "https://www.ibm.com/docs/en/db2",
+        "start_url": "https://www.ibm.com/docs/en/db2/11.5?topic=rest-db2-native-encryption",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Delighted",
+        "base_url": "https://app.delighted.com/docs/api",
+        "start_url": "https://app.delighted.com/docs/api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Dixa",
+        "base_url": "https://docs.dixa.io/docs",
+        "start_url": "https://docs.dixa.io/docs/exports-api-guide/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Dockerhub",
+        "base_url": "https://docs.docker.com/docker-hub/api/latest/",
+        "start_url": "https://docs.docker.com/docker-hub/api/latest/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Dremio",
+        "base_url": "https://docs.dremio.com/software/api",
+        "start_url": "https://docs.dremio.com/software/api/#authentication",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Drift",
+        "base_url": "https://devdocs.drift.com/docs",
+        "start_url": "https://devdocs.drift.com/docs/contact-model",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Dv-360",
+        "base_url": "https://developers.google.com/bid-manager",
+        "start_url": "https://developers.google.com/bid-manager/guides/getting-started-api",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Dynamodb",
+        "base_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide",
+        "start_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.API.html",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "E2e-test",
+        "base_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/",
+        "start_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Elasticsearch",
+        "base_url": "https://www.elastic.co/guide/en/elasticsearch/reference",
+        "start_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Emailoctopus",
+        "base_url": "https://emailoctopus.com/api-documentation",
+        "start_url": "https://emailoctopus.com/api-documentation",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Everhour",
+        "base_url": "https://everhour.docs.apiary.io",
+        "start_url": "https://everhour.docs.apiary.io/#introduction/getting-started",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Exchange-rates",
+        "base_url": "https://everhour.docs.apiary.io/references",
+        "start_url": "https://everhour.docs.apiary.io/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Exchange-rates-tutorial",
+        "base_url": "https://exchangeratesapi.io/documentation/",
+        "start_url": "https://exchangeratesapi.io/documentation/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Facebook-marketing",
+        "base_url": "https://developers.facebook.com/docs/",
+        "start_url": "https://developers.facebook.com/docs/marketing-apis/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Facebook-pages",
+        "base_url": "https://developers.facebook.com/docs/",
+        "start_url": "https://developers.facebook.com/docs/graph-api/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Faker",
+        "base_url": "https://fakerjs.dev/",
+        "start_url": "https://fakerjs.dev/api/faker.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Fastbill",
+        "base_url": "https://apidocs.fastbill.com/",
+        "start_url": "https://apidocs.fastbill.com/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Fauna",
+        "base_url": "https://docs.fauna.com/fauna/current/api/",
+        "start_url": "https://docs.fauna.com/fauna/current/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "File",
+        "base_url": "https://developers.podio.com/doc/",
+        "start_url": "https://developers.podio.com/doc/files",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "File-secure",
+        "base_url": "https://docs.gitlab.com/ee/api/secure_files",
+        "start_url": "https://docs.gitlab.com/ee/api/secure_files.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Firebase-realtime-database",
+        "base_url": "https://firebase.google.com/docs/reference/rest/database",
+        "start_url": "https://firebase.google.com/docs/reference/rest/database",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Firebolt",
+        "base_url": "https://docs.firebolt.io/developing-with-firebolt/",
+        "start_url": "https://docs.firebolt.io/developing-with-firebolt/firebolt-rest-api.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 9
+    },
+    {
+        "name": "Flexport",
+        "base_url": "https://apidocs.flexport.com",
+        "start_url": "https://apidocs.flexport.com/v3/tag/Authentication",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Freshcaller",
+        "base_url": "https://developers.freshcaller.com/api",
+        "start_url": "https://developers.freshcaller.com/api/#get-started",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Freshdesk",
+        "base_url": "https://developers.freshdesk.com/v2/docs/data-api/",
+        "start_url": "https://developers.freshdesk.com/v2/docs/data-api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Freshsales",
+        "base_url": "https://developer.freshsales.io/api/",
+        "start_url": "https://developer.freshsales.io/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Freshservice",
+        "base_url": "https://developer.freshservice.com/docs/data-api/",
+        "start_url": "https://developer.freshservice.com/docs/data-api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Fullstory",
+        "base_url": "https://help.fullstory.com/hc/en-us/categories/360001589674-Developer",
+        "start_url": "https://help.fullstory.com/hc/en-us/categories/360001589674-Developer",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Gcs",
+        "base_url": "https://cloud.google.com/storage/docs/access-control/",
+        "start_url": "https://cloud.google.com/storage/docs/access-control/using-iam-permissions",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Genesys",
+        "base_url": "https://developer.genesys.cloud/",
+        "start_url": "https://developer.genesys.cloud/devapps/api-explorer",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Getlago",
+        "base_url": "https://doc.getlago.com/docs/api",
+        "start_url": "https://doc.getlago.com/docs/api/intro",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Github",
+        "base_url": "https://docs.github.com/en/rest",
+        "start_url": "https://docs.github.com/en/rest?apiVersion=2022-11-28",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Gitlab",
+        "base_url": "https://docs.gitlab.com/ee",
+        "start_url": "https://docs.gitlab.com/ee/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Glassfrog",
+        "base_url": "https://documenter.getpostman.com/view/1014385/glassfrog-api-v3/",
+        "start_url": "https://documenter.getpostman.com/view/1014385/glassfrog-api-v3/2SJViY",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Gnews",
+        "base_url": "https://newsapi.org/docs",
+        "start_url": "https://newsapi.org/docs",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Gocardless",
+        "base_url": "https://developer.gocardless.com/api-reference",
+        "start_url": "https://developer.gocardless.com/api-reference",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Google-ads",
+        "base_url": "https://developers.google.com/google-ads/api/docs/",
+        "start_url": "https://developers.google.com/google-ads/api/docs/start",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Google-analytics-data-api",
+        "base_url": "https://developers.google.com/analytics/devguides/reporting/data/v1",
+        "start_url": "https://developers.google.com/analytics/devguides/reporting/data/v1",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Google-analytics-v4",
+        "base_url": "https://developers.google.com/analytics/devguides/reporting/core/v4",
+        "start_url": "https://developers.google.com/analytics/devguides/reporting/core/v4",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Google-directory",
+        "base_url": "https://developers.google.com/admin-sdk/directory/v1/guides",
+        "start_url": "https://developers.google.com/admin-sdk/directory/v1/guides",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Google-pagespeed-insights",
+        "base_url": "https://developers.google.com/speed/docs/insights",
+        "start_url": "https://developers.google.com/speed/docs/insights/v5/get-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 7
+    },
+    {
+        "name": "Google-search-console",
+        "base_url": "https://developers.google.com/webmaster-tools",
+        "start_url": "https://developers.google.com/webmaster-tools/about",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Google-sheets",
+        "base_url": "https://developers.google.com/sheets/api/guides",
+        "start_url": "https://developers.google.com/sheets/api/guides/concepts",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Google-webfonts",
+        "base_url": "https://developers.google.com/fonts",
+        "start_url": "https://developers.google.com/fonts/docs/developer_api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Google-workspace-admin-reports",
+        "base_url": "https://developers.google.com/speed/docs/insights",
+        "start_url": "https://developers.google.com/speed/docs/insights/v5/get-started",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 7
+    },
+    {
+        "name": "Greenhouse",
+        "base_url": "https://developers.greenhouse.io",
+        "start_url": "https://developers.greenhouse.io/harvest.html",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 8
+    },
+    {
+        "name": "Gridly",
+        "base_url": "https://www.gridly.com/docs/api",
+        "start_url": "https://www.gridly.com/docs/api/#introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Gutendex",
+        "base_url": "https://gutendex.com/",
+        "start_url": "https://gutendex.com/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Harvest",
+        "base_url": "https://help.getharvest.com/api-v2",
+        "start_url": "https://help.getharvest.com/api-v2/introduction/overview/general",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Hubplanner",
+        "base_url": "https://hubplanner.com/hub-planner-api",
+        "start_url": "https://hubplanner.com/hub-planner-api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Hubspot",
+        "base_url": "https://developers.hubspot.com/docs/api",
+        "start_url": "https://developers.hubspot.com/docs/api/overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Insightly",
+        "base_url": "https://www.insightly.com/api-for-developers",
+        "start_url": "https://www.insightly.com/api-for-developers",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Instagram",
+        "base_url": "https://instagram.api-docs.io/1.0",
+        "start_url": "https://instagram.api-docs.io/1.0/search",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Instatus",
+        "base_url": "https://instatus.com/help",
+        "start_url": "https://instatus.com/help/api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Intercom",
+        "base_url": "https://developers.intercom.com/intercom-api-reference/reference",
+        "start_url": "https://developers.intercom.com/intercom-api-reference/reference/welcome",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Intruder",
+        "base_url": "https://developers.intruder.io",
+        "start_url": "https://developers.intruder.io/docs",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Ip2whois",
+        "base_url": "https://www.ip2whois.com/developers-api",
+        "start_url": "https://www.ip2whois.com/developers-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Iterable",
+        "base_url": "https://api.iterable.com/api/docs",
+        "start_url": "https://api.iterable.com/api/docs",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Jira",
+        "base_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3",
+        "start_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#version",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "K6-cloud",
+        "base_url": "https://k6.io/docs/cloud",
+        "start_url": "https://k6.io/docs/cloud/cloud-reference/cloud-rest-api/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Kafka",
+        "base_url": "https://kafka.apache.org/34/documentation/streams/developer-guide",
+        "start_url": "https://kafka.apache.org/34/documentation/streams/developer-guide/",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Klarna",
+        "base_url": "https://docs.klarna.com/api",
+        "start_url": "https://docs.klarna.com/api/api-urls/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Klaviyo",
+        "base_url": "https://developers.klaviyo.com/en/reference",
+        "start_url": "https://developers.klaviyo.com/en/reference/api_overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Kustomer-singer",
+        "base_url": "https://developer.kustomer.com/kustomer-api-docs/reference",
+        "start_url": "https://developer.kustomer.com/kustomer-api-docs/reference/introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Kyriba",
+        "base_url": "https://developer.kyriba.com",
+        "start_url": "https://developer.kyriba.com/site/global/home/index.gsp",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Launchdarkly",
+        "base_url": "https://apidocs.launchdarkly.com",
+        "start_url": "https://apidocs.launchdarkly.com/#section/Overview",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Lemlist",
+        "base_url": "https://developer.lemlist.com",
+        "start_url": "https://developer.lemlist.com/#introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Lever-hiring",
+        "base_url": "https://hire.lever.co/developer/documentation",
+        "start_url": "https://hire.lever.co/developer/documentation#introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Linkedin-ads",
+        "base_url": "https://developer.linkedin.com",
+        "start_url": "https://developer.linkedin.com",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Linkedin-pages",
+        "base_url": "https://learn.microsoft.com/en-us/linkedin/marketing",
+        "start_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Linnworks",
+        "base_url": "https://apidocs.linnworks.net/reference",
+        "start_url": "https://apidocs.linnworks.net/reference/overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Lokalise",
+        "base_url": "https://developers.lokalise.com/reference",
+        "start_url": "https://developers.lokalise.com/reference/lokalise-rest-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Looker",
+        "base_url": "https://cloud.google.com/looker/docs",
+        "start_url": "https://cloud.google.com/looker/docs/intro",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mailchimp",
+        "base_url": "https://mailchimp.com/developer/marketing/api",
+        "start_url": "https://mailchimp.com/developer/marketing/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mailerlite",
+        "base_url": "https://developers.mailerlite.com/docs",
+        "start_url": "https://developers.mailerlite.com/docs/#mailerlite-api",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mailersend",
+        "base_url": "https://developers.mailersend.com",
+        "start_url": "https://developers.mailersend.com/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mailgun",
+        "base_url": "https://documentation.mailgun.com/en/latest",
+        "start_url": "https://documentation.mailgun.com/en/latest/quickstart.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mailjet-mail",
+        "base_url": "https://dev.mailjet.com/email/guides",
+        "start_url": "https://dev.mailjet.com/email/guides/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Mailjet-sms",
+        "base_url": "https://dev.mailjet.com/sms/guides",
+        "start_url": "https://dev.mailjet.com/sms/guides/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Marketo",
+        "base_url": "https://developers.marketo.com",
+        "start_url": "https://developers.marketo.com/getting-started/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Merge",
+        "base_url": "https://docs.merge.dev/ats",
+        "start_url": "https://docs.merge.dev/ats/overview/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Metabase",
+        "base_url": "https://www.metabase.com/docs/latest",
+        "start_url": "https://www.metabase.com/docs/latest/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Microsoft-dataverse",
+        "base_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform",
+        "start_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Microsoft-teams",
+        "base_url": "https://learn.microsoft.com/en-us/graph",
+        "start_url": "https://learn.microsoft.com/en-us/graph/teams-concept-overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mixpanel",
+        "base_url": "https://developer.mixpanel.com/reference",
+        "start_url": "https://developer.mixpanel.com/reference/overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Monday",
+        "base_url": "https://developer.monday.com/apps/docs",
+        "start_url": "https://developer.monday.com/apps/docs/intro",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mongodb",
+        "base_url": "https://www.mongodb.com/docs/drivers/java/sync/v4.3",
+        "start_url": "https://www.mongodb.com/docs/drivers/java/sync/v4.3/quick-start/",
+        "airbyte_status": "TBD",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mssql",
+        "base_url": "https://learn.microsoft.com/en-us/sql",
+        "start_url": "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "My-hours",
+        "base_url": "https://documenter.getpostman.com/view/8879268/TVmV4YYU",
+        "start_url": "https://documenter.getpostman.com/view/8879268/TVmV4YYU",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Mysql",
+        "base_url": "https://dev.mysql.com/doc",
+        "start_url": "https://dev.mysql.com/doc/index-connectors.html",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Mysql-strict-encrypt",
+        "base_url": "https://dev.mysql.com/doc/c-api/5.7/en",
+        "start_url": "https://dev.mysql.com/doc/c-api/5.7/en/preface.html",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "N8n",
+        "base_url": "https://docs.n8n.io/api",
+        "start_url": "https://docs.n8n.io/api/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 5
+    },
+    {
+        "name": "Nasa",
+        "base_url": "https://api.nasa.gov",
+        "start_url": "https://api.nasa.gov/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Netsuite",
+        "base_url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help",
+        "start_url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N3412777.html",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "News-api",
+        "base_url": "https://newsapi.org",
+        "start_url": "https://newsapi.org/docs/get-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Newsdata",
+        "base_url": "https://newsdata.io/documentation",
+        "start_url": "https://newsdata.io/documentation",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 2
+    },
+    {
+        "name": "Notion",
+        "base_url": "https://developers.notion.com/reference",
+        "start_url": "https://developers.notion.com/reference/intro",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Nytimes",
+        "base_url": "https://developer.nytimes.com",
+        "start_url": "https://developer.nytimes.com/get-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Okta",
+        "base_url": "https://developer.okta.com/docs/reference",
+        "start_url": "https://developer.okta.com/docs/reference/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Omnisend",
+        "base_url": "https://api-docs.omnisend.com/reference",
+        "start_url": "https://api-docs.omnisend.com/reference/intro",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Onesignal",
+        "base_url": "https://documentation.onesignal.com/docs",
+        "start_url": "https://documentation.onesignal.com/docs/onesignal-platform",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Open-exchange-rates",
+        "base_url": "https://openexchangerates.org",
+        "start_url": "https://openexchangerates.org/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Openweather",
+        "base_url": "https://openweathermap.org/api",
+        "start_url": "https://openweathermap.org/api",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Opsgenie",
+        "base_url": "https://docs.opsgenie.com/docs",
+        "start_url": "https://docs.opsgenie.com/docs",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Oracle",
+        "base_url": "https://developer.oracle.com/technologies/api.html",
+        "start_url": "https://developer.oracle.com/technologies/api.html",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Orb",
+        "base_url": "https://docs.withorb.com/docs/orb-docs",
+        "start_url": "https://docs.withorb.com/docs/orb-docs/overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Orbit",
+        "base_url": "https://api.orbit.love/reference/about-the-orbit-api",
+        "start_url": "https://api.orbit.love/reference/about-the-orbit-api",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Oura",
+        "base_url": "https://api.ouraring.com/v2/docs",
+        "start_url": "https://api.ouraring.com/v2/docs",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Outreach",
+        "base_url": "https://api.outreach.io/api/v2/docs",
+        "start_url": "https://api.outreach.io/api/v2/docs",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Pardot",
+        "base_url": "https://developer.salesforce.com/docs/marketing/pardot",
+        "start_url": "https://developer.salesforce.com/docs/marketing/pardot/overview",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Partnerstack",
+        "base_url": "https://docs.partnerstack.com/reference",
+        "start_url": "https://docs.partnerstack.com/reference/auth",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Paypal-transaction",
+        "base_url": "https://developer.paypal.com/api",
+        "start_url": "https://developer.paypal.com/api/rest/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Paystack",
+        "base_url": "https://paystack.com/docs/api",
+        "start_url": "https://paystack.com/docs/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Pendo",
+        "base_url": "https://engageapi.pendo.io",
+        "start_url": "https://engageapi.pendo.io/#intro",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Persistiq",
+        "base_url": "https://apidocs.persistiq.com",
+        "start_url": "https://apidocs.persistiq.com/#introduction",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 3
+    },
+    {
+        "name": "Pexels-api",
+        "base_url": "https://www.pexels.com/api/documentation",
+        "start_url": "https://www.pexels.com/api/documentation#introduction",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Pinterest",
+        "base_url": "https://developers.pinterest.com/docs",
+        "start_url": "https://developers.pinterest.com/docs/new/welcome/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Pipedrive",
+        "base_url": "https://developers.pipedrive.com/docs/api/v1",
+        "start_url": "https://developers.pipedrive.com/docs/api/v1",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Pivotal-tracker",
+        "base_url": "https://www.pivotaltracker.com/help/api",
+        "start_url": "https://www.pivotaltracker.com/help/api#Basics",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 5
+    },
+    {
+        "name": "Plaid",
+        "base_url": "https://plaid.com/docs/api",
+        "start_url": "https://plaid.com/docs/api/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Plausible",
+        "base_url": "https://plausible.io",
+        "start_url": "https://plausible.io/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Pocket",
+        "base_url": "https://getpocket.com/developer",
+        "start_url": "https://getpocket.com/developer/docs/overview",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Pokeapi",
+        "base_url": "https://pokeapi.co",
+        "start_url": "https://pokeapi.co/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 7
+    },
+    {
+        "name": "Polygon-stock-api",
+        "base_url": "https://polygon.io/docs/stocks",
+        "start_url": "https://polygon.io/docs/stocks/getting-started",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Postgres",
+        "base_url": "https://www.postgresql.org",
+        "start_url": "https://www.postgresql.org/docs/",
+        "airbyte_status": "java-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Posthog",
+        "base_url": "https://posthog.com/docs",
+        "start_url": "https://posthog.com/docs/getting-started/start-here",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Postmarkapp",
+        "base_url": "https://postmarkapp.com/developer",
+        "start_url": "https://postmarkapp.com/developer",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Prestashop",
+        "base_url": "https://devdocs.prestashop-project.org/1.7",
+        "start_url": "https://devdocs.prestashop-project.org/1.7/basics/",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Primetric",
+        "base_url": "https://developer.primetric.com",
+        "start_url": "https://developer.primetric.com/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Public-apis",
+        "base_url": "https://api.publicapis.org",
+        "start_url": "https://api.publicapis.org/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Punk-api",
+        "base_url": "https://punkapi.com/documentation/v2",
+        "start_url": "https://punkapi.com/documentation/v2",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 1
+    },
+    {
+        "name": "Pypi",
+        "base_url": "https://warehouse.pypa.io",
+        "start_url": "https://warehouse.pypa.io/development/index.html",
+        "airbyte_status": "lowcode-connector",
+        "scraped_page_count": 11
+    },
+    {
+        "name": "Python-http-tutorial",
+        "base_url": "https://api.apilayer.com/exchangerates_data/",
+        "start_url": "https://api.apilayer.com/exchangerates_data/",
+        "airbyte_status": "python-connector",
+        "scraped_page_count": 1
     }
 ]
