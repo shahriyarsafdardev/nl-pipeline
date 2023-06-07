@@ -131,12 +131,13 @@ def get_python_endpoints(connector_name):
 
 
 def get_java_endpoints(connector_name):
-    response = get_folder_names(connector_name)
-    if response.status_code == 200:
-        pass
-    else:
-        pass
-    return []
+    # response = get_folder_names(connector_name)
+    # if response.status_code == 200:
+    #     pass
+    # else:
+    #     pass
+    # return []
+    pass
 
 
 def add_existing_airbyte_endpoints(filename, local=False, connector_type='lowcode-connector'):
