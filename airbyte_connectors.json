@@ -31,7 +31,7 @@
         "base_url": "https://ricochet360.com",
         "start_url": "https://ricochet360.com/integrations",
         "airbyte_status": "backlog",
-        "scraped_page_count": 229,
+        "scraped_page_count": 1,
         "endpoint_count": 0,
         "endpoints": []
     },
@@ -40,7 +40,7 @@
         "base_url": "https://docs.kyve.network",
         "start_url": "https://docs.kyve.network/introduction/architecture",
         "airbyte_status": "backlog",
-        "scraped_page_count": 55,
+        "scraped_page_count": 1,
         "endpoint_count": 0,
         "endpoints": []
     },
@@ -49,7 +49,7 @@
         "base_url": "https://docs.exasol.com",
         "start_url": "https://docs.exasol.com/saas/administration/rest_api/rest_api.htm",
         "airbyte_status": "backlog",
-        "scraped_page_count": 6,
+        "scraped_page_count": 1,
         "endpoint_count": 0,
         "endpoints": []
     },
@@ -76,7 +76,7 @@
         "base_url": "https://cloud.google.com/spanner/docs",
         "start_url": "https://cloud.google.com/spanner/docs/apis",
         "airbyte_status": "backlog",
-        "scraped_page_count": 499,
+        "scraped_page_count": 1,
         "endpoint_count": 0,
         "endpoints": []
     },
@@ -2230,7 +2230,7 @@
         "base_url": "https://developer.rocket.chat/reference/api",
         "start_url": "https://developer.rocket.chat/reference/api/rest-api",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 1
     },
     {
@@ -2246,7 +2246,7 @@
         "base_url": "https://docs.aws.amazon.com/AmazonS3/latest/API",
         "start_url": "https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 2
     },
     {
@@ -2302,7 +2302,7 @@
         "base_url": "https://docs.sendgrid.com/api-reference",
         "start_url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 11
     },
     {
@@ -2310,7 +2310,7 @@
         "base_url": "https://developers.brevo.com/docs",
         "start_url": "https://developers.brevo.com/docs",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 13
     },
     {
@@ -2318,7 +2318,7 @@
         "base_url": "https://manual.senseforce.io/manual/sf-platform",
         "start_url": "https://manual.senseforce.io/manual/sf-platform/public-api",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 0
     },
     {
@@ -2326,7 +2326,7 @@
         "base_url": "https://docs.sentry.io/api",
         "start_url": "https://docs.sentry.io/api/auth/",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 5
     },
     {
@@ -2350,7 +2350,7 @@
         "base_url": "https://shopify.dev/docs/api",
         "start_url": "https://shopify.dev/docs/api/admin/getting-started",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 4
     },
     {
@@ -2358,7 +2358,7 @@
         "base_url": "https://developers.short.io/reference",
         "start_url": "https://developers.short.io/reference/apilinksget",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 9
     },
     {
@@ -2366,7 +2366,7 @@
         "base_url": "https://api.slack.com",
         "start_url": "https://api.slack.com/start",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 1
     },
     {
@@ -2374,7 +2374,7 @@
         "base_url": "https://smaily.com/help/api/",
         "start_url": "https://smaily.com/help/api/",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 6
     },
     {
@@ -2390,7 +2390,7 @@
         "base_url": "https://smartsheet.redoc.ly",
         "start_url": "https://smartsheet.redoc.ly/#section/Introduction",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 17
     },
     {
@@ -2406,7 +2406,7 @@
         "base_url": "https://docs.snowflake.com/en/developer-guide",
         "start_url": "https://docs.snowflake.com/en/developer-guide/drivers",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 0
     },
     {
@@ -2430,7 +2430,7 @@
         "base_url": "https://developer.squareup.com/reference",
         "start_url": "https://developer.squareup.com/reference/square",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11,
+        "scraped_page_count": 1,
         "endpoint_count": 0
     },
     {
@@ -2466,14 +2466,14 @@
         "base_url": "https://docs.surveycto.com/03-collecting-data",
         "start_url": "https://docs.surveycto.com/03-collecting-data/01-mobile-data-collection/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1
     },
     {
         "name": "Talkdesk-explore",
         "base_url": "https://docs.talkdesk.com/reference",
         "start_url": "https://docs.talkdesk.com/reference/api-reference",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1
     },
     {
         "name": "Tempo",
@@ -2487,7 +2487,7 @@
         "base_url": "https://docs.teradata.com",
         "start_url": "https://docs.teradata.com/r/NdkMUPEon7RcxYO8pcolTQ/xLNUoWj_FbQomEhuMoHlkQ",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 227
     },
     {
         "name": "The-guardian-api",
@@ -2501,7 +2501,7 @@
         "base_url": "https://docs.pingcap.com/tidbcloud",
         "start_url": "https://docs.pingcap.com/tidbcloud/api-overview",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 535
     },
     {
         "name": "Tiktok-marketing",
@@ -2522,7 +2522,7 @@
         "base_url": "https://developer.themoviedb.org/docs",
         "start_url": "https://developer.themoviedb.org/docs/getting-started",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 20
     },
     {
         "name": "Todoist",
@@ -2536,7 +2536,7 @@
         "base_url": "https://developers.track.toggl.com/docs/",
         "start_url": "https://developers.track.toggl.com/docs/",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 45
     },
     {
         "name": "Tplcentral",
@@ -2550,14 +2550,14 @@
         "base_url": "https://developer.atlassian.com/cloud/trello/rest",
         "start_url": "https://developer.atlassian.com/cloud/trello/rest/api-group-actions/#api-actions-id-get",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 21
     },
     {
         "name": "Trustpilot",
         "base_url": "https://documentation-apidocumentation.trustpilot.com/",
         "start_url": "https://documentation-apidocumentation.trustpilot.com/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 15
     },
     {
         "name": "Tvmaze-schedule",
@@ -2578,14 +2578,14 @@
         "base_url": "https://www.twilio.com/docs/taskrouter/api",
         "start_url": "https://www.twilio.com/docs/taskrouter/api#base-url",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 27
     },
     {
         "name": "Twitter",
         "base_url": "https://developer.twitter.com/en/docs/twitter-api",
         "start_url": "https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 507
     },
     {
         "name": "Tyntec-sms",
@@ -2599,14 +2599,14 @@
         "base_url": "https://www.typeform.com/developers",
         "start_url": "https://www.typeform.com/developers/create/walkthroughs/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 87
     },
     {
         "name": "Unleash",
         "base_url": "https://docs.getunleash.io/reference/api/legacy/unleash",
         "start_url": "https://docs.getunleash.io/reference/api/legacy/unleash",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 20
     },
     {
         "name": "Us-census",
@@ -2620,21 +2620,21 @@
         "base_url": "https://vantage.readme.io/reference",
         "start_url": "https://vantage.readme.io/reference/general",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 25
     },
     {
         "name": "Visma-economic",
         "base_url": "https://developer.visma.com/api",
         "start_url": "https://developer.visma.com/api/e-conomic",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 17
     },
     {
         "name": "Vitally",
         "base_url": "https://docs.vitally.io/pushing-data-to-vitally/rest-api",
         "start_url": "https://docs.vitally.io/pushing-data-to-vitally/rest-api",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 12
     },
     {
         "name": "Waiteraid",
@@ -2655,7 +2655,7 @@
         "base_url": "https://developers.webflow.com/reference",
         "start_url": "https://developers.webflow.com/reference/get-authorized-user",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 55
     },
     {
         "name": "Whisky-hunter",
@@ -2683,14 +2683,14 @@
         "base_url": "https://workable.readme.io/reference",
         "start_url": "https://workable.readme.io/reference/generate-an-access-token",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 51
     },
     {
         "name": "Workramp",
         "base_url": "https://developers.workramp.com/reference",
         "start_url": "https://developers.workramp.com/reference/getting-started",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 91
     },
     {
         "name": "Wrike",
@@ -2725,14 +2725,14 @@
         "base_url": "https://yandex.com/dev/metrika/doc/api2",
         "start_url": "https://yandex.com/dev/metrika/doc/api2/concept/about.html",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 264
     },
     {
         "name": "Yotpo",
         "base_url": "https://apidocs.yotpo.com/reference",
         "start_url": "https://apidocs.yotpo.com/reference/welcome",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 82
     },
     {
         "name": "Younium",
@@ -2746,7 +2746,7 @@
         "base_url": "https://developers.google.com/youtube/reporting",
         "start_url": "https://developers.google.com/youtube/reporting/v1/reports",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 39
     },
     {
         "name": "Zapier-supported-storage",
@@ -2760,21 +2760,21 @@
         "base_url": "https://developer.zendesk.com/api-reference",
         "start_url": "https://developer.zendesk.com/api-reference/introduction/introduction/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 419
     },
     {
         "name": "Zendesk-sell",
         "base_url": "https://developer.zendesk.com/api-reference",
         "start_url": "https://developer.zendesk.com/api-reference/sales-crm/introduction/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 419
     },
     {
         "name": "Zendesk-sunshine",
         "base_url": "https://developer.zendesk.com/api-reference",
         "start_url": "https://developer.zendesk.com/api-reference/introduction/introduction/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 419
     },
     {
         "name": "Zendesk-support",
@@ -2795,14 +2795,14 @@
         "base_url": "https://developers.zenefits.com/reference",
         "start_url": "https://developers.zenefits.com/reference/getting-started",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 49
     },
     {
         "name": "Zenloop",
         "base_url": "https://docs.zenloop.com/reference",
         "start_url": "https://docs.zenloop.com/reference/introduction",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 35
     },
     {
         "name": "Zoho-crm",
@@ -2830,21 +2830,21 @@
         "base_url": "https://developers.activecampaign.com/reference/",
         "start_url": "https://developers.activecampaign.com/reference/overview",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 287
     },
     {
         "name": "Adjust",
         "base_url": "https://help.adjust.com/en",
         "start_url": "https://help.adjust.com/en/developer",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 864
     },
     {
         "name": "Aha",
         "base_url": "https://www.aha.io/api",
         "start_url": "https://www.aha.io/api",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 375
     },
     {
         "name": "Aircall",
@@ -2865,7 +2865,7 @@
         "base_url": "https://cloud.google.com/alloydb/docs/reference/rest",
         "start_url": "https://cloud.google.com/alloydb/docs/reference/rest",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 88
     },
     {
         "name": "Alloydb-strict-encrypt",
@@ -2893,7 +2893,7 @@
         "base_url": "https://developer-docs.amazon.com/sp-api/",
         "start_url": "https://developer-docs.amazon.com/sp-api/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 357
     },
     {
         "name": "Amazon-sqs",
@@ -2907,7 +2907,7 @@
         "base_url": "https://www.docs.developers.amplitude.com/analytics",
         "start_url": "https://www.docs.developers.amplitude.com/analytics/apis/http-v2-api/",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 68
     },
     {
         "name": "Apify-dataset",
@@ -2935,7 +2935,7 @@
         "base_url": "https://dev.appsflyer.com/hc/docs",
         "start_url": "https://dev.appsflyer.com/hc/docs/api",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 148
     },
     {
         "name": "Appstore-singer",
@@ -2949,21 +2949,21 @@
         "base_url": "https://developers.asana.com/reference",
         "start_url": "https://developers.asana.com/reference/rest-api-reference",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 229
     },
     {
         "name": "Ashby",
         "base_url": "https://developers.ashbyhq.com/reference",
         "start_url": "https://developers.ashbyhq.com/reference/introduction",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 90
     },
     {
         "name": "Auth0",
         "base_url": "https://auth0.com/docs/api",
         "start_url": "https://auth0.com/docs/api",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 17
     },
     {
         "name": "Aws-cloudtrail",
@@ -2984,7 +2984,7 @@
         "base_url": "https://learn.microsoft.com/en-us/azure/storage/tables/",
         "start_url": "https://learn.microsoft.com/en-us/azure/storage/tables/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 12
     },
     {
         "name": "Babelforce",
@@ -3012,14 +3012,14 @@
         "base_url": "https://cloud.google.com/bigquery/docs/reference",
         "start_url": "https://cloud.google.com/bigquery/docs/reference/libraries-overview",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 531
     },
     {
         "name": "Bing-ads",
         "base_url": "https://learn.microsoft.com/en-us/advertising/guides",
         "start_url": "https://learn.microsoft.com/en-us/advertising/guides/?view=bingads-13",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 93
     },
     {
         "name": "Braintree",
@@ -3033,7 +3033,7 @@
         "base_url": "https://www.braze.com/docs/api",
         "start_url": "https://www.braze.com/docs/api/home",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 148
     },
     {
         "name": "Breezometer",
@@ -3054,14 +3054,14 @@
         "base_url": "https://shopify.dev/docs/api",
         "start_url": "https://shopify.dev/docs/api/ajax/reference/cart",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Chargebee",
         "base_url": "https://apidocs.chargebee.com/docs/api",
         "start_url": "https://apidocs.chargebee.com/docs/api",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 115
     },
     {
         "name": "Chargify",
@@ -3075,35 +3075,35 @@
         "base_url": "https://dev.chartmogul.com/reference",
         "start_url": "https://dev.chartmogul.com/reference/introduction-import-api",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 87
     },
     {
         "name": "Clickhouse",
         "base_url": "https://clickhouse.com/docs/en/",
         "start_url": "https://clickhouse.com/docs/en/interfaces/jdbc",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 714
     },
     {
         "name": "Clickhouse-strict-encrypt",
         "base_url": "https://clickhouse.com/docs/en/",
         "start_url": "https://clickhouse.com/docs/en/interfaces/jdbc",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 714
     },
     {
         "name": "Clickup-api",
         "base_url": "https://clickup.com/api/",
         "start_url": "https://clickup.com/api/",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 172
     },
     {
         "name": "Clockify",
         "base_url": "https://clockify.me/",
         "start_url": "https://clockify.me/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Close-com",
@@ -3117,7 +3117,7 @@
         "base_url": "https://www.cockroachlabs.com/docs",
         "start_url": "https://www.cockroachlabs.com/docs/cockroachcloud/cloud-api.html",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Coda",
@@ -3131,14 +3131,14 @@
         "base_url": "https://docs.coinapi.io/",
         "start_url": "https://docs.coinapi.io/",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 35
     },
     {
         "name": "Coingecko-coins",
         "base_url": "https://www.coingecko.com/",
         "start_url": "https://www.coingecko.com/en/api/documentation",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Coinmarketcap",
@@ -3152,14 +3152,14 @@
         "base_url": "https://commcare-hq.readthedocs.io",
         "start_url": "https://commcare-hq.readthedocs.io/api.html",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 144
     },
     {
         "name": "Commercetools",
         "base_url": "https://docs.commercetools.com/api/",
         "start_url": "https://docs.commercetools.com/api/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 499
     },
     {
         "name": "Configcat",
@@ -3173,7 +3173,7 @@
         "base_url": "https://developer.atlassian.com/cloud/confluence/rest",
         "start_url": "https://developer.atlassian.com/cloud/confluence/rest/v1/intro/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 35
     },
     {
         "name": "Convertkit",
@@ -3194,14 +3194,14 @@
         "base_url": "https://developer.copper.com/",
         "start_url": "https://developer.copper.com/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 116
     },
     {
         "name": "Courier",
         "base_url": "https://www.courier.com/docs",
         "start_url": "https://www.courier.com/docs/guides/getting-started/go/#getting-your-api-keys",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 404
     },
     {
         "name": "Datadog",
@@ -3222,7 +3222,7 @@
         "base_url": "https://www.ibm.com/docs/en/db2",
         "start_url": "https://www.ibm.com/docs/en/db2/11.1?topic=apis-administrative",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 154
     },
     {
         "name": "Db2-strict-encrypt",
@@ -3236,14 +3236,14 @@
         "base_url": "https://app.delighted.com/docs/api",
         "start_url": "https://app.delighted.com/docs/api",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 19
     },
     {
         "name": "Dixa",
         "base_url": "https://docs.dixa.io/docs",
         "start_url": "https://docs.dixa.io/docs/exports-api-guide/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 12
     },
     {
         "name": "Dockerhub",
@@ -3257,49 +3257,49 @@
         "base_url": "https://docs.dremio.com/software/api",
         "start_url": "https://docs.dremio.com/software/api/#authentication",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 44
     },
     {
         "name": "Drift",
         "base_url": "https://devdocs.drift.com/docs",
         "start_url": "https://devdocs.drift.com/docs/contact-model",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 99
     },
     {
         "name": "Dv-360",
         "base_url": "https://developers.google.com/bid-manager",
         "start_url": "https://developers.google.com/bid-manager/guides/getting-started-api",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 68
     },
     {
         "name": "Dynamodb",
         "base_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide",
         "start_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.API.html",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 478
     },
     {
         "name": "E2e-test",
         "base_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/",
         "start_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Elasticsearch",
         "base_url": "https://www.elastic.co/guide/en/elasticsearch/reference",
         "start_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html",
         "airbyte_status": "java-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Emailoctopus",
         "base_url": "https://emailoctopus.com/api-documentation",
         "start_url": "https://emailoctopus.com/api-documentation",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 36
     },
     {
         "name": "Everhour",
@@ -3327,42 +3327,42 @@
         "base_url": "https://developers.facebook.com/docs/",
         "start_url": "https://developers.facebook.com/docs/marketing-apis/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Facebook-pages",
         "base_url": "https://developers.facebook.com/docs/",
         "start_url": "https://developers.facebook.com/docs/graph-api/",
         "airbyte_status": "lowcode-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Faker",
         "base_url": "https://fakerjs.dev/",
         "start_url": "https://fakerjs.dev/api/faker.html",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 46
     },
     {
         "name": "Fastbill",
         "base_url": "https://apidocs.fastbill.com/",
         "start_url": "https://apidocs.fastbill.com/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 1001
     },
     {
         "name": "Fauna",
         "base_url": "https://docs.fauna.com/fauna/current/api/",
         "start_url": "https://docs.fauna.com/fauna/current/api/",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 224
     },
     {
         "name": "File",
         "base_url": "https://developers.podio.com/doc/",
         "start_url": "https://developers.podio.com/doc/files",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 467
     },
     {
         "name": "File-secure",
@@ -3390,7 +3390,7 @@
         "base_url": "https://apidocs.flexport.com",
         "start_url": "https://apidocs.flexport.com/v3/tag/Authentication",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 33
     },
     {
         "name": "Freshcaller",
@@ -3432,7 +3432,7 @@
         "base_url": "https://cloud.google.com/storage/docs/access-control/",
         "start_url": "https://cloud.google.com/storage/docs/access-control/using-iam-permissions",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 17
     },
     {
         "name": "Genesys",
@@ -3453,7 +3453,7 @@
         "base_url": "https://docs.github.com/en/rest",
         "start_url": "https://docs.github.com/en/rest?apiVersion=2022-11-28",
         "airbyte_status": "python-connector",
-        "scraped_page_count": 11
+        "scraped_page_count": 185
     },
     {
         "name": "Gitlab",

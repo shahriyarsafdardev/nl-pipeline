@@ -26,7 +26,11 @@ def run_scrapers(filename, local=False):
 
     for idx, connector in enumerate(connectors):
         # Check if this connector has already been scraped
-        if "scraped_page_count" in connector and connector["scraped_page_count"] > 2:
+        # if "scraped_page_count" in connector:
+            # logger.info(f'Skipping {connector["name"]}, already scraped {connector["scraped_page_count"]} pages.')
+            # continue
+
+        if connector["scraped_page_count"] != 11:
             # logger.info(f'Skipping {connector["name"]}, already scraped {connector["scraped_page_count"]} pages.')
             continue
         
@@ -34,7 +38,7 @@ def run_scrapers(filename, local=False):
         base_url = connector['base_url']
         start_url = connector['start_url']
         
-        scraped_urls = scrape_domain(start_url, base_url, verbose=True)
+        scraped_urls = scrape_domain(start_url, base_url, verbose=False)
 
         # Log the number of URLs scraped for each connector
         logger.info(f'Scraper for {name} completed. Total URLs scraped: {len(scraped_urls)}')
