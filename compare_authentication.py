@@ -2,7 +2,6 @@ import json
 import requests
 import yaml
 import pinecone
-from urllib.parse import urlparse
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Pinecone
 from langchain.chat_models import ChatOpenAI
@@ -32,20 +31,19 @@ def extract_connectors():
 
     connector_info = []
     for connector in lowcode_connectors:
-        base_url = connector.get('base_url', '')
-        parsed_url = urlparse(base_url)
+        domain_base_url = connector.get('base_url', '')
 
         connector_info.append({
             'name': connector.get('name', '').lower(),
-            'domain': parsed_url.netloc
+            'domain_base_url': domain_base_url
         })
 
     return connector_info
 
 
-def get_base_url(domain):
+def get_base_url(domain_base_url):
     query = "What is the most likely base url. Some endpoints include a version like /0/, /v0/. Give me the url (including https://) and nothing else"
-    response = get_langchain_response(domain, query)
+    response = get_langchain_response(domain_base_url, query)
   
     if '/v1' in response:
         return response.split('/v1')[0] + '/v1'
@@ -67,16 +65,16 @@ def find_best_response(response, options):
     return next((option for option in options if option.lower() in response), 'None')
 
 
-def get_langchain_response(domain, query):
+def get_langchain_response(domain_base_url, query):
     print(f'\nQuery: {query}')
     docsearch = Pinecone.from_existing_index(settings.pinecone_index_name, embeddings)
-    docs = docsearch.similarity_search(query, k=5, filter={'page_urls': domain})
+    docs = docsearch.similarity_search(query, k=5, filter={'domain_base_url': domain_base_url})
     response = chain.run(input_documents=docs, question=query)
     print(f'\nResponse: {response}')
     return response
 
 
-def get_sphere_sub_auth_block(base_url, domain, authentication_type):
+def get_sphere_sub_auth_block(base_url, domain_base_url, authentication_type):
     if authentication_type == "BasicHttpAuthenticator":
         return {
             "type": "BasicHttpAuthenticator",
@@ -89,7 +87,7 @@ def get_sphere_sub_auth_block(base_url, domain, authentication_type):
         }
     elif authentication_type == 'ApiKeyAuthenticator':
         query = f"This {base_url} uses pagination to fetch data. What are the main parameters? If main parameters contain 'page' or 'offset' ignore them. Just get the main parameter's name and return only one word parameter"
-        response = get_langchain_response(base_url, domain, query)
+        response = get_langchain_response(base_url, domain_base_url, query)
         return {
             'type': authentication_type,
             "api_token": "{{config.api_key}}",
@@ -97,7 +95,7 @@ def get_sphere_sub_auth_block(base_url, domain, authentication_type):
         }
     elif authentication_type == 'OAuth':
         query = f"Please generate a JSON which contains the following keys with the values for OAuth authentication for the URL {base_url}: 'client_id', 'client_secret', token_refresh_endpoint, refresh_token, access_token_name, expires_in_name. Give me the complete JSON and don't add extra text"
-        response = get_langchain_response(domain, query)
+        response = get_langchain_response(domain_base_url, query)
         response = {'type': authentication_type}.update(response)
         return response
     else:
@@ -111,11 +109,11 @@ def get_sphere_auth_block(connector):
         "ApiKeyAuthenticator",
         "OAuth"
     ]
-    base_url = get_base_url(connector['domain'])
+    base_url = get_base_url(connector['domain_base_url'])
     query = f"What is the method of authentication to authorize the API calls with this API? Following are the options: {authenticator_options}. Return the response from given options, just return the one word option. Return 'None' if don't find any"
-    langchain_response = get_langchain_response(connector['domain'], query)
+    langchain_response = get_langchain_response(connector['domain_base_url'], query)
     authentication_type =  find_best_response(langchain_response, authenticator_options)
-    response = get_sphere_sub_auth_block(base_url, connector['domain'], authentication_type)
+    response = get_sphere_sub_auth_block(base_url, connector['domain_base_url'], authentication_type)
 
     return response
 
@@ -160,7 +158,7 @@ def get_airbyte_auth_block(connector_name):
 
 if __name__ == "__main__":
     connectors = extract_connectors()
-    # connectors = [{'name': 'sendgrid', 'domain': 'docs.sendgrid.com'},  {'name': 'sentry', 'domain': 'docs.sentry.io'}, {'name': 'quickbooks', 'domain': 'developer.intuit.com'}]
+    # connectors = [{'name': 'sendgrid', 'domain_base_url': 'docs.sendgrid.com'},  {'name': 'sentry', 'domain_base_url': 'docs.sentry.io'}, {'name': 'quickbooks', 'domain_base_url': 'developer.intuit.com'}]
     auth_comparison = {}
 
     for connector in connectors:
