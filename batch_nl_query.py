@@ -63,12 +63,12 @@ def find_best_response(response, options):
     return next((option for option in options if option.lower() in response), 'None')
 
 
-def get_langchain_response(domain, key, query):
+def get_langchain_response(domain_base_url, key, query):
     if key != 'base_url':
         query = replace_base_url(query)
     print(f'\nQuery: {query}')
     docsearch = Pinecone.from_existing_index(settings.pinecone_index_name, embeddings)
-    docs = docsearch.similarity_search(query, k=5, filter={'page_urls': domain})
+    docs = docsearch.similarity_search(query, k=5, filter={'domain_base_url': domain_base_url})
     print(f'\nDocs: {docs}')
     response = chain.run(input_documents=docs, question=query)
     if key == 'base_url':
@@ -82,68 +82,68 @@ def replace_base_url(query):
     return query.replace("{base_url}", base_url)
 
 
-def get_authentication_sub_object(domain, authentication_object, authentication_type, key):
+def get_authentication_sub_object(domain_base_url, authentication_object, authentication_type, key):
     query = ''
     if authentication_type == 'ApiKeyAuthenticator':
         query = authentication_object['api_authentication_header']['description']
-        response = get_langchain_response(domain, key, query)
+        response = get_langchain_response(domain_base_url, key, query)
         return {
             'type': authentication_type,
             'api_authentication_header': response
         }
     elif authentication_type == 'OAuth':
         query = authentication_object['oauth_authentication_object']['description']
-        response = get_langchain_response(domain, key, query)
+        response = get_langchain_response(domain_base_url, key, query)
         return {
             'type': authentication_type,
             'oauth_authentication_object': response
         }
 
 
-def get_pagination_sub_object(domain, pagination_object, pagination_type, key):
+def get_pagination_sub_object(domain_base_url, pagination_object, pagination_type, key):
     query = ''
     if pagination_type == 'OffsetIncrement' or pagination_type == 'PageIncrement':
         query = pagination_object['increment_pagination_parameter']['description']
-        response = get_langchain_response(domain, key, query)
+        response = get_langchain_response(domain_base_url, key, query)
         return {
             'type': pagination_type,
             'increment_pagination_parameter': response
         }
     elif pagination_type == 'CursorPagination':
         query = pagination_object['cursor_pagination_value']['description']
-        response = get_langchain_response(domain, key, query)
+        response = get_langchain_response(domain_base_url, key, query)
         return {
             'type': pagination_type,
             'cursor_pagination_value': response
         }
 
 
-def query_with_langchain(domain, key, query_object):
-    """Query the vector database for the given domain and key using LangChain."""
+def query_with_langchain(domain_base_url, key, query_object):
+    """Query the vector database for the given domain_base_url and key using LangChain."""
     sub_query = f"Following are the options: {query_object['options']}. Return the response from given options, just return the one word option." if 'options' in query_object else "Return 'None' if don't find any"
     query = f"{query_object['description']}. {sub_query}"
-    langchain_response = get_langchain_response(domain, key, query)
+    langchain_response = get_langchain_response(domain_base_url, key, query)
     best_response =  find_best_response(langchain_response, query_object['options']) if 'options' in query_object else langchain_response
     if key == 'authentication':
-        response = get_authentication_sub_object(domain, query_object, best_response, key)
+        response = get_authentication_sub_object(domain_base_url, query_object, best_response, key)
         return response if response is not None else best_response
     elif key == 'pagination':
-        response = get_pagination_sub_object(domain, query_object, best_response, key)
+        response = get_pagination_sub_object(domain_base_url, query_object, best_response, key)
         return response if response is not None else best_response
     return best_response.strip()
 
 
-def infer_properties(domain, config_file):
-    """Infer the properties about a domain and save the output JSON file."""
+def infer_properties(domain_base_url, config_file):
+    """Infer the properties about a domain_base_url and save the output JSON file."""
     config = load_config(config_file)
     output = {}
     if config is not None:
         for key in config.keys():
-            value = query_with_langchain(domain, key, config[key])
+            value = query_with_langchain(domain_base_url, key, config[key])
             output[key] = value
         save_output(output)
 
 
 if __name__ == "__main__":
     infer_properties(
-        "docs.sendgrid.com", "transformations_config.json")
+        "https://docs.sendgrid.com/api-reference", "transformations_config.json")
