@@ -167,8 +167,8 @@ if __name__ == "__main__":
         airbyte_auth_block = get_airbyte_auth_block(connector['name'])
         sphere_auth_block = get_sphere_auth_block(connector)
         auth_comparison[connector['name']] = {
-            'airbyte_auth_block': airbyte_auth_block,
-            'sphere_auth_block': sphere_auth_block
+            'sphere_auth_block': sphere_auth_block,
+            'airbyte_auth_block': airbyte_auth_block
         }
         print(f"\nProcessed connector: {connector['name']}")
 
