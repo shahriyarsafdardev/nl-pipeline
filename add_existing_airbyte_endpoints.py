@@ -125,7 +125,7 @@ def get_python_endpoints(connector_name):
                             elif isinstance(stmt.value, ast.FormattedValue):
                                 return_values.append(ast.unparse(stmt.value))
         else:
-            print(f"Failed to fetch {url.strip('/')[-1]} file, status code: {response.status_code}")
+            print(f"Failed to fetch {url.split('/')[-1]} file, status code: {response.status_code}")
 
     return return_values
 
@@ -178,5 +178,5 @@ def add_existing_airbyte_endpoints(filename, local=False, connector_type='lowcod
             file_obj = io.BytesIO(updated_connectors.encode('utf-8'))
             upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
 
-
-add_existing_airbyte_endpoints('airbyte_connectors.json', local=True, connector_type='python-connector')
+if __name__ == "__main__":
+    add_existing_airbyte_endpoints('airbyte_connectors.json', local=True, connector_type='lowcode-connector')

@@ -72,4 +72,5 @@ def create_md_files(filename, local=False):
         upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
 
 # Usage:
-create_md_files('airbyte_connectors.json', local=True)
+if __name__ == "__main__":
+    create_md_files('airbyte_connectors.json', local=True)
