@@ -82,10 +82,8 @@ def split_into_chunks(text, max_length=500):
             header_string = '\n'.join(headers)
 
             if header_string:
-                lines = paragraph.split("\n")
-                for line in lines:
-                    new_paragraphs.append(header_string + "\n" + line)
-                    print(f'Set Para: {header_string} \n {line}')
+                new_paragraphs.append(header_string + "\n" + paragraph)
+                print(f'Set Para: {header_string} \n {paragraph}')
 
     for idx, paragraph in enumerate(new_paragraphs):
         if len(current_chunk) + len(paragraph) + 1 <= max_length:

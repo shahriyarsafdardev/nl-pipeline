@@ -62,6 +62,7 @@ def create_md_files(filename, local=False):
                             colored(paragraph[paragraph.find(link)+len(link):context_end], 'blue'))
 
         extracted_links = list(set(extracted_links))
+        logger.info(f"Extracted {len(extracted_links)} for {connector['name']}")
         connector['endpoint_count'] = len(extracted_links)
         connector['sphere_endpoints'] = extracted_links
 

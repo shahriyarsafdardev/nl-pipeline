@@ -1,5 +1,5 @@
 from urllib.parse import quote
-from s3 import read_object, upload_object, list_objects
+from s3 import read_object
 from logger import getLogger
 from pinecone_db import store_chunks
 import json
