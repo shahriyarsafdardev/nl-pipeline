@@ -8,6 +8,25 @@ link_pattern = r'\s(https?|/[^/\s]+)'
 logger = getLogger()
 
 
+def create_context(texts, verbose=False):
+    context = ""
+    for text in texts:
+        remaining_space = 6000 - len(context)
+        if remaining_space == 0:
+            break
+        if len(text) > remaining_space:
+            context += text[:remaining_space]
+        else:
+            context += text
+
+    if verbose:
+        logger.info('Creating context')
+        logger.info('Number of texts:', len(texts))
+        logger.info(context)
+
+    return context
+
+
 def link_search_text(text):
     pattern = re.compile(link_pattern)
 
@@ -29,7 +48,7 @@ def text_slice_to_vector(text, base_url):
 
     return (
         str(uuid.uuid4()),
-        create_embedding(text),
+        create_embedding(create_context(text)),
         metadata
     )
 
