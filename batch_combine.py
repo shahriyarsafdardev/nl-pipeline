@@ -27,7 +27,7 @@ def create_md_files(filename, local=False):
 
     for connector in connectors:
         page_count = connector.get('scraped_page_count', None)
-        if not page_count or connector['airbyte_status'] != 'lowcode-connector':
+        if not page_count or connector['airbyte_status'] != 'lowcode-connector' or 'sphere_endpoints' in connector:
             logger.info("No pages scrapped for {}".format(connector['name']))
             continue
         logger.info("Creating md files for {}".format(connector['name']))
@@ -43,9 +43,11 @@ def create_md_files(filename, local=False):
             combined_file_content += file_content + "\n"
 
         upload_object(io.BytesIO(combined_file_content.encode('utf-8')), quoted_base_url + '-bulk' + '.md')
+        logger.info("Generated bulk file for {}".format(connector['name']))
 
         unique_paragraphs = set(combined_file_content.split("\n\n"))
         upload_object(io.BytesIO("\n\n".join(unique_paragraphs).encode('utf-8')), quoted_base_url + '-bulk-concise' + '.md')
+        logger.info("Generated concise bulk file for {}".format(connector['name']))
 
         extracted_links = []
         for paragraph in unique_paragraphs:
@@ -61,15 +63,15 @@ def create_md_files(filename, local=False):
 
         extracted_links = list(set(extracted_links))
         connector['endpoint_count'] = len(extracted_links)
-        connector['endpoints'] = extracted_links
+        connector['sphere_endpoints'] = extracted_links
 
-    if local:
-        with open(filename, 'w') as f:
-            json.dump(connectors, f, indent=4)
-    else:
-        updated_connectors = json.dumps(connectors, indent=4)
-        file_obj = io.BytesIO(updated_connectors.encode('utf-8'))
-        upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
+        if local:
+            with open(filename, 'w') as f:
+                json.dump(connectors, f, indent=4)
+        else:
+            updated_connectors = json.dumps(connectors, indent=4)
+            file_obj = io.BytesIO(updated_connectors.encode('utf-8'))
+            upload_object(file_obj, filename, extraArgs={'CacheControl': 'no-store'})
 
 # Usage:
 if __name__ == "__main__":
