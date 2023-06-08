@@ -1,3 +1,4 @@
+import re
 from s3 import read_object, upload_object
 from logger import getLogger
 import json
@@ -8,6 +9,7 @@ logger = getLogger()
 
 def compare_lowcode_endpoints(filename, local=False):
     lowcode_connectors = []
+    regex_pattern = r'({{.*?}}|{.*?}|<.*?>)'
 
     if local:
         with open(filename, 'r') as f:
@@ -42,8 +44,10 @@ def compare_lowcode_endpoints(filename, local=False):
         if 'existing_airbyte_endpoints' in connector and 'sphere_endpoints' in connector:
             # For each airbyte endpoint, check if it is included in any sphere endpoint
             for airbyte_endpoint in connector['existing_airbyte_endpoints']:
+                airbyte_endpoint_norm = re.sub(regex_pattern, '{variable}', airbyte_endpoint)
                 for sphere_endpoint in connector['sphere_endpoints']:
-                    if airbyte_endpoint in sphere_endpoint:
+
+                    if airbyte_endpoint_norm in re.sub(regex_pattern, '{variable}', sphere_endpoint):
                         common_endpoints.append(airbyte_endpoint)
                         break  # Break out of the inner loop if a match is found
 
