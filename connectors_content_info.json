@@ -1,0 +1,517 @@
+{
+    "recreation": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "recruitee": {
+        "paragraphs": 4932,
+        "lines": 80815,
+        "characters": 23471557
+    },
+    "reply-io": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "ringcentral": {
+        "paragraphs": 14,
+        "lines": 31,
+        "characters": 1003
+    },
+    "rocket-chat": {
+        "paragraphs": 6269,
+        "lines": 15804,
+        "characters": 260139
+    },
+    "sap-fieldglass": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "secoda": {
+        "paragraphs": 148,
+        "lines": 355,
+        "characters": 6810
+    },
+    "sendgrid": {
+        "paragraphs": 315,
+        "lines": 1145,
+        "characters": 37487
+    },
+    "sendinblue": {
+        "paragraphs": 583,
+        "lines": 2711,
+        "characters": 84456
+    },
+    "senseforce": {
+        "paragraphs": 607,
+        "lines": 1281,
+        "characters": 44560
+    },
+    "sentry": {
+        "paragraphs": 1211,
+        "lines": 7597,
+        "characters": 202105
+    },
+    "smaily": {
+        "paragraphs": 209,
+        "lines": 1296,
+        "characters": 33210
+    },
+    "smartengage": {
+        "paragraphs": 79,
+        "lines": 748,
+        "characters": 20612
+    },
+    "sonar-cloud": {
+        "paragraphs": 16,
+        "lines": 69,
+        "characters": 1955
+    },
+    "spacex-api": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "square": {
+        "paragraphs": 370,
+        "lines": 764,
+        "characters": 18744
+    },
+    "statuspage": {
+        "paragraphs": 1225,
+        "lines": 3359,
+        "characters": 72867
+    },
+    "survey-sparrow": {
+        "paragraphs": 28,
+        "lines": 88,
+        "characters": 2673
+    },
+    "tempo": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "the-guardian-api": {
+        "paragraphs": 48,
+        "lines": 113,
+        "characters": 2812
+    },
+    "tmdb": {
+        "paragraphs": 252,
+        "lines": 817,
+        "characters": 30743
+    },
+    "toggl": {
+        "paragraphs": 1198,
+        "lines": 21509,
+        "characters": 737540
+    },
+    "tvmaze-schedule": {
+        "paragraphs": 142,
+        "lines": 405,
+        "characters": 20703
+    },
+    "twilio-taskrouter": {
+        "paragraphs": 1125,
+        "lines": 4524,
+        "characters": 174307
+    },
+    "twitter": {
+        "paragraphs": 7994,
+        "lines": 56410,
+        "characters": 2455516
+    },
+    "tyntec-sms": {
+        "paragraphs": 2384,
+        "lines": 47870,
+        "characters": 2370921
+    },
+    "vantage": {
+        "paragraphs": 96,
+        "lines": 290,
+        "characters": 9585
+    },
+    "vitally": {
+        "paragraphs": 914,
+        "lines": 2298,
+        "characters": 40495
+    },
+    "waiteraid": {
+        "paragraphs": 103,
+        "lines": 710,
+        "characters": 408150
+    },
+    "whisky-hunter": {
+        "paragraphs": 9,
+        "lines": 26,
+        "characters": 524
+    },
+    "wikipedia-pageviews": {
+        "paragraphs": 2,
+        "lines": 3,
+        "characters": 79
+    },
+    "woocommerce": {
+        "paragraphs": 2117,
+        "lines": 110420,
+        "characters": 4771635
+    },
+    "workable": {
+        "paragraphs": 482,
+        "lines": 2871,
+        "characters": 113017
+    },
+    "workramp": {
+        "paragraphs": 330,
+        "lines": 1050,
+        "characters": 25946
+    },
+    "yotpo": {
+        "paragraphs": 512,
+        "lines": 2990,
+        "characters": 111406
+    },
+    "zapier-supported-storage": {
+        "paragraphs": 2,
+        "lines": 3,
+        "characters": 2583
+    },
+    "zenloop": {
+        "paragraphs": 178,
+        "lines": 1014,
+        "characters": 41005
+    },
+    "zoom": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "activecampaign": {
+        "paragraphs": 1624,
+        "lines": 14047,
+        "characters": 536429
+    },
+    "aha": {
+        "paragraphs": 2332,
+        "lines": 9845,
+        "characters": 286006
+    },
+    "aircall": {
+        "paragraphs": 1243,
+        "lines": 5864,
+        "characters": 145597
+    },
+    "alpha-vantage": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "amplitude": {
+        "paragraphs": 1490,
+        "lines": 12474,
+        "characters": 419470
+    },
+    "apple-search-ads": {
+        "paragraphs": 3,
+        "lines": 5,
+        "characters": 119
+    },
+    "ashby": {
+        "paragraphs": 353,
+        "lines": 932,
+        "characters": 27602
+    },
+    "braze": {
+        "paragraphs": 1126,
+        "lines": 7197,
+        "characters": 192968
+    },
+    "breezometer": {
+        "paragraphs": 915,
+        "lines": 2876,
+        "characters": 126266
+    },
+    "callrail": {
+        "paragraphs": 745,
+        "lines": 6381,
+        "characters": 309814
+    },
+    "chargebee": {
+        "paragraphs": 10406,
+        "lines": 36682,
+        "characters": 1685853
+    },
+    "chartmogul": {
+        "paragraphs": 533,
+        "lines": 15650,
+        "characters": 513100
+    },
+    "clickup-api": {
+        "paragraphs": 3088,
+        "lines": 9510,
+        "characters": 192406
+    },
+    "close-com": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "coin-api": {
+        "paragraphs": 1227,
+        "lines": 6297,
+        "characters": 249500
+    },
+    "coingecko-coins": {
+        "paragraphs": 29280,
+        "lines": 71748,
+        "characters": 77583646
+    },
+    "coinmarketcap": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "configcat": {
+        "paragraphs": 2,
+        "lines": 3,
+        "characters": 5
+    },
+    "convertkit": {
+        "paragraphs": 280,
+        "lines": 1699,
+        "characters": 50502
+    },
+    "courier": {
+        "paragraphs": 661,
+        "lines": 2825,
+        "characters": 100655
+    },
+    "datascope": {
+        "paragraphs": 81,
+        "lines": 651,
+        "characters": 19852
+    },
+    "delighted": {
+        "paragraphs": 272,
+        "lines": 1667,
+        "characters": 62033
+    },
+    "dremio": {
+        "paragraphs": 1558,
+        "lines": 8126,
+        "characters": 246377
+    },
+    "emailoctopus": {
+        "paragraphs": 152,
+        "lines": 2954,
+        "characters": 90541
+    },
+    "exchange-rates-tutorial": {
+        "paragraphs": 111,
+        "lines": 719,
+        "characters": 25136
+    },
+    "facebook-pages": {
+        "paragraphs": 560,
+        "lines": 2026,
+        "characters": 68995
+    },
+    "fullstory": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "getlago": {
+        "paragraphs": 260,
+        "lines": 3716,
+        "characters": 104180
+    },
+    "gnews": {
+        "paragraphs": 260,
+        "lines": 1090,
+        "characters": 33407
+    },
+    "gocardless": {
+        "paragraphs": 2546,
+        "lines": 26828,
+        "characters": 898902
+    },
+    "google-pagespeed-insights": {
+        "paragraphs": 365,
+        "lines": 1908,
+        "characters": 63306
+    },
+    "google-webfonts": {
+        "paragraphs": 395,
+        "lines": 1349,
+        "characters": 56618
+    },
+    "greenhouse": {
+        "paragraphs": 1542,
+        "lines": 22026,
+        "characters": 720385
+    },
+    "gutendex": {
+        "paragraphs": 36,
+        "lines": 112,
+        "characters": 4482
+    },
+    "instatus": {
+        "paragraphs": 318,
+        "lines": 796,
+        "characters": 23684
+    },
+    "intercom": {
+        "paragraphs": 126,
+        "lines": 480,
+        "characters": 16237
+    },
+    "intruder": {
+        "paragraphs": 344,
+        "lines": 795,
+        "characters": 26453
+    },
+    "ip2whois": {
+        "paragraphs": 35,
+        "lines": 466,
+        "characters": 14046
+    },
+    "k6-cloud": {
+        "paragraphs": 493,
+        "lines": 1478,
+        "characters": 54517
+    },
+    "launchdarkly": {
+        "paragraphs": 2801,
+        "lines": 8461,
+        "characters": 229716
+    },
+    "lokalise": {
+        "paragraphs": 128,
+        "lines": 773,
+        "characters": 23716
+    },
+    "mailerlite": {
+        "paragraphs": 537,
+        "lines": 8541,
+        "characters": 179914
+    },
+    "mailersend": {
+        "paragraphs": 866,
+        "lines": 12745,
+        "characters": 313303
+    },
+    "mailjet-mail": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "mailjet-sms": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "merge": {
+        "paragraphs": 734,
+        "lines": 3171,
+        "characters": 60130
+    },
+    "metabase": {
+        "paragraphs": 794,
+        "lines": 1946,
+        "characters": 62358
+    },
+    "monday": {
+        "paragraphs": 733,
+        "lines": 2755,
+        "characters": 120779
+    },
+    "n8n": {
+        "paragraphs": 104,
+        "lines": 1238,
+        "characters": 29949
+    },
+    "news-api": {
+        "paragraphs": 336,
+        "lines": 1281,
+        "characters": 39574
+    },
+    "newsdata": {
+        "paragraphs": 167,
+        "lines": 739,
+        "characters": 29927
+    },
+    "nytimes": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "omnisend": {
+        "paragraphs": 152,
+        "lines": 623,
+        "characters": 19758
+    },
+    "oura": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "partnerstack": {
+        "paragraphs": 111,
+        "lines": 345,
+        "characters": 8903
+    },
+    "pendo": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "pexels-api": {
+        "paragraphs": 0,
+        "lines": 0,
+        "characters": 0
+    },
+    "plausible": {
+        "paragraphs": 1384,
+        "lines": 3353,
+        "characters": 250543
+    },
+    "pocket": {
+        "paragraphs": 271,
+        "lines": 1021,
+        "characters": 62926
+    },
+    "polygon-stock-api": {
+        "paragraphs": 1001,
+        "lines": 3539,
+        "characters": 87935
+    },
+    "posthog": {
+        "paragraphs": 627,
+        "lines": 3834,
+        "characters": 80966
+    },
+    "postmarkapp": {
+        "paragraphs": 1175,
+        "lines": 8010,
+        "characters": 235410
+    },
+    "prestashop": {
+        "paragraphs": 783,
+        "lines": 2898,
+        "characters": 119762
+    },
+    "punk-api": {
+        "paragraphs": 47,
+        "lines": 197,
+        "characters": 6877
+    },
+    "pypi": {
+        "paragraphs": 707,
+        "lines": 2445,
+        "characters": 92449
+    }
+}

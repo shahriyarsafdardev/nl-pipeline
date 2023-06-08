@@ -1,0 +1,1505 @@
+{
+    "recreation_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 50
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "offset",
+                "inject_into": "request_parameter"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "recruitee_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "primary_key": "id"
+    },
+    "reply-io_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "ringcentral_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "perPage"
+            },
+            "pagination_strategy": {
+                "type": "PageIncrement",
+                "page_size": 100
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "page"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "rocket-chat_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/offset_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "sap-fieldglass_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "secoda_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/cursor_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "sendgrid_retriever": {
+        "type": "SimpleRetriever"
+    },
+    "sendinblue_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/offset_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "senseforce_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 10000
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "offset",
+                "inject_into": "request_parameter"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "sentry_retriever": {
+        "type": "SimpleRetriever"
+    },
+    "smaily_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "smartengage_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "sonar-cloud_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/increment_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "spacex-api_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "square_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "statuspage_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/offset_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "survey-sparrow_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "pagination_strategy": {
+                "type": "PageIncrement",
+                "page_size": "#/definitions/page_size"
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "page"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "tempo_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response['metadata']['next'] }}",
+                "stop_condition": "{{ 'next' not in response['metadata'] }}",
+                "page_size": 50
+            },
+            "page_size_option": {
+                "field_name": "limit",
+                "inject_into": "request_parameter"
+            },
+            "page_token_option": {
+                "type": "RequestPath"
+            }
+        }
+    },
+    "the-guardian-api_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "class_name": "source_the_guardian_api.custom_page_strategy.CustomPageIncrement",
+                "page_size": 10
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "page"
+            },
+            "page_size_option": {
+                "inject_into": "body_data",
+                "field_name": "page_size"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "tmdb_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "toggl_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "tvmaze-schedule_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "twilio-taskrouter_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "twitter_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response.meta.next_token }}",
+                "stop_condition": "{{ 'next_token' not in response['meta'] }}",
+                "page_size": 100
+            },
+            "page_size_option": {
+                "field_name": "max_results",
+                "inject_into": "request_parameter"
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "next_token",
+                "inject_into": "request_parameter"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "tyntec-sms_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "vantage_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/increment_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "vitally_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response.next }}",
+                "page_size": 100
+            },
+            "page_size_option": {
+                "field_name": "limit",
+                "inject_into": "request_parameter"
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "from",
+                "inject_into": "request_parameter"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "waiteraid_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "whisky-hunter_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "wikipedia-pageviews_retriever": {
+        "$ref": "#/definitions/per_article_retriever"
+    },
+    "woocommerce_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 100
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "offset"
+            },
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "per_page"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "workable_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "limit_option": {
+                "inject_into": "request_parameter",
+                "field_name": ""
+            },
+            "page_token_option": {
+                "type": "RequestPath"
+            },
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response.paging.next }}",
+                "stop_condition": "{{ 'next' not in response['paging'] }}",
+                "page_size": "#/definitions/page_size"
+            }
+        }
+    },
+    "workramp_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "per_page"
+            },
+            "pagination_strategy": {
+                "type": "PageIncrement",
+                "page_size": 100
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "page"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "yotpo_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "type": "RecordSelector",
+            "extractor": {
+                "$ref": "#/definitions/yotpo_extractor"
+            }
+        },
+        "paginator": {
+            "$ref": "#/definitions/yotpo_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/yotpo_stream_requester"
+        }
+    },
+    "zapier-supported-storage_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "zenloop_retriever": {
+        "type": "SimpleRetriever",
+        "$parameters": {
+            "url_base": "https://api.zenloop.com/v1/"
+        },
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "PageIncrement",
+                "page_size": 50,
+                "start_from_page": 1
+            },
+            "page_size_option": {
+                "field_name": "per_page",
+                "inject_into": "request_parameter"
+            },
+            "page_token_option": {
+                "type": "RequestPath"
+            }
+        }
+    },
+    "zoom_retriever": {
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "activecampaign_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 20
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "offset"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "aha_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "paginator": {
+            "$ref": "#/definitions/increment_paginator"
+        }
+    },
+    "aircall_retriever": {
+        "$ref": "#/definitions/record_retriever",
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "alpha-vantage_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "amplitude_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "apple-search-ads_retriever": {
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "ashby_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response.nextCursor }}",
+                "page_size": 100
+            },
+            "page_size_option": {
+                "field_name": "per_page",
+                "inject_into": "body_json"
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "body_json",
+                "field_name": "cursor"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "braze_retriever": {
+        "$ref": "#/definitions/paginated_retriever"
+    },
+    "breezometer_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "url_base": "https://api.breezometer.com",
+            "http_method": "GET",
+            "request_parameters": {
+                "key": "{{ config['api_key'] }}",
+                "lat": "{{ config['latitude'] }}",
+                "lon": "{{ config['longitude'] }}"
+            }
+        }
+    },
+    "callrail_retriever": {
+        "type": "SimpleRetriever",
+        "$parameters": {
+            "url_base": "https://api.callrail.com/v3/a/"
+        },
+        "record_selector": {
+            "extractor": {
+                "type": "DpathExtractor",
+                "field_path": [
+                    "{{ parameters['name'] }}"
+                ]
+            }
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ headers['link']['next']['url'] }}",
+                "stop_condition": "{{ 'next' not in headers['link'] }}",
+                "page_size": 100
+            },
+            "page_size_option": {
+                "field_name": "per_page",
+                "inject_into": "request_parameter"
+            },
+            "page_token_option": {
+                "type": "RequestPath"
+            }
+        }
+    },
+    "chargebee_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/nested_selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response.get('next_offset')|tojson() }}",
+                "stop_condition": "{{ not response.next_offset }}",
+                "page_size_option": {
+                    "type": "RequestOption",
+                    "inject_into": "request_parameter",
+                    "field_name": "limit",
+                    "page_size": 100
+                }
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "offset"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "chartmogul_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "clickup-api_retriever": {
+        "type": "SimpleRetriever",
+        "$parameters": {
+            "url_base": "https://api.clickup.com/api/v2"
+        }
+    },
+    "close-com_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        }
+    },
+    "coin-api_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "coingecko-coins_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "coinmarketcap_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/offset_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "configcat_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "convertkit_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "courier_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/results_selector"
+        }
+    },
+    "datascope_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 200
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "offset"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "delighted_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "PageIncrement",
+                "page_size": 100,
+                "start_from_page": 1
+            },
+            "page_size_option": {
+                "field_name": "per_page",
+                "inject_into": "request_parameter"
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "page",
+                "inject_into": "request_parameter"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "dremio_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "emailoctopus_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "exchange-rates-tutorial_retriever": {},
+    "facebook-pages_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "fullstory_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "type": "RecordSelector",
+            "extractor": {
+                "type": "DpathExtractor",
+                "field_path": [
+                    "{{ parameters.name }}"
+                ]
+            },
+            "paginator": {
+                "type": "DefaultPaginator",
+                "pagination_strategy": {
+                    "type": "TokenBased",
+                    "token_field": "nextPaginationToken",
+                    "token_option": {
+                        "type": "RequestOption",
+                        "inject_into": "request_parameter",
+                        "field_name": "pagination_token"
+                    }
+                }
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "getlago_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/cursor_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "gnews_retriever": {
+        "$ref": "#/definitions/base_retriever",
+        "requester": {
+            "$ref": "#/definitions/base_requester",
+            "request_parameters": {
+                "$ref": "#/definitions/common_parameters",
+                "q": "{{ config['query'] }}",
+                "in": "{{ ','.join(config['in']) }}",
+                "sortby": "{{ config['sortby'] }}"
+            }
+        }
+    },
+    "gocardless_retriever": {
+        "type": "SimpleRetriever",
+        "$parameters": {
+            "url_base": "{{ 'https://api.gocardless.com' if config['gocardless_environment'] == 'live' else 'https://api-sandbox.gocardless.com' }}"
+        },
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response['meta']['cursors']['after'] }}",
+                "page_size": 500
+            },
+            "limit_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "after",
+                "inject_into": "request_parameter"
+            },
+            "page_size_option": {
+                "field_name": "limit",
+                "inject_into": "request_parameter"
+            }
+        }
+    },
+    "google-pagespeed-insights_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "partition_router": [
+            "#/definitions/url_partition_router",
+            "#/definitions/strategy_partition_router"
+        ]
+    },
+    "google-webfonts_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "greenhouse_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ headers['link']['next']['url'] }}",
+                "stop_condition": "{{ 'next' not in headers['link'] }}",
+                "page_size": 100
+            },
+            "page_size_option": {
+                "field_name": "per_page",
+                "inject_into": "request_parameter"
+            },
+            "page_token_option": {
+                "type": "RequestPath"
+            }
+        }
+    },
+    "gutendex_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "PageIncrement",
+                "page_size": 32
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "page"
+            },
+            "page_size_option": {
+                "inject_into": "body_data",
+                "field_name": "page_size"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "instatus_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "intercom_retriever": {
+        "description": "Base Retriever for Full Refresh streams",
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "url_base": "#/definitions/requester/url_base",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response.get('pages', {}).get('next') }}",
+                "stop_condition": "{{ 'next' not in response.get('pages', {}) }}",
+                "page_size": 150
+            },
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "per_page"
+            },
+            "page_token_option": {
+                "type": "RequestPath"
+            }
+        }
+    },
+    "intruder_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/offset_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "ip2whois_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "k6-cloud_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/increment_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "launchdarkly_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/offset_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "lokalise_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/increment_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "mailerlite_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "mailersend_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "incremental_sync": {
+            "$ref": "#/definitions/incremental_sync"
+        }
+    },
+    "mailjet-mail_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "mailjet-sms_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "merge_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "$ref": "#/definitions/selective_paginator"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "metabase_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "monday_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "paginator": {
+            "$ref": "#/definitions/default_paginator"
+        }
+    },
+    "n8n_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": ""
+            },
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ response.nextCursor }}",
+                "page_size": 250
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "cursor",
+                "inject_into": "request_parameter"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "news-api_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "pageSize"
+            },
+            "pagination_strategy": {
+                "type": "PageIncrement",
+                "page_size": 100
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "page"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "newsdata_retriever": {
+        "$ref": "#/definitions/base_retriever",
+        "requester": {
+            "$ref": "#/definitions/base_requester"
+        }
+    },
+    "nytimes_retriever": {
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "omnisend_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{response['paging']['next']}}",
+                "stop_condition": "{{response['paging']['next'] == None}}",
+                "page_size": 100
+            },
+            "page_token_option": {
+                "type": "RequestPath"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "oura_retriever": {
+        "$ref": "#/definitions/date_retriever"
+    },
+    "partnerstack_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "CursorPagination",
+                "cursor_value": "{{ last_records[-1]['key'] }}",
+                "stop_condition": "{{ response.data.has_more is false }}",
+                "page_size": 250
+            },
+            "page_size_option": {
+                "field_name": "limit",
+                "inject_into": "request_parameter"
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "starting_after",
+                "inject_into": "request_parameter"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        },
+        "partition_router": {
+            "$ref": "#/definitions/partition_router"
+        }
+    },
+    "pendo_retriever": {
+        "type": "SimpleRetriever",
+        "requester": {
+            "type": "HttpRequester",
+            "url_base": "https://app.pendo.io/api/v1",
+            "path": "/page",
+            "http_method": "GET",
+            "request_parameters": {},
+            "request_headers": {},
+            "request_body_json": {},
+            "authenticator": {
+                "type": "ApiKeyAuthenticator",
+                "header": "x-pendo-integration-key",
+                "api_token": "{{ config['api_key'] }}"
+            }
+        },
+        "record_selector": {
+            "type": "RecordSelector",
+            "extractor": {
+                "type": "DpathExtractor",
+                "field_path": []
+            }
+        },
+        "paginator": {
+            "type": "NoPagination"
+        }
+    },
+    "pexels-api_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "plausible_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "pocket_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "count"
+            },
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 10
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "offset"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "polygon-stock-api_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "posthog_retriever": {
+        "type": "SimpleRetriever",
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "limit"
+            },
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 100
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "field_name": "offset",
+                "inject_into": "request_parameter"
+            }
+        }
+    },
+    "postmarkapp_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 500
+            },
+            "page_token_option": {
+                "type": "RequestOption",
+                "inject_into": "request_parameter",
+                "field_name": "offset"
+            },
+            "page_size_option": {
+                "inject_into": "request_parameter",
+                "field_name": "offset"
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "prestashop_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "DefaultPaginator",
+            "pagination_strategy": {
+                "type": "OffsetIncrement",
+                "page_size": 50
+            }
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "punk-api_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    },
+    "pypi_retriever": {
+        "record_selector": {
+            "$ref": "#/definitions/selector"
+        },
+        "paginator": {
+            "type": "NoPagination"
+        },
+        "requester": {
+            "$ref": "#/definitions/requester"
+        }
+    }
+}
